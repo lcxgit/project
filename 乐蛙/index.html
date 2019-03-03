@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta name="author" contect="web developer lcx" />
+	<meta name="name" content="乐蛙, beta V1.0 2018/10/1" />
+	<meta name="copyright" content="乐蛙 All Rights Reserved" />
+	<meta name="applicable-device" content="pc,mobile">
+    <!--<meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+	<meta http-equiv="refresh" content="2" /> -->
+	<title>乐蛙</title>
+	<meta name="keywords" content="乐蛙">
+	<meta name="description" content="乐蛙 不超过850个字符">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	
+	<!-- header -->
+    <header class="container-fluid header">
+        <nav class="header_nav">
+            <div class="container">
+                <div class="navbar_header">
+                    <a class="navbar_a" href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
+                    <button class="navbar_toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar_toggler_icon"></span>
+                    </button>
+                </div>
+                <div class="main_menu" id="menu">
+                    <ul class="navbar_nav">
+                        <!-- <li class="nav_item active">
+                            <a class="nav_link active" href="#">Home</a>
+                        </li> -->
+                        <li class="nav_item active">
+                            <a class="nav_link" href="index.html" data-toggle="" aria-haspopup="true" aria-expanded="false">乐蛙服务</a>
+                            <div class="dropdown_menu">
+                                <a class="dropdown_item active" href="index.html">乐蛙服务</a>
+                                <a class="dropdown_item" href="service.html">乐蛙服务</a>
+                            </div>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="product.html" data-toggle="" aria-haspopup="true" aria-expanded="false">产品方案</a>
+                            <div class="dropdown_menu">
+                                <a class="dropdown_item" href="product.html">产品方案</a>
+                                <a class="dropdown_item" href="product.html">产品方案</a>
+                            </div>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="cases.html" data-toggle="" aria-haspopup="true" aria-expanded="false">项目案例</a>
+                            <div class="dropdown_menu">
+                                <a class="dropdown_item" href="cases.html">项目案例</a>
+                                <a class="dropdown_item" href="cases.html">项目案例</a>
+                            </div>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="news.html" data-toggle="" aria-haspopup="true" aria-expanded="false">新闻动态</a>
+                            <div class="dropdown_menu">
+                                <a class="dropdown_item" href="news.html">新闻动态</a>
+                                <a class="dropdown_item" href="news.html">新闻动态</a>
+                            </div>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="contact.html" data-toggle="" aria-haspopup="true" aria-expanded="false">联系我们</a>
+                            <div class="dropdown_menu">
+                                <a class="dropdown_item" href="contact.html">联系我们</a>
+                                <a class="dropdown_item" href="contact.html">联系我们</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="mobile_menu">
+                    <!-- <li><a class="active" href="index.html">Home</a></li> -->
+                    <li class="active">
+                        <a href="javascript:;">乐蛙服务</a>
+                        <ul>
+                            <li><a class="active" href="service.html">乐蛙服务</a></li>
+                            <li><a href="service.html">乐蛙服务</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">产品方案</a>
+                        <ul>
+                            <li><a href="product.html">产品方案</a></li>
+                            <li><a href="product.html">产品方案</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">项目案例</a>
+                        <ul>
+                            <li><a href="cases.html">项目案例</a></li>
+                            <li><a href="cases.html">项目案例</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">新闻动态</a>
+                        <ul>
+                            <li><a href="news.html">新闻动态</a></li>
+                            <li><a href="news.html">新闻动态</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                        <ul>
+                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+	<!-- header -->
+
+	<!-- slider -->
+	<!-- <div id="bootstrap-touch-slider" class="carousel bs-slider fade fade_slider control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000">
+	    <div class="carousel-inner" role="listbox">
+	        <div class="item active">
+	            <img src="images/banner.png" alt="" class="slide-image" />
+	        </div>
+	        <div class="item">
+	            <img src="images/banner.png" alt="" class="slide-image" />
+	        </div>
+	        <div class="item">
+	            <img src="images/banner.png" alt="" class="slide-image" />
+	        </div>
+	    </div>
+	    <ol class="carousel-indicators">
+	        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+	        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+	        <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+	    </ol>
+	    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+	        <span class="fa fa-angle-left" aria-hidden="true"></span>
+	        <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+	        <span class="fa fa-angle-right" aria-hidden="true"></span>
+	        <span class="sr-only">Next</span>
+	    </a>
+	</div> -->
+    <!-- slider -->
+
+    <!-- banner -->
+    <!-- <section class="container-fluid banner">
+	    <figure class="banner_text_img">
+			<img src="images/banner2.png" alt="" class="center-block img" />
+			<figcaption class="figcaption_text">
+				<div class="text">
+					<h3 class="wow fadeInUp" data-wow-delay="0.1s">LOVAPLAY</h3>
+					<h4 class="wow fadeInUp" data-wow-delay="0.2s">你好，童年!</h4>
+					<p class="wow fadeInUp" data-wow-delay="0.3s">它将改变社区，幼儿园，公园，它鼓励儿童的自我发现，并使儿童快乐并且健壮起来。在lovaplay，我们知道游戏真正的力量，它体现在我们的每一个行动中，从创新的设计和儿童人机测试到生态友好的流程和贴心的客户服务。我们正在拯救失去的儿童玩耍时光…一个有趣的操场，一个动感的秋千，一个具有挑战的攀爬设施！</p>
+				</div>
+			</figcaption>
+		</figure>
+	</section> -->
+	<section class="container-fluid banner">
+	    <figure class="banner_img">
+			<img src="images/banner3.png" alt="" class="center-block img xs_img" />
+			<figcaption class="figcaption_text">
+				<div class="col-xs-4 col-sm-7 col-md-7 col-lg-7 figcaption_img">
+					<img src="images/banner_img.png" class="center-block img wow fadeInRightBig" data-wow-delay="0.5s" alt="" />
+				</div>
+				<div class="col-xs-8 col-sm-5 col-md-5 col-lg-3 text">
+					<h3 class="wow fadeInUp" data-wow-delay="0.1s">LOVAPLAY</h3>
+					<h4 class="wow fadeInUp" data-wow-delay="0.2s">你好，童年!</h4>
+					<p class="wow fadeInUp" data-wow-delay="0.3s">它将改变社区，幼儿园，公园，它鼓励儿童的自我发现，并使儿童快乐并且健壮起来。在lovaplay，我们知道游戏真正的力量，它体现在我们的每一个行动中，从创新的设计和儿童人机测试到生态友好的流程和贴心的客户服务。我们正在拯救失去的儿童玩耍时光一个有趣的操场，一个动感的秋千，一个具有挑战的攀爬设施！</p>
+				</div>
+			</figcaption>
+		</figure>
+	</section>
+    <!-- banner -->
+
+    <!-- index_icon -->
+	<section class="container-fluid index_icon">
+		<div class="container">
+			<div class="row text-center index_icon_mtb">
+				<h2 class="index_icon_h2">十项核心，十全十美</h2>
+				<div class="icon">
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.1s";>
+						<img class="center-block figure_img" src="images/index_icon_1.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>有趣</h3>
+							<span>玩法丰富有去，不枯燥</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s";>
+						<img class="center-block figure_img" src="images/index_icon_2.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>美观</h3>
+							<span>造型漂亮，活化景观</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.3s";>
+						<img class="center-block figure_img" src="images/index_icon_3.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>安全</h3>
+							<span>紧密的结构，用料扎实</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.4s";>
+						<img class="center-block figure_img" src="images/index_icon_4.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>健康</h3>
+							<span>不含对儿童有害的材料</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.5s";>
+						<img class="center-block figure_img" src="images/index_icon_5.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>耐用</h3>
+							<span>施工牢固，材料耐性好</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s";>
+						<img class="center-block figure_img" src="images/index_icon_6.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>环保</h3>
+							<span>更少的塑料，更多的可再利用的材料</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.7s";>
+						<img class="center-block figure_img" src="images/index_icon_7.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>定置设计</h3>
+							<span>因地制宜的设计，让处都是别样的风采</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s";>
+						<img class="center-block figure_img" src="images/index_icon_8.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>套餐式方案</h3>
+							<span>为客户提供价值最大化的方案</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.9s";>
+						<img class="center-block figure_img" src="images/index_icon_9.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>无障碍设计</h3>
+							<span>人人都该有的玩耍机会</span>
+						</figcaption>
+					</figure>
+					<figure class="figure_img_text col-md-2 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="1s";>
+						<img class="center-block figure_img" src="images/index_icon_10.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>一站服务</h3>
+							<span>提供从规划设计到施工以及全周期的维护</span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- index_icon -->
+
+    <!-- index_article_1 -->
+    <article class="container-fluid index_article_1">
+		<figure class="figure_img_text">
+			<img src="images/index_article_1_img.jpg" alt="" class="center-block index_article_1_img" />
+			<figcaption class="container text-center">
+				<div class="figcaption_text wow fadeInUp">
+					<h3>用创造力，搭建孩子们的小时光</h3>
+					<p>  我们相信在越有趣的环境里，越是能够激发孩子们的创造力；而孩子在玩耍的时光里，每一个创造力的妙想，都藏着孩子的未来。我们通过绳索，攀岩，水景乐园，飞盘秋千，动物滑梯等一系列主题式的创新性的设计和组合，将场景激活，创造出沉浸式体验。场景化游戏方式，促进智力发育。</p>
+				</div>
+			</figcaption>
+		</figure>
+	</article>
+	<!-- index_article_1 -->
+
+	<!-- index_article_2 -->
+	<article class="container-fluid index_article_2">
+		<div class="container">
+			<div class="text-center index_article_2_title wow fadeInUp">
+				<h2>丰富有趣，不负童年</h2>
+				<p>童年不可辜负，让我们在这个无忧无虑的时光尽情玩耍</p>
+			</div>
+			<div class="index_article_2_text_img text-center clearfix">
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_2_img_1.png" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_2_img_01.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="" class="btn_more_a"><small class="small">飞盘秋千</small></a></h6>
+					<span>化身飞舞的精灵</span>
+					<p> 传统的秋千为一人荡漾，而飞盘秋千和多人一起玩耍，更加刺激更加有趣。</p>
+				</article>
+				<div class="clearfix"></div>
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_2_img_2.png" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_2_img_02.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="" class="btn_more_a"><small class="small">科普配件</small></a></h6>
+					<span>请叫我自然“博士”</span>
+					<p>LOVAPLAY在许多地方都搭配了科普益智类的配件，让孩子们在游玩中学到有趣的知识。</p>
+				</article>
+				<div class="clearfix"></div>
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_2_img_3.png" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_2_img_03.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="" class="btn_more_a"><small class="small">攀爬绳索</small></a></h6>
+					<span>正义的伙伴-蜘蛛侠</span>
+					<p>我们采用优质进口的绳索材料，为孩子们搭建出形态丰富多彩绳索攀爬造型。锻炼孩子们的手脚协同能力和肢体力量。</p>
+				</article>
+				<div class="clearfix"></div>
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_2_img_4.png" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_2_img_04.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="" class="btn_more_a"><small class="small">主题乐园</small></a></h6>
+					<span>船长，发现海岛！</span>
+					<p>我们将诸多有趣的功能，用一系列引人注目的主体创意性的嫁接起来，让孩子们如角色扮演一样玩乐。</p>
+				</article>
+			</div>
+		</div>
+	</article>
+	<!-- index_article_2 -->
+
+	<!-- index_article_3 -->
+	<article class="container-fluid index_article_3">
+		<figure class="figure_img_text">
+			<img src="images/index_article_3_img.jpg" alt="" class="center-block index_article_3_img" />
+			<figcaption class="container text-center">
+				<div class="figcaption_text wow fadeInUp">
+					<h3>不止游乐玩法，丰富有趣</h3><h3>玩耍环境更是，美不胜收</h3>
+					<p>森林、动物、海盗船等等丰富可爱的造型，伴随游玩愉悦心情。 </p>
+				</div>
+			</figcaption>
+		</figure>
+	</article>  
+	<!-- index_article_3 -->
+
+	<!-- index_article_4 -->
+	<article class="container-fluid index_article_4">
+		<div class="container">
+			<div class="row">
+				<div class="index_article_4_title_text text-center wow fadeInUp">
+					<h2>像你保护家人一样，设计每一个安全的细节</h2>
+					<p>一定是特别的缘份，才可以一路走来成为家人。之后，每一件小事，每一个细节，都想给他们最好的。</p>
+				</div>
+			</div>
+			<div class="index_article_4_content">
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_1.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">坚固的金属部件</a></h6>
+							<p>金属部件由不锈钢，阳极氧化或涂漆铝或热浸镀锌钢制成，钢部件经喷砂处理，环氧树脂和粉末涂料处理或涂有电沉积涂层。金属部件具有优异的耐候性和成品外观。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_2.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">钢筋加强绳索和网</a></h6>
+							<p>我们使用的所有绳索和网都是钢筋。十字形接头由不锈钢制成。绳索紧固件由坚固的塑料制成，特殊设计的连杆紧固件用于暴露于大角度变化的接头。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_3.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">牢固的紧固件</a></h6>
+							<p>紧固件由不锈钢或热镀锌钢制成。以Ø8mm不锈钢螺钉经过专门设计，易于安装。他们没有使用。此外，螺杆的形状设计用于减少木材的开裂。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_4.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">高质量滑梯</a></h6>
+							<p>高质量的滑道由MD-PE塑料制成。，不含任何对健康有害的化合物。塑料滑道免维护且抗冲击，在阳光下保持凉爽。沿着滑道中间的凹槽有助于它在下雨后更快地干燥。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_5.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">适合玩耍的地面</a></h6>
+							<p>我们的地面材料由混合了特具柔韧性和耐用性的着色聚烯烃颗粒和脂肪族聚氨酯粘合剂制造而成，柔软舒适，适合赤脚行走；防褪色、耐腐蚀、可长时间经受紫外线照射。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_6.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">精致专业的施工</a></h6>
+							<p>我们排出由施工专家和专业培训过的施工人员，共同协作完成施工，保证设施的最后一站稳妥无恙，并且我们有这比业界同行更高的施工标准。保证了设备与地面的牢固连接。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_7.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">特种塑料连接件</a></h6>
+							<p>框架的球窝接头和面板紧固件由玻璃纤维增​​强的聚酰胺塑料制成，适合户外使用。它们具有耐高温和耐候性以及抗冲击性。</p>
+						</article>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 p60 wow zoomIn">
+					<div class="index_article_4_box">
+						<figure class="figure_img list_img">
+							<a href=""><img src="images/index_article_4_img_8.jpg" alt=""></a>
+						</figure>
+						<article class="article_text">
+							<h6><a href="">隧道和管道滑道</a></h6>
+							<p>隧道和管道滑道由塑料制成，适合户外使用，具有耐高温和耐候性以及抗冲击性。</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- index_article_4 -->
+
+	<!-- index_article_5 -->
+	<article class="container-fluid index_article_5">
+		<div class="container">
+			<div class="row text-center">
+				<div class="index_article_5_title_text text-center wow fadeInUp">
+					<h2>甄选安全环保材料，守护孩子的欢乐时光</h2>
+					<p>材料均符合欧盟等多国及地区安全标准</p>
+				</div>
+			</div>
+			<div class="row text-center index_article_5_box">
+				<figure class="figure_img col-xs-12 col-sm-6 col-md-6 list_img">
+					<a href="">
+						<img src="images/index_article_5_img_1.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>进口环保漆</h3>
+							<p>采用环保漆，无刺激性气味，颜色艳丽丰富。</p>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="figure_img col-xs-12 col-sm-6 col-md-6 list_img">
+					<a href="">
+						<img src="images/index_article_5_img_2.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>优质钢材</h3>
+							<p>金属部件采用优质的表面处理，保证接触安全。并且金属可以回收再利用。</p>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="figure_img col-xs-12 col-sm-6 col-md-6 list_img">
+					<a href="">
+						<img src="images/index_article_5_img_3.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>浸渍木材</h3>
+							<p>浸渍木制部件可在维护后尽可能重复使用。其他部件必须交付给指定的废物管理或热能生产。</p>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="figure_img col-xs-12 col-sm-6 col-md-6 list_img">
+					<a href="">
+						<img src="images/index_article_5_img_4.png" alt="">
+						<figcaption class="figcaption_text">
+							<h3>婴童级塑料</h3>
+							<p>局部选用的塑料符合欧盟要求，不含任何对健康有害的化合物。 无异味、韧性强、色泽光鲜。</p>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
+		</div>
+	</article>
+	<!-- index_article_5 -->
+
+	<!-- index_article_6 -->
+	<article class="container-fluid index_article_6">
+		<figure class="figure_img_text">
+			<img src="images/index_article_6_img.jpg" alt="" class="center-block index_article_6_img" />
+			<figcaption class="container text-center">
+				<div class="figcaption_text wow fadeInUp">
+					<h3>设计于心，服务于行</h3>
+					<p>精良的产品，更需要精益的服务来执行，高效的执行力体现在乐蛙的每项服务里</p>
+				</div>
+			</figcaption>
+		</figure>
+	</article>  
+	<!-- index_article_6 -->
+
+	<!-- index_article_7 -->
+	<article class="container-fluid index_article_7">
+		<div class="container index_article_7_text">
+			<div class="index_article_7_title_text_img text-center">
+				<h2>一站服务，十足省心</h2>
+				<p>乐蛙面向用户提供全流程的一站式服务，只需要客户提供场地信息，其他的都交由乐蛙处理。乐蛙的服务涵盖光，从规划到最终的维护都尽心为客户服务。全周期的维护也为客户打消了设备保养的疑虑。</p>
+				<img src="images/index_article_7_icon_1.png" class="center-block index_article_7_icon hidden-xs" alt="" />
+				<img src="images/index_article_7_icon_2.png" class="center-block index_article_7_icon hidden-sm hidden-md hidden-lg" alt="" />
+			</div>
+			<div class="index_article_7_text_img clearfix">
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_7_img_1.png" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_7_img_01.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="">定置化设计</a></h6>
+					<span>要设计的不是冰冷的产品，而是欢快的童年时光。</span>
+					<p>       “ lovaplay不是简单的设备堆砌，而是因地制宜为为客户带来最适合的设计方案，我们想要制造的不是冰冷的设备，而是一个个欢声笑语的童年时光。lovaplay拥有专业的儿童游乐设计团队，同时与国内外专业景观设计师合作，为您的项目提供景观、儿童游乐、水系统、安全地面等细分设计方案，打造游乐与景观的生态环境系统。lovaplay相信一个优秀的儿童游乐定制化设计方案既可以带来欢乐，又可以美好环境。”</p>
+				</article>
+				<div class="clearfix"></div>
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_7_img_2.jpg" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_7_img_02.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="">套餐化方案</a></h6>
+					<span>四大场景化解决方案带给客户最大的价值</span>
+					<p>我们深知仅仅靠一套方案是无法面对所有场景的。每种不同的场景不同的客户，不同的诉求，都带来了美观，乐趣，利润，成本，功能，等等不同平衡取舍，这里面需要巨大的创新和权衡才能为客户带来价值最大化。在乐蛙多年的经验之上，我们特别针对这四大类场景的，开发出了多套创新且成本可控，平衡有益的解决方案，满足客户多元化的要求。</p>
+				</article>
+				<div class="clearfix"></div>
+				<figure class="figure_img col-md-6">
+					<a class="hidden-xs" href=""><img src="images/index_article_7_img_3.jpg" alt=""></a>
+					<a class="hidden-sm hidden-md hidden-lg" href=""><img src="images/index_article_7_img_03.jpg" alt=""></a>
+				</figure>
+				<article class="article_text col-md-6">
+					<h6><a href="">无障碍游乐</a></h6>
+					<span>人人该都有的玩耍机会</span>
+					<p>无障碍的游戏强调将所有儿童、残疾儿童以及典型的成长儿童和成年人纳入其生活的可能性。我们创造了多样性游戏空间。使得所有儿童可以尽情玩耍。</p>
+				</article>
+			</div>
+		</div>
+	</article>
+	<!-- index_article_7 -->
+
+	<!-- footer_contact -->
+	<section class="container-fluid footer_contact">
+		<figure class="">
+			<div class="hidden-xs hidden-sm">
+				<img src="images/footer_contact.jpg" class="center-block footer_contact_img" alt="">
+			</div>
+			<figcaption class="container">
+				<div class="footer_contact_left_right">
+					<div class="col-xs-12 col-sm-6 col-md-6 wow fadeInLeft">
+						<h2 class="footer_contact_left_right_h2">此时订购</h2>
+						<p class="footer_contact_left_right_p">将得到20%的优惠 <br/>
+						并且赠送5年的延长维护期</p>
+						<img class="wx_img" src="images/footer_contact_wx.jpg" alt="">
+						<p class="footer_contact_left_right_wxp">扫码咨询详情</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1  wow fadeInRight">
+						<h2 class="right_h2">联系我们</h2>
+						<p class="right_p">可以留下您的电话或者邮箱，与我们联系！</p>
+						<form role="form" class="form">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-volume-control-phone"></i></span>
+									<input type="email" class="form-control input-lg" id="name" placeholder="">
+								</div>
+							</div>
+							<span class="right_span">或者</span>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control input-lg" id="name" placeholder="">
+								</div>
+							</div>
+							<button type="submit" class="btn button btn-default btn-lg col-xs-12 col-sm-12 col-md-12">提交</button>
+						</form>
+					</div>
+				</div>
+			</figcaption>
+		</figure>
+	</section>
+	<!-- footer_contact -->
+
+	<!-- footer -->
+	<footer class="container-fluid footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeIn" data-wow-delay="0.1s">
+					<h3 class="h3"><a href="service.html" class="underline">乐蛙服务</a></h3>
+					<ul class="ul">
+						<li><a href="">公司简介</a></li>
+						<li><a href="">服务流程</a></li>
+						<li><a href="">安全</a></li>
+						<li><a href="">材料</a></li>
+						<li><a href="">套餐方案</a></li>
+						<li><a href="">无障碍设计</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeIn" data-wow-delay="0.2s">
+					<h3 class="h3"><a href="product.html" class="underline">产品方案</a></h3>
+					<ul class="ul">
+						<li><a href="">秋千</a></li>
+						<li><a href="">滑梯</a></li>
+						<li><a href="">摇马</a></li>
+						<li><a href="">攀爬</a></li>
+						<li><a href="">科普配件</a></li>
+						<li><a href="">主题公园</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
+					<h3 class="h3"><a href="cases.html" class="underline">项目案例</a></h3>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 wow fadeIn" data-wow-delay="0.4s">
+					<h3 class="h3"><a href="contact.html" class="underline">联系我们</a></h3>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-12 mt20 text-center copyright">Copywriter@2018 Guangzhou Origin Information Technology Co., Ltd. All rights reserved.</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+	
+	<script src="js/document_write.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 客服 -->
+	<div id="kefu"></div>
+	<!-- 客服 -->
+</body>
+</html>

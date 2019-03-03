@@ -1,0 +1,126 @@
+﻿@charset "utf-8";
+
+/* slide_down */
+.slide_down {
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.slide_down.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+/* slide_down */
+
+/* menu_main style */
+.menu_main {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #191919;
+}
+
+/* menu_main closing cross */
+.menu_main .btn_close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.menu_main nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.menu_main ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.menu_main ul li {
+	display: block;
+	height: calc(100% / 8);
+    min-height: 40px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.menu_main ul li a {
+	position: relative;
+	font-size: 30px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	transition: 0.5s;
+	/*-webkit-transition: color 0.2s;
+	transition: color 0.2s;*/
+}
+
+.menu_main ul li a:hover,
+.menu_main ul li a:focus {color: var(--color_fff);}
+/*.menu_main ul li a {background-image: linear-gradient(transparent calc(100% - 1px),var(--color) 1px);}*/
+
+.menu_main ul li:hover a::before,
+.menu_main ul .li_a a::before {
+	content: "";
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    left: -350px;
+    right: auto;
+    height: 2px;
+    width: 300px;
+    background: var(--bg_fff);
+    margin: 0px auto;
+    transition: 0.5s;
+}
+.menu_main ul li:hover a::after,
+.menu_main ul .li_a a::after {
+	content: "";
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    left: auto;
+    right: -350px;
+    height: 2px;
+    width: 300px;
+    background: var(--bg_fff);
+    margin: 0px auto;
+    transition: 0.5s;
+}
+
+/*@media screen and (max-height: 30.5em) {
+	.menu_main nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.menu_main ul li {
+		min-height: 34px;
+	}
+}*/

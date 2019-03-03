@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+@media (max-width: 3000px) and (min-width: 1700px){
+  .container {width: 1600px;}
+}
+@media (max-width: 1700px) and (min-width: 1600px){
+  .container {width: 1500px;}
+}
+@media (max-width: 1600px) and (min-width: 1500px){
+  .container {width: 1400px;}
+}
+@media (max-width: 1500px) and (min-width: 1400px){
+  .container {width: 1300px;}
+}
+@media (max-width: 1400px) and (min-width: 1300px){
+  .container {width: 1200px;}
+}
+@media (max-width: 3000px) and (min-width: 1300px){
+  .change_password .container, .member .container, .forget_password3 .container, .forget_password2 .container, 
+  .forget_password1 .container, .terms .container, .login .container, .registered .container, 
+  .search_nav .container, .index_about_content .index_about_content_img_text .container, 
+  .footer .container, .index_footer_contact .container {width: 1200px;}
+}
+@media (max-width: 3000px) and (min-width: 1800px){
+	.food .container, .food_details .container, .product_details .container, .product .container, 
+	.site .container, .meeting .container, .meeting_details .container, .wellness .container,
+	.about .container, .activity .container, .news .container, .news_details .container, 
+	.promotions .container, .promotions_details .container {width: 1784px;}
+}
+@media (max-width: 1800px) and (min-width: 1700px){
+	.food .container, .food_details .container, .product_details .container, .product .container, 
+	.site .container, .meeting .container, .meeting_details .container, .wellness .container,
+	.about .container, .activity .container, .news .container, .news_details .container, 
+	.promotions .container, .promotions_details .container {width: 1684px;}
+}
+@media (max-width: 1700px) and (min-width: 1600px){
+	.food .container, .food_details .container, .product_details .container, .product .container, 
+	.site .container, .meeting .container, .meeting_details .container, .wellness .container,
+	.about .container, .activity .container, .news .container, .news_details .container, 
+	.promotions .container, .promotions_details .container {width: 1584px;}
+}
+@media (max-width: 1600px) and (min-width: 1500px){
+	.food .container, .food_details .container, .product_details .container, .product .container, 
+	.site .container, .meeting .container, .meeting_details .container, .wellness .container,
+	.about .container, .activity .container, .news .container, .news_details .container, 
+	.promotions .container, .promotions_details .container {width: 1484px;}
+}
+@media (max-width: 1500px) and (min-width: 1400px){
+	.food .container, .food_details .container, .product_details .container, .product .container, 
+	.site .container, .meeting .container, .meeting_details .container, .wellness .container,
+	.about .container, .activity .container, .news .container, .news_details .container, 
+	.promotions .container, .promotions_details .container {width: 1384px;}
+}
+@media (max-width: 1400px) and (min-width: 1300px){
+	.food .container, .food_details .container, .product_details .container, .product .container, 
+	.site .container, .meeting .container, .meeting_details .container, .wellness .container,
+	.about .container, .activity .container, .news .container, .news_details .container, 
+	.promotions .container, .promotions_details .container {width: 1283px;}
+}
+
+@media (max-width: 1800px){
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 260px 10px 0;}
+	.index_about_content .index_about_content_img_text .m50 {margin: 130px auto 0;}
+	.top_figure_img {margin-left: 180px;}
+	.nav_left_content .links_left_ul li,
+	.nav_left_content .links_left_ul li:hover, 
+	.nav_left_content .links_left_ul .links_left_li_bg:hover,
+	.nav_left_content .links_left_ul .links_left_li_bg{background-size: contain;}
+	.nav_left_content .links_left_ul li a {padding: 35px 40px;}
+	.nav_left_content .left_nav_img {width: 272px;height: auto;}
+	.nav_left_content .left_nav_img_top {top: -130px;}
+	.contact_content .right_content .contact_content_right {margin: -250px auto 50px;}
+	.meeting_details_content .right_content .food_text .food_text_yy .mr,
+	.food_details_content .right_content .food_text .food_text_yy .mr {margin-right: 20px;}
+	.product_details_content .right_content_text .input_text .margin_input,
+	.product_details_content .right_content_text .input_text input {margin-bottom: 20px;}
+	.meeting_content .right_content .meeting_img_text .article_text p {
+	    overflow: hidden;
+	    display: -webkit-box;
+	    -webkit-box-orient: vertical;
+	    -webkit-line-clamp: 2;
+	    text-overflow: ellipsis;
+	    word-break: break-all;
+	}
+	.meeting .icon_list { margin: 100px auto 0;}
+}
+@media (max-width: 1700px){
+	.index_join_content .index_join_text {padding: 82px;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 250px 10px 0;}
+	.index_about_content .index_about_content_img_text .m50 {margin: 115px auto 0;}
+	.top_figure_img {margin-left: 150px;}
+	.nav_left_content .left_nav_img {width: 250px;}
+	.nav_left_content .links_left_ul li a{padding: 30px 40px;}
+	.meeting_details_content .right_content .food_text .food_text_yy .mr,
+	.food_details_content .right_content .food_text .food_text_yy .mr {margin-right: 15px;}
+}
+@media (max-width: 1600px){
+	.index_join_content .index_join_text {padding: 63px;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 210px 10px 0;}
+	.index_about_content .index_about_content_img_text .m50 {margin: 85px auto 0;}
+	.nav_left_content .left_nav_img {width: 224px;}
+	.top_figure_img {margin-left: 130px;}
+	.contact_content .right_content .contact_content_right {margin: -180px auto 50px;}
+	.product_content .right_content .meeting_img_text .article_text .article_text_mt {margin: 30px auto 0;}
+	.wellness_content .right_content .meeting_img_text .article_text .mt {margin-top: 40px;}
+	.meeting_details_content .right_content .food_text .food_text_yy img,
+	.food_details_content .right_content .food_text .food_text_yy img {width: 30px;} 
+	.meeting_details_content .right_content .food_text .food_text_yy .mr,
+	.food_details_content .right_content .food_text .food_text_yy .mr {margin: 0 9px 0 0;}
+	.meeting_details_content .right_content .food_text .food_text_yy span,
+	.food_details_content .right_content .food_text .food_text_yy span {width: 100px;}
+}
+@media (max-width: 1500px){
+	.index_join_content .index_join_text {padding: 44px;}
+	.index_about_content .index_about_content_img_text .m50 {margin: 80px auto 0;}
+	.nav_left_content .left_nav_img {width: 199px;}
+	.top_figure_img {width: 160px;}
+	.nav_left_content .left_nav_img_top {top: -160px;}
+	.nav_left_content .links_left_ul li a{padding: 25px 40px;}
+	.figure_banner {margin: 150px auto 0;}
+	.meeting_content .right_content .meeting_img_text .article_text .article_text_mt {margin: 0px auto 0;}
+	.meeting .icon_list  {margin: 65px auto 0;}
+	.meeting_top_banner .figcaption_text {padding: 20px;}
+	.product .meeting_top_banner .figure_banner .figcaption_text h3 {font-size: 20px;}
+	.product .meeting_top_banner .figcaption_text p {font-size: 14px;}
+	.product .meeting_top_banner .figcaption_text h4 {margin: 15px auto 0;font-size: 14px;}
+	.product_content .right_content .meeting_img_text .article_text .article_text_mt {margin: 10px auto 0;}
+	.product_content .right_content .meeting_img_text .article_text h4 {margin: 10px auto;}
+	.product_content .right_content .meeting_img_text .article_text p {margin: 0px auto 10px;}
+	.food_content .right_content .meeting_img_text .article_text .mt {margin-top: 0px;}
+	.wellness_content .right_content .meeting_img_text .article_text .mt {margin-top: 30px;} 
+	.wellness .meeting_top_banner .figcaption_text p { margin: 0 auto 10px;font-size: 15px;line-height: 20px;}
+	.meeting_details_content .right_content .food_text .food_text_yy input,
+	.food_details_content .right_content .food_text .food_text_yy input {width: 140px;}
+}
+@media (max-width: 1400px){
+	.icon_list {margin: 35px auto 0;}
+	.food .icon_list {margin: 10px auto 0;}
+	.index_join_content .index_join_text {padding: 25px;}
+	.index_about_content {height: 530px;}
+	.nav_left_content .left_nav_img_top {width: 170px;}
+	.nav_left_content .left_nav_img {width: 275px;}
+	.nav_left_content .left_nav_img {width: 203px;}
+	.top_figure_img {margin-left: 100px;}
+	.nav_left_content .links_left_ul li a{padding: 20px 40px;}
+	.contact_content .right_content .contact_content_right {margin: -100px auto 50px;}
+	.meeting_content .right_content .meeting_img_text .article_text h4 {margin: 10px auto;}
+	.meeting_content .right_content .meeting_img_text .article_text .article_text_mt {margin: 20px auto 0;}
+	.food_content .right_content .meeting_img_text .article_text p {margin: 10px auto;}
+	.food_content .right_content .meeting_img_text .article_text .mt {margin-top: 15px;}
+	.wellness_content .right_content .meeting_img_text .article_text h2 {margin: 0px auto 10px;}
+	.wellness_content .right_content .meeting_img_text .article_text h2 a {font-size: 15px;}
+	.wellness_content .right_content .meeting_img_text .article_text h5 {margin: 0px auto 10px;font-size: 13px;}
+	.wellness_content .right_content .meeting_img_text .article_text .mt {margin-top: 0;}
+	.wellness_content .right_content .meeting_img_text .article_text .meeting_content_a {width: 90px;margin: 0px auto;}
+	.meeting_details_content .right_content .food_text .food_text_yy .mr,
+	.food_details_content .right_content .food_text .food_text_yy .mr {
+	    margin: 0 50px 10px 0;
+	    display: inline-block;
+	    float: none;
+	}
+}
+@media (max-width: 1299px){
+	.icon_list {margin: 25px auto 0;}
+	.index_join_content .index_join_text {padding: 20px;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 180px 10px 0;}
+	.index_about_content {height: 500px;}
+	.login_content .figcaption_text .input_yzm{width: 59%;}
+	.links_content {margin: 0px auto;}
+	.nav_left_content .left_nav_img {width: 175px;}
+	.top_figure_img {width: 150px;}
+	.contact_content .right_content .contact_content_right {padding: 30px 50px;}
+	.contact_content .right_content .contact_content_right .contact_form .contact_form_textarea {height: 150px;}
+	.figure_banner {margin: 140px auto 0;}
+	.meeting_content .right_content .meeting_img_text .article_text p {margin: 0px auto 10px;}
+	.product_content .right_content .meeting_img_text .article_text p {font-size: 13px;line-height: 20px;}
+	.product_content .right_content .meeting_img_text .article_text span {margin-top: 10px;}
+	.food_content .right_content .meeting_img_text .article_text .mt {margin-top: 0px;}
+	.meeting_details_content .right_content .food_text .food_text_yy .mr,
+	.food_details_content .right_content .food_text .food_text_yy .mr {margin: 0 20px 10px 0;}
+}
+@media (max-width: 1199px){
+	.main{margin: 116px auto 0;}
+	.navbar_header, .navbar_logo {margin: 0 auto 0px;}
+	.main_menu .navbar_nav .nav_item {padding: 5px 20px;margin: 15px auto 0;}
+	.header_nav .main_menu .ul_1,.header_nav .main_menu .ul_2{padding: 0;}
+	.header .header_nav .header_nav_left h5,.header .header_nav .header_nav_left h5 small,
+	.header .header_nav .header_nav_right .header_nav_right_ul_l li a,
+	.header .header_nav .header_nav_right .header_nav_right_ul_r li a{font-size: 12px;}
+	.main_menu .navbar_nav .nav_item .dropdown_menu .dropdown_item {padding: 10px 3px;}
+	.main_menu .navbar_nav .nav_item .dropdown_menu{margin: 25px auto 0;}
+	.search_nav_content .p0{width: 19%;}
+	.search_nav_content .form_select .undefined {width: 90px;}
+	.index_join_content .index_join_text p {font-size: 25px;margin: 20px auto 0;}
+	.index_join_content .index_join_text p:nth-child(3) {margin: 21.5px auto;}
+	.index_join_content .index_join_text .btn_more_a:nth-child(4){margin: 20px 10px;}
+	.index_join_content .index_join_text .btn_more_a:nth-child(5){margin: 20px auto;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 140px 10px 0;}
+	.icons{font-size: 15px;}
+	.index_about_content {height: 425px;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff .btn_more_a {margin: 25px 0 0;}
+	.login_content .figcaption_text .input_yzm{width: 49%;}
+	.registered_content .form_reg .input_label {margin-left: 39px;}
+	.registered_content .form_reg {margin: 60px 90px 0;}
+	.forget_password1 .forget_password1_content .input_label {margin-left: 15px;}
+	.change_member .member_form .submit_btn_ml, 
+	.change_password_content .member_form .submit_btn_ml{margin: 20px 125px 0;}
+	.nav_left_content .links_left_ul li a{padding: 15px;}
+	.top_figure_img {width: 120px;}
+	.nav_left_content .left_nav_img {width: 200px;}
+	.top_figure_img {width: 150px;margin-left: 15px;}
+	.contact_content .right_content .contact_content_right {padding: 30px;}
+	.contact_content .right_content .contact_content_right {margin: 30px auto;float: none;width: 95%;}
+	.news_content .index_news_box .article_text {padding: 10px;}
+	.news_content .index_news_box .article_text p {margin: 10px auto 0;}
+	.meeting_top_banner {width: 70%;}
+	.figure_banner {margin: 135px auto 0;}
+	.list_content {margin-top: 90px;}
+	.product .meeting_top_banner .figure_banner .figcaption_text h3 {font-size: 15px;margin: 0px auto;}
+	.product .meeting_top_banner .figure_banner .figcaption_text h3:nth-child(3) {margin: 10px auto;}
+	.product .meeting_top_banner .figcaption_text p {font-size: 12px;margin: 10px auto 0;}
+	.product_content .right_content .meeting_img_text .article_text .article_text_mt { margin: 25px auto;}
+	.food .list_content {margin-top: 30px;}
+	.wellness .right_content {margin-top: 130px;}
+	.wellness_content .right_content .meeting_img_text {padding: 10px;margin-bottom: 20px;}
+	.wellness .meeting_top_banner .figure_banner img {height: 300px;}
+	.search_nav_content .btn_submit {padding: 30px 30px 23px;}
+	.meeting_content .right_content .meeting_img_text .article_text h5,
+	.meeting_content .right_content .meeting_img_text .article_text .article_text_mt {margin: 20px auto;}
+	.meeting .icon_list  {margin: 65px auto 0;}
+}
+@media (max-width: 991px){
+	.main{margin: 91px auto 0;}
+	.main_menu .navbar_nav .nav_item {padding: 5px 15px 10px 10px;margin: 0px auto;}
+	.main_menu .navbar_nav .nav_item .dropdown_menu {margin-top: 10px;}
+	.main_menu .navbar_nav .nav_item .dropdown_menu .dropdown_item {font-size: 12px;padding: 10px 3px;line-height: 15px;}
+	.header .header_nav .header_nav_left h5 small {display: block; margin-top: 5px;}
+	.icon_list {margin: 0px auto;}
+	.index_news_content .index_news_box .article_text {padding: 10px 10px 25px;}
+	.index_news_content .index_news_box {margin-bottom: 30px;}
+	.index_join_content .index_join_text {padding: 8px 20px;}
+	.index_news_content .btn_more_a {margin: 0px auto;}
+	.index_join_content .index_join_text p {font-size: 20px;margin: 15px auto 0;}
+	.index_join_content .index_join_text p:nth-child(3) {margin: 10px auto;}
+	.index_join_content .index_join_text .btn_more_a:nth-child(4),
+	.index_join_content .index_join_text .btn_more_a:nth-child(5){margin: 10px auto;width: 110px;height: 30px;}
+	.index_join_content .index_join_text .btn_more_a:nth-child(4) .small,
+	.index_join_content .index_join_text .btn_more_a:nth-child(5) .small{font-size: 15px;line-height: 30px;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 100px 10px 0;}
+	.search_nav_content .search_nav_content_form {padding: 0;}
+	.search_nav_content .p0 {width: 21%;padding: 10px 0;margin-right: 0;}
+	.search_nav_content .btn_submit{padding: 17px 4px;font-size: 15px;}
+	.icons {font-size: 12px;}
+	.index_about_content {height: 345px;}
+	.index_about_content .index_about_content_img_text .m50 {margin: 60px auto 0;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff {padding: 15px;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff p {-webkit-line-clamp: 4;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff .btn_more_a{margin: 20px 0 0;width: 120px;height: 40px;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff .btn_more_a .small {font-size: 15px;line-height: 40px;}
+	.login {background: #aa8420; padding-bottom: 30px;margin-bottom: 0;}
+	.login_content .figcaption_text .login_content_tab{float: none;}
+	.login_content .h2 {margin: 20px auto;}
+	.login_content .figcaption_text .input_yzm {width: 60%;}
+	.registered_content .form_reg {margin: 60px 20px 0;}
+	.member_order_content .table thead tr th,
+	.member_order_content .table tbody tr td {padding: 10px;}
+	.about {margin: 20px auto;}
+	.nav_left_content .left_nav_img {width: 150px;}
+	.nav_left_content .links_left_ul li a {padding: 8px 10px;}
+	.about_content .nav_right_content img{width: 100%;}
+	.about_content .nav_right_content_img {margin: 0 auto;}
+	.contact_content .right_content .contact_content_left .contact_content_left_figcaption {padding: 30px;}
+	.food, .food_details, .wellness, .product_details, .product, .site, .meeting, .meeting_details, 
+	.promotions, .promotions_details, .news, .news_details, .activity {margin: 20px auto;}
+	.bottom_content {width: 100%;}
+	.meeting_content .right_content .meeting_img_text {padding: 10px;}
+	.meeting_content .right_content .meeting_img_text .figure_img,
+	.meeting_content .right_content .meeting_img_text .meeting_article_text {padding: 0;}
+	.meeting_top_banner {margin: 0 auto;}
+	.meeting_content .right_content {margin-top: 170px;}
+	.meeting_top_banner .figcaption_text p ,
+	.meeting_top_banner .figcaption_text h4{margin: 0px auto;}
+	.figure_banner {margin: 5px auto 0;}
+	.meeting_content .right_content {margin-top: 0px;}
+	.meeting_top_banner {width: 67%;}
+	.list_content {margin-top: 270px;}
+	.meeting_content .right_content .meeting_img_text .article_text .meeting_content_a {width: 90px;margin-right: 10px;}
+	.meeting_content .nav_pagination_pager { margin: 0px auto;}
+	.product .meeting_top_banner .figcaption_text {padding: 5px;}
+	.product .list_content {margin-top: 160px;}
+	.product_content .right_content .meeting_img_text {padding: 0px;}
+	.product_content .figure_img, .product_content .meeting_article_text{padding: 0;}
+	.product_content .right_content .meeting_img_text .article_text {padding: 10px;}
+	.product_content .right_content .meeting_img_text .article_text .article_text_mt {margin: 10px auto;}
+	.product_content .right_content .meeting_img_text .article_text .meeting_content_a {width: 90px;}
+	.product_content .nav_pagination_pager { margin: 0px auto;}
+	.food .meeting_top_banner .figcaption_text {padding: 20px;}
+	.food .meeting_top_banner .figcaption_text p {margin: 10px auto;font-size: 14px;}
+	.food .list_content {margin-top: 90px;}
+	.food_content .right_content .meeting_img_text {padding: 0;}
+	.food_content .figure_img, .food_content .meeting_article_text {padding: 0;}
+	.food_content .right_content .meeting_img_text .article_text {padding: 10px;}
+	.food_content .right_content .meeting_img_text .article_text .meeting_content_a {margin: -10px auto;width: 90px;}
+	.food_content .nav_pagination_pager {margin: 0 auto;}
+	.meeting_top_banner .figcaption_text {padding: 10px;}
+	.wellness .meeting_top_banner .figcaption_text p {margin: 5px auto;font-size: 13px;line-height: 20px;}
+	.wellness .right_content {margin-top: 160px;}
+	.product_details_content .product_text_tab .nav li a, 
+	.product_details_content .product_text_tab .nav li a:hover, 
+	.product_details_content .product_text_tab .nav li a:focus{padding: 10px}
+	.product_details_content .right_content .content_a {width: 100px;margin: 20px auto;}
+	.meeting .icon_list  {margin: 55px auto 0;}
+}
+@media (max-width: 900px){
+	.meeting_top_banner {width: 70%;}
+}
+@media (max-width: 767px){
+	.main {margin: 105px auto 0;}
+	.header_nav{padding: 0;}
+	.header_top {margin: 10px auto 50px;}
+	.navbar_a{margin: 45px auto 0; position: absolute;} 
+	.navbar_a img{margin: 0px auto 0;width: 55px;}
+	.header .header_nav .header_nav_left,
+	.header .header_nav .header_nav_right{width: 50%;}
+	.indicators-line > .carousel-indicators{top: 3%;}
+	.footer{padding: 20px 0;}
+	.footer_content .footer_figure_img {margin: 10px auto;}
+	.footer_content .footer_figure_img img {float: none;}
+	.footer_content .footer_figure_wx_img p {float: none;margin: 10px auto;}
+	.footer_content .footer_content_bottom span {display: block;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 200px 10px 0;}
+	.search_nav_content .search_nav_content_bg {padding: 15px;}
+	.search_nav_content .p0 {width: 43%;padding: 10px 0;margin-right: 0;border: none;}
+	.search_nav_content .form_select .btn{padding: 0;}
+	.search_nav_content .btn_submit{padding: 14px 20px;}
+	.index_about_content .index_about_content_img_text .m50 {padding: 0 15px;margin: 0px auto 0;}
+	.index_about_content {height: auto;}
+	.index_about_content .index_about_bg {display: none;}
+	.index_about_content .index_about_content_img_text {position: inherit;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff h3 {margin: 0 auto 30px;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff p {-webkit-line-clamp: 3;font-size: 13px;}
+	.index_about_content .index_about_content_img_text .index_about_content_img, 
+	.index_about_content .index_about_content_img_text .index_about_content_img .bg_aa8420 img{padding: 0;margin: auto;}
+	.login_content .figcaption_text .input_yzm {width: 45%;}
+	.login_content .figcaption_text .input_label {margin: 10px 100px 0 0;float: right;}
+	.registered_content .form_reg {margin: 30px auto 0;}
+	.forget_password3 .forget_password3_content .control-label {padding: 0px 15px;}
+	.change_member .member_form .submit_btn_ml, 
+	.change_password_content .member_form .submit_btn_ml {margin: auto;}
+	.member_content .member_form .table {margin-bottom: 0px;}
+	.product_content_details, .product_content, .nav_right_contentm, .about_content, .contact_content, .links_content {padding: 0px;}
+	.contact_content .right_content .contact_content_right { padding: 10px;}
+	.contact_content .right_content .contact_content_right .contact_content_right_h3 {margin: 0 auto 10px;}
+	.contact_content .right_content .contact_content_right .contact_form .form-group {margin-bottom: 0px;}
+	.contact_content .right_content .contact_content_right .contact_form .contact_form_input {margin-bottom: 10px;} 
+	.contact_content .right_content .contact_content_right .contact_form .submit_btn {margin-top: 10px;}
+	.map {margin: 30px auto 0;}
+	.food_content, .food_details_content, .product_details_content, .product_content, .wellness_content,  
+	.site_content, .meeting_content, .meeting_details_content, .promotions_content, .promotions_details_content, 
+	.news_content, .news_details_content, .activity_content {padding: 0;}
+	.promotions_content .index_news_box .article_text .btn_more_a {width: 100px;height: 30px;}
+	.promotions_content .index_news_box .article_text .btn_more_a .small {line-height: 25px;}
+	.bottom_content{padding: 15px;}
+	.meeting_top_banner {width: 100%;margin: 0px auto;float: none;}
+	.figure_banner {margin: 100px auto 0;position: relative;}
+	.meeting_content .right_content {margin-top: -320px;}
+	.meeting_top_banner .figcaption_text {height: auto;bottom: auto;padding: 15px;background: #aa8420;}
+	.meeting_top_banner img {opacity: 0;}
+	.meeting_top_banner .figcaption_text p {margin: 10px auto;}
+	.product .list_content {margin-top: -95px;}
+	.food .list_content {margin-top: -60px;}
+	.food .meeting_top_banner .figcaption_text p{color: #fff;}
+	.food .mobile_left_nav, .product .mobile_left_nav, .meeting .mobile_left_nav{top: -405px;}
+	.wellness .mobile_left_nav{top: -360px;}
+	.mobile_left_nav {top: 0px;}
+	.figure_banner {margin: 80px auto 0;}
+	.wellness .right_content {margin-top: -180px;}
+	.wellness_content .right_content .meeting_img_text,
+	.wellness .meeting_img_text, .wellness .meeting_article_text {padding: 0;}
+	.wellness_content .right_content .meeting_img_text .article_text {padding: 10px;}
+	.wellness_content .nav_pagination_pager {margin: 0px auto;}
+	.wellness .meeting_top_banner .figcaption_text p {color: #fff;}
+	.meeting_details_content .right_content .food_text .food_text_yy,
+	.food_details_content .right_content .food_text .food_text_yy {margin: 20px auto 0;}
+	.meeting_details_content .right_content .food_text .content_a, 
+	.food_details_content .right_content .food_text .content_a {margin: 0px auto 10px;width: 100px;height: 35px;line-height: 35px;}
+	.food_details_content .mobile_left_nav, .meeting_details_content .mobile_left_nav {top: 0;}
+	.product_details .mobile_left_nav {top: 0;}
+}
+@media (max-width: 600px){
+	.header .header_nav .header_nav_left,
+	.header .header_nav .header_nav_right{width: 100%;}
+	.header .header_nav .header_nav_left h5 small {display: initial;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 150px 10px 0;}
+	.search_nav_content .p0 {width: 42%;}
+	.index_about_content .index_about_content_img, .index_about_content .index_about_content_text {width: 100%;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff {padding: 20px 0;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff .btn_more_a {margin: 15px 0 0;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff h3 {margin: 0px auto 15px;font-size: 20px;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff h3::before {width: 130px;margin: 30px auto 0;}
+	.index_about_content .index_about_content_img_text .index_about_content_text .bg_fff p {line-height: 20px;}
+	.contact_content .right_content .contact_content_right .contact_form .contact_form_textarea {height: auto;}
+	.wellness .meeting_top_banner .figcaption_text p,
+	.product .meeting_top_banner .figcaption_text p,
+	.food .meeting_top_banner .figcaption_text p{
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
+		text-overflow: ellipsis;
+		word-break: break-all;
+	}
+	.food .meeting_top_banner .figcaption_text {padding: 5px;}
+	.food .meeting_top_banner .figcaption_text p {-webkit-line-clamp: 4;margin: 5px auto;font-size: 13px;}
+	.wellness .meeting_top_banner .figcaption_text p {-webkit-line-clamp: 7;}
+	.meeting_details_content .food_text .food_text_tab .nav li a, 
+	.meeting_details_content .food_text .food_text_tab .nav li a:hover, 
+	.meeting_details_content .food_text .food_text_tab .nav li a:focus,
+	.food_details_content .food_text .food_text_tab .nav li a, 
+	.food_details_content .food_text .food_text_tab .nav li a:hover, 
+	.food_details_content .food_text .food_text_tab .nav li a:focus{padding: 10px 20px;}
+	.food .icon_list {margin: 35px auto 0;}
+}
+@media (max-width: 500px){
+	.index_news .index_news_content .col-xs-6 {width: 100%;}
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 110px 10px 0;}
+	.index_footer_contact_content .index_footer_icon {height: 180px;}
+	.search_nav_content .p0 {width: 40%;}
+	.login_content .figcaption_text .login_content_tab .tab-content {padding: 10px 10px;}
+	.login_content .figcaption_text .input_label {margin: 10px auto 0;}
+	.login_content .figcaption_text .login_content_tab_ul li a {padding: 15px;}
+	.login_content .figcaption_text .submit_btn {padding: 10px;}
+	.contact_content .right_content .contact_content_left .contact_content_left_figcaption {padding: 15px;}
+	.contact_content .right_content .contact_content_left img {height: 320px;}
+	.contact_content .right_content .contact_content_left .contact_content_left_figcaption p {font-size: 15px;line-height: 20px;}
+	.news_content .index_news_box .article_text,
+	.promotions_content .index_news_box .article_text {padding: 5px;}
+	.news_content .index_news_box .article_text h6 a,
+	.promotions_content .index_news_box .article_text h6 a {font-size: 13px;line-height: 20px;}
+	.news_content .index_news_box .article_text p,
+	.promotions_content .index_news_box .article_text p {margin: 5px auto 0;font-size: 12px;line-height: 20px;}
+}
+@media (max-width: 400px){
+	.index_product_content .index_product_list .product_figure_img .figcaption_text{padding: 70px 10px 0;}
+	.index_footer_contact_content .index_footer_icon {height: auto;}
+	.search_nav_content .p0 {width: 88%;}
+	.search_nav_content .btn_submit {padding: 10px 20px;float: none;display: block;}
+	.index_about {margin-top: 0px;}
+	.index_about_content .index_about_content_img_text .m50{margin: 0 auto 0;}
+	.login_content .figcaption_text .login_content_tab_ul li a {padding: 10px 15px;font-size: 15px;}
+	.login_content .figcaption_text .form-control {font-size: 13px;}
+	.login_content .figcaption_text .input_yzm {padding: 10px 5px;font-size: 13px;}
+	.login_content .figcaption_text p {font-size: 13px;}
+	.registered_content .form_reg .input_label {margin: 10px 0 0 0;float: right;}
+	.registered_content .form_reg .input_yzm {padding: 10px 5px;font-size: 13px;}
+	.registered_content .form_reg .form-control {font-size: 13px;}
+	.forget_password1 .forget_password1_content .input_yzm {width: 100%;margin-bottom: 15px;}
+	.forget_password1_content .img {margin-left: 0;}
+	.meeting_top_banner .figcaption_text h4 {margin: 10px auto;}
+}
+@media (max-width: 395px){
+	.main {margin: 116px auto 0;}
+	.navbar_a{margin: 50px auto 0;}
+}
+
