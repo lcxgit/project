@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=1200">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <title>比特币</title>
+    <link rel="shortcut icon" href=static/images/favicon.ico.png>
+    <link rel=stylesheet href=static/css/font_593980_4ft7bv0qsdk21emi.css>
+    <link href=static/css/app.9aa76c9d33dbab3dee90becf5ec2a462.css rel=stylesheet>
+</head>
+<body>
+    <div id="app">
+        <svg xmlns="http://www.w3.org/2000/svg" hidden="hidden" style="position: absolute; z-index: -999;">
+            <symbol viewBox="0 0 11 1" id="minus">
+                <path d="M0 1V0h11v1z" fill="#979797" fill-rule="nonzero"></path>
+            </symbol>
+            <symbol viewBox="0 0 11 11" id="add">
+                <path d="M5 5V0h1v5h5v1H6v5H5V6H0V5h5z" fill="#979797" fill-rule="nonzero"></path>
+            </symbol>
+            <symbol viewBox="0 0 15 14" id="cart">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M-1-2h17v17H-1z"></path>
+                    <path d="M3.291 1.616H15l-1.392 6.747H4.672l.223 1.089h8.918v.963H4.094L2.16.964H0V0h2.96l.331 1.616zm2.206 11.666c-.675 0-1.223-.54-1.223-1.205s.548-1.205 1.223-1.205 1.223.54 1.223 1.205-.548 1.205-1.223 1.205zm7.05 0c-.676 0-1.223-.54-1.223-1.205s.547-1.205 1.223-1.205c.675 0 1.223.54 1.223 1.205s-.548 1.205-1.223 1.205z" fill="#FFF" fill-rule="nonzero"></path>
+                </g>
+            </symbol>
+        </svg>
+        <div data-v-12204bcb="" class="header">
+            <div data-v-12204bcb="" class="header__inner">
+                <a data-v-12204bcb="" href="index.html" class="logo router-link-active"></a>
+                <ul data-v-12204bcb="" role="menubar" class="menu el-menu--horizontal el-menu">
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="hash.html">云算力</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 230, 161);border-bottom-color: rgb(255, 230, 161);"><a href="product.html">矿机</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="hosting.html">托管</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item is-active" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="pool.html">矿池</a></li>
+                </ul>
+                <div data-v-12204bcb="" class="right text-right">
+                    <ul data-v-12204bcb="" role="menubar" class="menu login el-menu--horizontal el-menu">
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item sign-in" style="border-bottom-color: transparent;">登录</li>
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item sign-up" style="border-bottom-color: transparent;">注册</li>
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item cart" style="border-bottom-color: transparent;">
+                            <a data-v-12204bcb="" href="/cart" class="">
+                                <img data-v-12204bcb="" src="static/images/cart.9bdd50b.svg" alt=""></a>
+                        </li>
+                        <li data-v-12204bcb="" role="menuitem" aria-haspopup="true" class="mine el-submenu" menu-trigger="hover" tabindex="0">
+                            <div class="el-submenu__title" style="border-bottom-color: transparent;">
+                                <span data-v-12204bcb="">
+                                    <img data-v-12204bcb="" src="static/images/person.1cee58e.svg" alt="" class="icon-my-center">个人中心</span>
+                                <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                            </div>
+                            <div class="el-menu--horizontal" style="display: none;">
+                                <ul role="menu" class="el-menu el-menu--popup el-menu--popup-bottom-start">
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的账户</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的订单</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的托管</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的云算力</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的邀请</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">收货地址</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">安全中心</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">退出登录</li></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul data-v-12204bcb="" role="menubar" class="menu lang el-menu--horizontal el-menu">
+                        <li data-v-12204bcb="" role="menuitem" aria-haspopup="true" class="el-submenu" tabindex="0">
+                            <div class="el-submenu__title" style="border-bottom-color: transparent;">
+                                <img data-v-12204bcb="" src="static/images/common_cn.b5f55b2.svg" alt="" style="margin-top: -2px; margin-right: 10px;" width="20px" height="13px">简体中文
+                                <i class="el-submenu__icon-arrow el-icon-arrow-down"></i></div>
+                            <div class="el-menu--horizontal lang-popper" style="display: none;">
+                                <ul role="menu" class="el-menu el-menu--popup el-menu--popup-bottom-start">
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item menu-item">
+                                        <img data-v-12204bcb="" src="static/images/common_cn.b5f55b2.svg" alt="" style="margin-top: -2px; margin-right: 10px;" width="20px" height="13px">简体中文</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item menu-item">
+                                        <img data-v-12204bcb="" src="static/images/common_en.5bec5f8.svg" alt="" style="margin-top: -2px; margin-right: 10px;" width="20px" height="13px">English</li></ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div data-v-4a47b48a="" class="miner-container">
+                <header data-v-4a47b48a="">
+                    <div data-v-02982ddd="" data-v-4a47b48a="" class="banner">
+                        <img data-v-02982ddd="" src="http://walian-shop.oss-cn-hangzhou.aliyuncs.com/bannerManager/93bff7ed-6564-4c33-8284-12e19fcb5aec.png?Expires=1531531749&amp;OSSAccessKeyId=LTAIlQ1L6DaY5Sdo&amp;Signature=b69dX1ZtBiT8cTPDaHCgLI%2FQQyI%3D" class="" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;" width="0" height="0">
+                        <!----></div>
+                </header>
+                <section data-v-4a47b48a="" class="minerList">
+                    <ul data-v-4a47b48a="" class="miner-category clearfix">
+                        <li data-v-4a47b48a="" class="active">全部矿机</li>
+                        <li data-v-4a47b48a="" class="">BTC矿机</li>
+                        <li data-v-4a47b48a="" class="">ETH矿机</li>
+                        <li data-v-4a47b48a="" class="">DCR矿机</li>
+                        <li data-v-4a47b48a="" class="">BTM显卡矿机</li></ul>
+                    <ul data-v-4a47b48a="" class="miner-product-list clearfix">
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#4D87EA" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">新上架</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <a href="detail.html"><img data-v-4a47b48a="" src="static/images/b158fa2a-360b-4626-b432-17f4ad9c7497.png" alt="蚂蚁S9i 13.5T矿机"></a></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 13.5T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">功耗降低 性能优越 运行稳定</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-15</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4,700.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="">矿机售价</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">立即购买</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#98999B" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">已结束</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <img data-v-4a47b48a="" src="static/images/5f234ce6-c859-436c-9863-ac1e7c7a902c.png" alt="蚂蚁S9i 14T矿机"></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 14T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">低功耗高性能 算力升级 性价比高</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-01</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4950.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="" class="decoration">原价：5,250.00元</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">已结束</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#4D87EA" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">新上架</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <a href="detail.html"><img data-v-4a47b48a="" src="static/images/6e8e44b3-4f21-4ad1-a6c4-0c5f330f65bf.png" alt="蚂蚁S9i 13.5T矿机"></a></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 13.5T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">功耗降低 性能优越 运行稳定</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-15</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4,700.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="">矿机售价</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">立即购买</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#98999B" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">已结束</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <img data-v-4a47b48a="" src="static/images/1531116049638.png" alt="蚂蚁S9i 14T矿机"></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 14T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">低功耗高性能 算力升级 性价比高</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-01</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4950.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="" class="decoration">原价：5,250.00元</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">已结束</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#4D87EA" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">新上架</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <a href="detail.html"><img data-v-4a47b48a="" src="static/images/banner-kj.png" alt="蚂蚁S9i 13.5T矿机"></a></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 13.5T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">功耗降低 性能优越 运行稳定</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-15</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4,700.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="">矿机售价</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">立即购买</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#98999B" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">已结束</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <img data-v-4a47b48a="" src="static/images/075bda4f-02c8-41fd-82f8-974c4b702375.png" alt="蚂蚁S9i 14T矿机"></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 14T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">低功耗高性能 算力升级 性价比高</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-01</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4950.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="" class="decoration">原价：5,250.00元</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">已结束</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#4D87EA" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">新上架</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <a href="detail.html"><img data-v-4a47b48a="" src="static/images/b158fa2a-360b-4626-b432-17f4ad9c7497.png" alt="蚂蚁S9i 13.5T矿机"></a></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 13.5T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">功耗降低 性能优越 运行稳定</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-15</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4,700.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="">矿机售价</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">立即购买</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#98999B" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">已结束</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <img data-v-4a47b48a="" src="static/images/075bda4f-02c8-41fd-82f8-974c4b702375.png" alt="蚂蚁S9i 14T矿机"></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 14T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">低功耗高性能 算力升级 性价比高</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-01</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4950.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="" class="decoration">原价：5,250.00元</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">已结束</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#4D87EA" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">新上架</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <a href="detail.html"><img data-v-4a47b48a="" src="static/images/b158fa2a-360b-4626-b432-17f4ad9c7497.png" alt="蚂蚁S9i 13.5T矿机"></a></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 13.5T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">功耗降低 性能优越 运行稳定</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-15</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4,700.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="">矿机售价</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">立即购买</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-v-4a47b48a="">
+                            <svg data-v-4a47b48a="" width="85.5" height="30" xmlns="http://www.w3.org/2000/svg" class="product-label">
+                                <path data-v-4a47b48a="" fill="#98999B" d="M0 0h85.5l-30 30H0z"></path>
+                                <text data-v-4a47b48a="" x="10" y="20" fill="#fff" font-size="14">已结束</text></svg>
+                            <div data-v-4a47b48a="" class="product-img">
+                                <img data-v-4a47b48a="" src="static/images/075bda4f-02c8-41fd-82f8-974c4b702375.png" alt="蚂蚁S9i 14T矿机"></div>
+                            <div data-v-4a47b48a="" class="product-detail-container">
+                                <p data-v-4a47b48a="" class="procuct-name">
+                                    <span data-v-4a47b48a=""><a href="detail.html">蚂蚁S9i 14T矿机</a></span>
+                                    <span data-v-4a47b48a="">BTC矿机</span></p>
+                                <p data-v-4a47b48a="" class="product-detail">低功耗高性能 算力升级 性价比高</p>
+                                <p data-v-4a47b48a="" class="product-delivery">发货时间：2018-07-01</p>
+                                <p data-v-4a47b48a="" class="product-discount"></p>
+                                <div data-v-4a47b48a="" class="product-count clearfix">
+                                    <div data-v-4a47b48a="" class="left">
+                                        <p data-v-4a47b48a="" class="sale-price">
+                                            <span data-v-4a47b48a="">¥4950.00</span></p>
+                                        <p data-v-4a47b48a="" class="original-cost">
+                                            <span data-v-4a47b48a="" class="decoration">原价：5,250.00元</span></p>
+                                    </div>
+                                    <button data-v-4a47b48a="" type="button" class="el-button right el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span><a href="detail.html">已结束</a></span></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!----></section>
+                <div data-v-600bffb2="" data-v-4a47b48a="" class="features el-row">
+                    <div data-v-600bffb2="" class="el-col el-col-6">
+                        <img data-v-600bffb2="" src="static/images/feature_superb.8e98ef0.png" alt="">
+                        <p data-v-600bffb2="">算力卓越</p></div>
+                    <div data-v-600bffb2="" class="el-col el-col-6">
+                        <img data-v-600bffb2="" src="static/images/feature_flexible_trading.6dd96da.png" alt="">
+                        <p data-v-600bffb2="">灵活交易</p></div>
+                    <div data-v-600bffb2="" class="el-col el-col-6">
+                        <img data-v-600bffb2="" src="static/images/feature_low_risk.5ffc700.png" alt="">
+                        <p data-v-600bffb2="">超低风险</p></div>
+                    <div data-v-600bffb2="" class="el-col el-col-6">
+                        <img data-v-600bffb2="" src="static/images/feature_buy_use.987034b.png" alt="">
+                        <p data-v-600bffb2="">随买随用</p></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-dab67d26="" class="footer">
+            <div data-v-dab67d26="" class="footer__inner el-row">
+                <div data-v-dab67d26="" class="el-col el-col-7">
+                    <img data-v-dab67d26="" src="static/images/logo.jpg" alt="" class="footer-logo">
+                    <p data-v-dab67d26=""><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP 16052051号-1</a> Copyright © 游控派 版权所有</p>
+                    <p data-v-dab67d26="">广州游控派技有限公司</p>
+                    <p data-v-dab67d26="">地址：广州市番禺区海伦堡创意园</p></div>
+                <div data-v-dab67d26="" class="el-col el-col-3">
+                    <h5 data-v-dab67d26="">挖链产品与服务</h5>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href="index.html" class="link">游控派</a></p>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href=" https://www.jinse.com/" target="_blank" class="link">金色财经</a></p>
+                </div>
+                <div data-v-dab67d26="" class="el-col el-col-3">
+                    <h5 data-v-dab67d26="">关于游控派</h5>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href="" class="link">游控派简介</a></p>
+                    <p data-v-dab67d26="">商务合作</p>
+                    <p data-v-dab67d26="">youkongpai@126.com</p></div>
+                <div data-v-dab67d26="" class="text-center el-col el-col-4">
+                    <h5 data-v-dab67d26="">客服热线</h5>
+                    <p data-v-dab67d26="" class="service">020-83064707</p>
+                    <p data-v-dab67d26="">周一至周五 09:00~18:00</p>
+                    <p data-v-dab67d26="">（仅收市话费）</p></div>
+                <div data-v-dab67d26="" class="el-col el-col-5 el-col-offset-2">
+                    <div data-v-dab67d26="" class="text-center el-row">
+                        <div data-v-dab67d26="" class="el-col el-col-12">
+                            <h5 data-v-dab67d26="">游控派客服微信</h5>
+                            <img data-v-dab67d26="" src="static/images/webwxgetmsgimg.jpg" alt="" class="download-img"></div>
+                        <div data-v-dab67d26="" class="el-col el-col-12">
+                            <h5 data-v-dab67d26="">游控派公众号</h5>
+                            <img data-v-dab67d26="" src="static/images/webwxgetmsgimg.jpg" alt="" class="download-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

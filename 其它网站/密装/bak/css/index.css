@@ -1,0 +1,607 @@
+﻿
+
+.header_ad .index_header_ad {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+    .header_ad .index_header_ad .index_header_ad_wrap {
+        width: 100%;
+        float: left;
+    }
+
+        .header_ad .index_header_ad .index_header_ad_wrap img {
+            width: 100%;
+            float: left;
+        }
+
+    .header_ad .index_header_ad .slide_more {
+        position: absolute;
+        bottom: 200px;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        animation: shake 1s infinite ease-in-out;
+        -o-animation: shake 1s infinite ease-in-out;
+        -webkit-animation: shake 1s infinite ease-in-out;
+        -moz-animation: shake 1s infinite ease-in-out;
+    }
+
+@keyframes shake {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,100% {
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+.index_slide_ad {
+    height: 680px;
+}
+
+    .index_slide_ad .swiper-button-next, .index_slide_ad .swiper-button-prev {
+        width: 80px;
+        height: 80px;
+        display: none;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .index_slide_ad:hover .swiper-button-next, .index_slide_ad:hover .swiper-button-prev {
+        display: block;
+    }
+
+    .index_slide_ad .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        background: url('../images/btn_prev.png') center center no-repeat;
+        background-size: contain;
+    }
+
+        .index_slide_ad .swiper-button-prev:hover, .swiper-container-rtl .swiper-button-next:hover {
+            background: url('../images/btn_prev_hover.png') center center no-repeat;
+            background-size: contain;
+        }
+
+    .index_slide_ad .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        background: url('../images/btn_next.png') center center no-repeat;
+        background-size: contain;
+    }
+
+        .index_slide_ad .swiper-button-next:hover, .swiper-container-rtl .swiper-button-prev:hover {
+            background: url('../images/btn_next_hover.png') center center no-repeat;
+            background-size: contain;
+        }
+
+    .index_slide_ad .swiper-pagination-bullets span {
+    }
+
+    .index_slide_ad .swiper-pagination-bullet {
+        width: 80px;
+        height: 2px;
+        background-color: #909090;
+        border-radius: 0px;
+    }
+
+    .index_slide_ad .swiper-pagination-bullet-active {
+        background-color: #DE0532;
+        border-radius: 0px;
+    }
+
+.index_adv {
+    width: 100%;
+    float: left;
+    background-color: #FDF0F1;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+    .index_adv .index_adv_title {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+        .index_adv .index_adv_title sub {
+            width: 100%;
+            display: block;
+            font-size: 16px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+    .index_adv .index_adv_main {
+        width: 100%;
+        float: left;
+        padding-top: 60px;
+        background: url('../images/index_adv_main_bg.png') top center no-repeat;
+        padding-bottom: 40px;
+    }
+
+        .index_adv .index_adv_main ul {
+            width: 100%;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .index_adv .index_adv_main ul li {
+                width: 50%;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                overflow: hidden;
+                position: relative;
+                color: #e5e5e5;
+                transition: all 1s;
+                -moz-transition: all 1s;
+                -webkit-transition: all 1s;
+                -o-transition: all 1s;
+            }
+
+                .index_adv .index_adv_main ul li > img {
+                    float: left;
+                }
+
+                .index_adv .index_adv_main ul li.active {
+                    width: 72%;
+                    color: #666666;
+                }
+
+                .index_adv .index_adv_main ul li.unactive {
+                    width: 28%;
+                }
+
+                .index_adv .index_adv_main ul li .text_box {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: url('../images/shade_black_50.png') repeat;
+                    padding: 60px;
+                }
+
+                    .index_adv .index_adv_main ul li .text_box .text_title {
+                        width: 100%;
+                        float: left;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 16px;
+                    }
+
+                    .index_adv .index_adv_main ul li .text_box .text_sub {
+                        width: 100%;
+                        float: left;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                .index_adv .index_adv_main ul li.active .text_box {
+                    background: none;
+                }
+
+                .index_adv .index_adv_main ul li .link_more {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 60px;
+                    text-align: right;
+                    padding-right: 60px;
+                }
+
+                    .index_adv .index_adv_main ul li .link_more a {
+                        padding-right: 40px;
+                        float: right;
+                        color: #fff;
+                        background: url('../images/index_adv_linkmore.png') bottom right no-repeat;
+                    }
+
+                .index_adv .index_adv_main ul li.active .link_more a {
+                    height: 32px;
+                    line-height: 32px;
+                    background: none;
+                    background-color: #DE0532;
+                    padding-left: 40px;
+                }
+
+                .index_adv .index_adv_main ul li.unactive .link_more a {
+                    background: none;
+                    padding-right: 0px;
+                    border-bottom: 1px solid #fff;
+                }
+
+
+.index_about {
+    width: 100%;
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+    .index_about .index_about_main {
+        width: 100%;
+        float: left;
+        padding-top: 60px;
+        background: url('../images/index_adv_main_bg.png') top center no-repeat;
+        padding-bottom: 40px;
+    }
+
+    .index_about .index_about_title {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+        .index_about .index_about_title sub {
+            width: 100%;
+            display: block;
+            font-size: 16px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+    .index_about .index_about_main {
+        width: 100%;
+        float: left;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+
+        .index_about .index_about_main .index_about_main_ad {
+            float: left;
+            width: 55%;
+        }
+
+    .index_about .index_about_text {
+        position: absolute;
+        width: 600px;
+        left: 45%;
+        bottom: 0px;
+        background-color: #FDF0F1;
+        padding: 60px;
+        line-height: 28px;
+        font-size: 16px;
+        z-index: 9999;
+    }
+
+        .index_about .index_about_text .text_box {
+            width: 100%;
+            float: left;
+        }
+
+        .index_about .index_about_text .index_about_text_link {
+            width: 100%;
+            float: left;
+            padding-top: 40px;
+        }
+
+            .index_about .index_about_text .index_about_text_link a {
+                float: right;
+                padding-left: 60px;
+                padding-right: 60px;
+                color: #5D5D5D;
+                border-bottom: 1px solid #5D5D5D;
+            }
+
+    .index_about .index_about_main .index_about_history {
+        width: 42%;
+        float: right;
+        overflow: hidden;
+    }
+
+        .index_about .index_about_main .index_about_history .items {
+            float: left;
+            height: 324px;
+            white-space: nowrap;
+            background: url('../images/timeline_bg.png') center center repeat-x;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+            .index_about .index_about_main .index_about_history .items .item {
+                height: 300px;
+                padding: 0px;
+                padding-bottom: 150px;
+                display: inline-block;
+                margin: 0px;
+            }
+
+            .index_about .index_about_main .index_about_history .items .even {
+                padding-top: 150px;
+                padding-bottom: 0px;
+            }
+
+            .index_about .index_about_main .index_about_history .items .item .item_box {
+                height: 150px;
+                margin-left: 50%;
+                float: left;
+                background: url('../images/timeline_bg_v.png') left top repeat-y;
+                padding-left: 20px;
+                position: relative;
+            }
+
+                .index_about .index_about_main .index_about_history .items .item .item_box i {
+                    position: absolute;
+                    left: -11px;
+                    top: -11px;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url('../images/icon_timeline.png') center center no-repeat;
+                }
+
+            .index_about .index_about_main .index_about_history .items .even .item_box i {
+                left: -11px;
+                top: auto;
+                bottom: -11px;
+            }
+
+            .index_about .index_about_main .index_about_history .items .item .item_box .item_text_box {
+                margin-top: -11px;
+                height: 100%;
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+
+            .index_about .index_about_main .index_about_history .items .even .item_box .item_text_box {
+                align-content: flex-end;
+                margin-top: auto;
+                margin-bottom: -11px;
+            }
+
+.index_news {
+    width: 100%;
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background: url('../images/index_news_bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+    .index_news .index_news_main {
+        width: 100%;
+        float: left;
+        padding-top: 60px;
+        background: url('../images/index_adv_main_bg.png') top center no-repeat;
+        padding-bottom: 40px;
+    }
+
+    .index_news .index_news_title {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+        .index_news .index_news_title sub {
+            width: 100%;
+            display: block;
+            font-size: 16px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+    .index_news .index_news_main ul {
+        width: 100%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .index_news .index_news_main ul li {
+            width: 33.33%;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+            .index_news .index_news_main ul li a {
+                display: block;
+                width: 100%;
+                height: 500px;
+                float: left;
+                background-color: #fff;
+                padding: 24px;
+                padding-bottom: 40px;
+            }
+
+                .index_news .index_news_main ul li a .item_img {
+                    width: 100%;
+                    height: 280px;
+                    float: left;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                    .index_news .index_news_main ul li a .item_img img {
+                        width: 100%;
+                        float: left;
+                        transition: All 1s ease-in-out;
+                        -webkit-transition: All 1s ease-in-out;
+                        -moz-transition: All 1s ease-in-out;
+                        -o-transition: All 1s ease-in-out;
+                    }
+
+                    .index_news .index_news_main ul li a .item_img span {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 24px;
+                        background-color: #F8020F;
+                        color: #fff;
+                        font-size: 32px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        text-align: center;
+                    }
+
+                        .index_news .index_news_main ul li a .item_img span small {
+                            display: block;
+                            width: 100%;
+                            font-size: 12px;
+                        }
+
+
+                .index_news .index_news_main ul li a .item_text {
+                    width: 100%;
+                    height: 130px;
+                    float: left;
+                }
+
+                    .index_news .index_news_main ul li a .item_text .item_text_title {
+                        width: 100%;
+                        float: left;
+                        line-height: 42px;
+                        font-size: 16px;
+                        padding-top: 10px;
+                    }
+
+                    .index_news .index_news_main ul li a .item_text .item_text_subtitle {
+                        width: 100%;
+                        float: left;
+                        font-size: 14px;
+                        line-height: 24px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        text-overflow: ellipsis;
+                        word-break: break-all;
+                    }
+
+                    .index_news .index_news_main ul li a .item_text .item_text_title .sub_title {
+                        width: 100%;
+                        float: left;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 14px;
+                    }
+
+                .index_news .index_news_main ul li a .item_linkmore {
+                    width: 100%;
+                    float: left;
+                }
+
+                    .index_news .index_news_main ul li a .item_linkmore span {
+                        float: right;
+                        color: #666666;
+                        padding-right: 48px;
+                        height: 42px;
+                        line-height: 42px;
+                        background: url('../images/linkmore_black.png') center right no-repeat;
+                    }
+
+                .index_news .index_news_main ul li a:hover .item_linkmore span {
+                    color: #ff0000;
+                    background: url('../images/linkmore_red.png') center right no-repeat;
+                    text-decoration: none;
+                }
+
+                .index_news .index_news_main ul li a:hover .item_img img {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                }
+
+                .index_news .index_news_main ul li a:hover .item_text_title {
+                    color: #DE0532;
+                }
+
+    .index_news .index_news_main .index_news_more {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+        .index_news .index_news_main .index_news_more a {
+            display: inline-block;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 16px;
+            height: 42px;
+            line-height: 42px;
+            font-weight: 500;
+            border-bottom: 2px solid #5D5D5D;
+            color: #5D5D5D;
+        }
+
+.index_contact {
+    width: 100%;
+    float: left;
+    background: url('../images/index_contact_bg.jpg') center center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+    .index_contact .index_contact_text {
+        width: 100%;
+        float: left;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .index_contact .index_contact_btn {
+        width: 100%;
+        float: left;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+        .index_contact .index_contact_btn a {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 80px;
+            padding-right: 80px;
+            background-color: #DE0532;
+            color: #FFF;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+            .index_contact .index_contact_btn a:hover {
+                background-color: #FF0F46;
+            }
+
+    .index_contact .index_contact_tel {
+        width: 100%;
+        float: left;
+        font-size: 52px;
+    }
+
+    .index_contact .index_contact_tel_text {
+        width: 100%;
+        float: left;
+        line-height: 24px;
+    }

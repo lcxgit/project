@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=1200">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <title>比特币</title>
+    <link rel="shortcut icon" href=static/images/favicon.ico.png>
+    <link rel=stylesheet href=static/css/font_593980_4ft7bv0qsdk21emi.css>
+    <link href=static/css/app.9aa76c9d33dbab3dee90becf5ec2a462.css rel=stylesheet>
+</head>
+<body>
+    <div id="app">
+        <svg xmlns="http://www.w3.org/2000/svg" hidden="hidden" style="position: absolute; z-index: -999;">
+            <symbol viewBox="0 0 11 1" id="minus">
+                <path d="M0 1V0h11v1z" fill="#979797" fill-rule="nonzero"></path>
+            </symbol>
+            <symbol viewBox="0 0 11 11" id="add">
+                <path d="M5 5V0h1v5h5v1H6v5H5V6H0V5h5z" fill="#979797" fill-rule="nonzero"></path>
+            </symbol>
+            <symbol viewBox="0 0 15 14" id="cart">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M-1-2h17v17H-1z"></path>
+                    <path d="M3.291 1.616H15l-1.392 6.747H4.672l.223 1.089h8.918v.963H4.094L2.16.964H0V0h2.96l.331 1.616zm2.206 11.666c-.675 0-1.223-.54-1.223-1.205s.548-1.205 1.223-1.205 1.223.54 1.223 1.205-.548 1.205-1.223 1.205zm7.05 0c-.676 0-1.223-.54-1.223-1.205s.547-1.205 1.223-1.205c.675 0 1.223.54 1.223 1.205s-.548 1.205-1.223 1.205z" fill="#FFF" fill-rule="nonzero"></path>
+                </g>
+            </symbol>
+        </svg>
+        <div data-v-12204bcb="" class="header">
+            <div data-v-12204bcb="" class="header__inner">
+                <a data-v-12204bcb="" href="index.html" class="logo router-link-active"></a>
+                <ul data-v-12204bcb="" role="menubar" class="menu el-menu--horizontal el-menu">
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="hash.html">云算力</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="product.html">矿机</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 230, 161); border-bottom-color: rgb(255, 230, 161);"><a href="hosting.html">托管</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item is-active" style="color: rgb(255, 255, 255); border-bottom-color: transparent;" ><a href="pool.html">矿池</a></li>
+                </ul>
+                <div data-v-12204bcb="" class="right text-right">
+                    <ul data-v-12204bcb="" role="menubar" class="menu login el-menu--horizontal el-menu">
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item sign-in" style="border-bottom-color: transparent;">登录</li>
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item sign-up" style="border-bottom-color: transparent;">注册</li>
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item cart" style="border-bottom-color: transparent;">
+                            <a data-v-12204bcb="" href="/cart" class="">
+                                <img data-v-12204bcb="" src="static/images/cart.9bdd50b.svg" alt=""></a>
+                        </li>
+                        <li data-v-12204bcb="" role="menuitem" aria-haspopup="true" class="mine el-submenu" menu-trigger="hover" tabindex="0">
+                            <div class="el-submenu__title" style="border-bottom-color: transparent;">
+                                <span data-v-12204bcb="">
+                                    <img data-v-12204bcb="" src="static/images/person.1cee58e.svg" alt="" class="icon-my-center">个人中心</span>
+                                <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                            </div>
+                            <div class="el-menu--horizontal" style="display: none;">
+                                <ul role="menu" class="el-menu el-menu--popup el-menu--popup-bottom-start">
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的账户</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的订单</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的托管</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的云算力</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的邀请</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">收货地址</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">安全中心</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">退出登录</li></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul data-v-12204bcb="" role="menubar" class="menu lang el-menu--horizontal el-menu">
+                        <li data-v-12204bcb="" role="menuitem" aria-haspopup="true" class="el-submenu" tabindex="0">
+                            <div class="el-submenu__title" style="border-bottom-color: transparent;">
+                                <img data-v-12204bcb="" src="static/images/common_cn.b5f55b2.svg" alt="" width="20px" height="13px" style="margin-top: -2px; margin-right: 10px;">简体中文
+                                <!-- <i class="el-submenu__icon-arrow el-icon-arrow-down"></i> -->
+                            </div>
+                            <div class="el-menu--horizontal lang-popper">
+                                <ul role="menu" class="el-menu el-menu--popup el-menu--popup-bottom-start">
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item menu-item">
+                                        <img data-v-12204bcb="" src="static/images/common_cn.b5f55b2.svg" alt="" width="20px" height="13px" />简体中文
+                                    </li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item menu-item">
+                                        <img data-v-12204bcb="" src="static/images/common_en.5bec5f8.svg" alt="" width="20px" height="13px" />English
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div data-v-6c1a5174="" class="trusteeship">
+                <div data-v-6c1a5174="" class="header-banner">
+                    <div data-v-6c1a5174="" class="banner-content el-row">
+                        <div data-v-6c1a5174="" class="banner-left el-col el-col-10">
+                            <div data-v-6c1a5174="" class="banner-txt">游空派矿机托管
+                                <br data-v-6c1a5174="">
+                                <strong data-v-6c1a5174="">让挖矿更简单</strong></div>
+                            <button data-v-6c1a5174="" type="button" class="el-button banner-btn el-button--default">
+                                <!---->
+                                <!---->
+                                <span><a href="detail.html">立即购买</a></span></button>
+                        </div>
+                        <div data-v-6c1a5174="" class="banner-right el-col el-col-14">
+                            <img data-v-6c1a5174="" src="static/images/banner-l.a42ef38.png" alt="图标L" class="banner-l">
+                            <img data-v-6c1a5174="" src="static/images/banner-kj.259aa48.png" alt="矿机" class="banner-kj">
+                            <img data-v-6c1a5174="" src="static/images/banner-eth.c996dc9.png" alt="图标ETH" class="banner-eth">
+                            <img data-v-6c1a5174="" src="static/images/banner-b.cf41096.png" alt="图标B" class="banner-b"></div>
+                    </div>
+                </div>
+                <div data-v-6c1a5174="" class="trusteeship-machine">
+                    <h1 data-v-6c1a5174="">矿机托管</h1>
+                    <ul data-v-6c1a5174="" class="clearfix">
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjituoguan_wendingkekao.eb25457.png" alt="稳定可靠" width="141px" height="146px">
+                            <h2 data-v-6c1a5174="">稳定可靠</h2>
+                            <p data-v-6c1a5174="">矿机购买后，将托管在游空派矿场，由专业人员部署，24小时维护</p></li>
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjituoguan_feiyongdilian.969a099.png" alt="费用低廉" width="136px" height="146px">
+                            <h2 data-v-6c1a5174="">费用低廉</h2>
+                            <p data-v-6c1a5174="">0.65元/kW·H电费，每天每台20元，管理维护费，以币抵费，自动结算</p></li>
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjituoguan_shishijiankong.0e326d2.png" alt="实时监控" width="153px" height="153px">
+                            <h2 data-v-6c1a5174="">实时监控</h2>
+                            <p data-v-6c1a5174="">实时查看矿机运行情况，T+1查看矿机产出收益</p></li>
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjituoguan_jiesuangongkai.28dfa8f.png" alt="结算公开" width="143px" height="149px">
+                            <h2 data-v-6c1a5174="">结算公开</h2>
+                            <p data-v-6c1a5174="">收益参考当日火币早8点实时价格，扣除电费管理费，即为前一日所得</p></li>
+                    </ul>
+                    <div data-v-6c1a5174="" class="to-agreement">
+                        <a data-v-6c1a5174="" href="/trusteeship-agreement" class="pointer" target="_blank">托管服务协议 &gt;</a></div>
+                </div>
+                <div data-v-6c1a5174="" class="process">
+                    <h1 data-v-6c1a5174="">托管流程</h1>
+                    <ul data-v-6c1a5174="">
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/tuoguanliucheng_goumai.794998c.png" alt="购买" width="181px" height="183px">
+                            <p data-v-6c1a5174="">购买矿机后
+                                <br data-v-6c1a5174="">选择托管服务</p></li>
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/tuoguanliucheng_fahuo.ac47855.png" alt="发货" width="177px" height="161px">
+                            <p data-v-6c1a5174="">等待发货
+                                <br data-v-6c1a5174="">到游空派矿场</p></li>
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/tuoguanliucheng_bushu.185981c.png" alt="部署" width="169px" height="168px">
+                            <p data-v-6c1a5174="">到达矿场后
+                                <br data-v-6c1a5174="">由专业人员部署矿机</p></li>
+                        <li data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/tuoguanliucheng_shouyi.7cdc9c8.png" alt="收益" width="170px" height="170px">
+                            <p data-v-6c1a5174="">开始挖矿
+                                <br data-v-6c1a5174="">获得收益</p></li>
+                    </ul>
+                </div>
+                <div data-v-6c1a5174="" class="realshot">
+                    <h1 data-v-6c1a5174="">矿场实拍</h1>
+                    <div data-v-6c1a5174="">
+                        <span data-v-6c1a5174="" class="realshot-img1">
+                            <img data-v-6c1a5174="" src="static/images/kuangjishipai_img1.32f6f3b.png" alt="实拍1"></span>
+                        <span data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjishipai_img2.234e4d5.png" alt="实拍2"></span>
+                    </div>
+                    <div data-v-6c1a5174="">
+                        <span data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjishipai_img3.a272012.png" alt="实拍3"></span>
+                        <span data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjishipai_img4.33f54d1.png" alt="实拍4"></span>
+                        <span data-v-6c1a5174="">
+                            <img data-v-6c1a5174="" src="static/images/kuangjishipai_img5.c623b3a.png" alt="实拍5"></span>
+                    </div>
+                </div>
+                <div data-v-542e1d0d="" data-v-6c1a5174="" class="features el-row">
+                    <div data-v-542e1d0d="" class="el-col el-col-6">
+                        <img data-v-542e1d0d="" src="static/images/feature-1.f16ad0a.png" alt="">
+                        <p data-v-542e1d0d="">算力超群</p></div>
+                    <div data-v-542e1d0d="" class="el-col el-col-6">
+                        <img data-v-542e1d0d="" src="static/images/feature-2.fc970f8.png" alt="">
+                        <p data-v-542e1d0d="">效率高超</p></div>
+                    <div data-v-542e1d0d="" class="el-col el-col-6">
+                        <img data-v-542e1d0d="" src="static/images/feature-3.c92139a.png" alt="">
+                        <p data-v-542e1d0d="">经久耐用</p></div>
+                    <div data-v-542e1d0d="" class="el-col el-col-6">
+                        <img data-v-542e1d0d="" src="static/images/feature-4.1eff720.png" alt="">
+                        <p data-v-542e1d0d="">品质可靠</p></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-dab67d26="" class="footer">
+            <div data-v-dab67d26="" class="footer__inner el-row">
+                <div data-v-dab67d26="" class="el-col el-col-7">
+                    <img data-v-dab67d26="" src="static/images/logo.jpg" alt="" class="footer-logo">
+                    <p data-v-dab67d26=""><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP 16052051号-1</a> Copyright © 游控派 版权所有</p>
+                    <p data-v-dab67d26="">广州游控派技有限公司</p>
+                    <p data-v-dab67d26="">地址：广州市番禺区海伦堡创意园</p></div>
+                <div data-v-dab67d26="" class="el-col el-col-3">
+                    <h5 data-v-dab67d26="">挖链产品与服务</h5>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href="index.html" class="link">游控派</a></p>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href=" https://www.jinse.com/" target="_blank" class="link">金色财经</a></p>
+                </div>
+                <div data-v-dab67d26="" class="el-col el-col-3">
+                    <h5 data-v-dab67d26="">关于游控派</h5>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href="" class="link">游控派简介</a></p>
+                    <p data-v-dab67d26="">商务合作</p>
+                    <p data-v-dab67d26="">youkongpai@126.com</p></div>
+                <div data-v-dab67d26="" class="text-center el-col el-col-4">
+                    <h5 data-v-dab67d26="">客服热线</h5>
+                    <p data-v-dab67d26="" class="service">020-83064707</p>
+                    <p data-v-dab67d26="">周一至周五 09:00~18:00</p>
+                    <p data-v-dab67d26="">（仅收市话费）</p></div>
+                <div data-v-dab67d26="" class="el-col el-col-5 el-col-offset-2">
+                    <div data-v-dab67d26="" class="text-center el-row">
+                        <div data-v-dab67d26="" class="el-col el-col-12">
+                            <h5 data-v-dab67d26="">游控派客服微信</h5>
+                            <img data-v-dab67d26="" src="static/images/webwxgetmsgimg.jpg" alt="" class="download-img"></div>
+                        <div data-v-dab67d26="" class="el-col el-col-12">
+                            <h5 data-v-dab67d26="">游控派公众号</h5>
+                            <img data-v-dab67d26="" src="static/images/webwxgetmsgimg.jpg" alt="" class="download-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
