@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.lianxiwomen .am-paragraph .h2_title{
+	color: #044c9a;
+    font-size: 30px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0 20px 0;
+}
+
+.lianxiwomen .am-thumbnail {
+    border: none;
+}
+
+.lianxiwomen .am-thumbnail-caption{
+	font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.lianxiwomen img{float: left; max-width: 100%;}
+
+.lianxiwomen .p1 p{
+    font-size: 15px;
+    color: #4d4d4d;
+}
+.lianxiwomen .p1 p{
+    font-size: 15px;
+    color: #808080;
+}
+
+@media only screen and (max-width: 640px){
+	.lianxiwomen img{ width: 25%;}
+	.lianxiwomen .p1 p{
+	    margin: 0 0 0 30%;
+	}
+}
+@media only screen and (max-width: 380px){
+	.lianxiwomen .am-thumbnail-caption{
+		font-size: 17px;
+	}
+}
+@media only screen and (max-width: 350px){
+	.lianxiwomen .am-thumbnail-caption{
+		font-size: 15px;
+	}
+}
+

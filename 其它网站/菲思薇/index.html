@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>菲思薇</title>
+        <meta name='keywords' content='菲思薇' />
+        <meta name='description' content='菲思薇' />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/ocean_style.css" />
+        <!--[if lt IE 9]>
+            <script language="javascript" type="text/javascript">self.location = 'brower.html';</script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <!--[if IE 9]>
+            <div id="ie9tips">您的浏览器版本过低，请升级到ie10以上或更换Chrome浏览器获得流畅的浏览效果！</div>
+        <![endif]-->
+        <div id="loading"></div>
+        <div id="iframe-warp" class="dis-none">
+            <div id="iframe-close">
+                <i class="iconfont icon-naviclose"></i>
+            </div>
+            <iframe src="" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+        </div>
+        <div id="menu-btn-wrap">
+            <b class="menu-txt">menu</b>
+            <div class="menu-icon">
+                <span class="menu-icon-top"></span>
+                <span class="menu-icon-center"></span>
+                <span class="menu-icon-bottom"></span>
+            </div>
+        </div>
+        <div class="menu-link-wrap">
+            <ul id="menu-link">
+                <li data-menuanchor="page1" class="active">
+                    <a href="#page1">
+                        <i class="iconfont icon-01"></i>
+                        <span class="txt">菲思薇首页</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page2">
+                    <a href="#page2">
+                        <i class="iconfont icon-02"></i>
+                        <span class="txt">师资团队</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page3">
+                    <a href="#page3">
+                        <i class="iconfont icon-03"></i>
+                        <span class="txt">了解</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page4">
+                    <a href="#page4">
+                        <i class="iconfont icon-04"></i>
+                        <span class="txt">课程</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page5">
+                    <a href="#page5">
+                        <i class="iconfont icon-05"></i>
+                        <span class="txt">团队</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page6">
+                    <a href="#page6">
+                        <i class="iconfont icon-06"></i>
+                        <span class="txt">伙伴</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page7">
+                    <a href="#page7">
+                        <i class="iconfont icon-07"></i>
+                        <span class="txt">毕业证书</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page9">
+                    <a href="detail_1.html">
+                        <i class="iconfont icon-08"></i>
+                        <span class="txt">加盟菲思薇</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page10">
+                    <a href="detail_2.html">
+                        <i class="iconfont icon-09"></i>
+                        <span class="txt">品牌加盟店</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <i class="iconfont icon-10"></i>
+                        <span class="txt">产品体系</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        <i class="iconfont icon-11"></i>
+                        <span class="txt">新闻动态</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                <li data-menuanchor="page8">
+                    <a href="#page8">
+                        <i class="iconfont icon-12"></i>
+                        <span class="txt">联系我们</span>
+                        <span class="line1 line_top"></span>
+                        <span class="line1 line_right"></span>
+                        <span class="line1 line_bottom"></span>
+                        <span class="line1 line_left"></span>
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <!-- <div class="lang">
+            <a href='' class='lang-active'>CN</a>
+            <a href=''>EN</a>
+        </div> -->
+        <div id="logo-mobile">
+            <img src="images/logo.png" />
+        </div>
+        <div class="menu-mobile-bg"></div>
+        <div id="top-logo">
+            <img class="logo" src="images/logo.png" />
+        </div>
+        <div id="foot-left">
+            <div class="news-power">
+                <a href="news_list.html" class="showfloat">
+                    <div class="news-arrow">
+                        <i class="iconfont icon-arrow"></i>
+                    </div>
+                    <div class="news-txt">
+                        <span>NEWS 动态</span>
+                    </div>
+                </a>
+            </div>
+            <p class="foot-eng">face-way</p>
+            <p class="foot-copy">CopyRight 2018 . AllRights Reserved faceway international beauty management school
+                <br>
+                <a href="" target="_blank">
+                    公网安备 50019002500906号
+                </a>Design by
+                <a href="" target="_blank">MemoryDesign.</a>
+            </p>
+        </div>
+        <div id="dowebok">
+            <div class="section first">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="home-page">
+                            <span class="pageon">01</span>
+                            <b class="pagecut">/</b>04
+                        </div>
+                        <div class="top-protxt2">
+                            <ul>
+                                <li>
+                                    <p>学院介绍</p>
+                                    <h2 class='top-movie'>菲思薇国际美肤商学院</h2>
+                                </li>
+                                <li>
+                                    <p>学院介绍</p>
+                                    <h2 class='top-movie'>菲思薇国际美肤商学院</h2>
+                                </li>
+                                <li>
+                                    <p>学院介绍</p>
+                                    <h2 class='top-movie'>菲思薇国际美肤商学院</h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="home-btn">
+                        <a class="img-prev"></a>
+                        <a class="img-next"></a>
+                    </div>
+                    <div id="homebanner">
+                        <ul>
+                            <!-- <li data-image='background-image: url(images/banner_0.jpg)' data-mobile='background-image: url(images/banner_0.jpg)'>
+                                <a data-sec='4' class='slide-page'></a>
+                            </li> -->
+                            <li data-image='background-image: url(images/banner_1.jpg)' data-mobile='background-image: url(images/banner_1.jpg'></li>
+                            <li data-image='background-image: url(images/banner_2.jpg)' data-mobile='background-image: url(images/banner_2.jpg)'></li>
+                            <li data-image='background-image: url(images/banner_3.jpg)' data-mobile='background-image: url(images/banner_3.jpg)'></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section teacher">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt2">
+                            <div class="title-img">
+                                <p>cooperative teacher</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>师资团队</h2>
+                        </div>
+                    </div>
+                    <div class="list-warp">
+                        <div id="starhover" class="star-list">
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_3.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_4.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_5.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_3.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_4.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'>Sun Jingjing</p>
+                                        <h3>孙静静</h3>
+                                    </div>
+                                    <img src='images/teacher_img_5.jpg' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section about">
+                <div class="left-top">
+                    <div class="title-big left-txt3">
+                        <div class="title-img">
+                            <p>about</p>
+                            <b class="title-line"></b>
+                        </div>
+                        <h2>了解</h2>
+                    </div>
+                </div>
+                <div class='slide'>
+                    <div class='about-center'>
+                        <a href='about.html' class='showfloat'>
+                            <div class='about-title'>
+                                <img src='images/about_01.jpg' />
+                            </div>
+                            <div class='about-txt'>
+                                <h3>FaceWay菲思薇国际美肤管理学院</h3>
+                                <h4></h4>
+                                <b class='white-bord'></b>
+                                <div class='about-detail'>专注于国际医学美容领域，不断引入国际美学前沿技术讲师团成员汇集国内外行业顶级专家讲师、国内外</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='bgpic3' data-src='background-image: url(images/about.jpg);'></div>
+                </div>
+                <div class='slide'>
+                    <div class='about-center'>
+                        <a href='about.html' class='showfloat'>
+                            <div class='about-title'>
+                                <img src='images/about_01.jpg' />
+                            </div>
+                            <div class='about-txt'>
+                                <h3>FaceWay菲思薇国际美肤管理学院</h3>
+                                <h4></h4>
+                                <b class='white-bord'></b>
+                                <div class='about-detail'>专注于国际医学美容领域，不断引入国际美学前沿技术讲师团成员汇集国内外行业顶级专家讲师、国内外</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='bgpic3' data-src='background-image: url(images/about.jpg);'></div>
+                </div>
+            </div>
+            <div class="section course">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt4">
+                            <div class="title-img">
+                                <p>course</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>课程</h2>
+                        </div>
+                    </div>
+                    <div class="movie-wrap">
+                        <div id="moviehover" class="movie-list">
+                            <div>
+                                <a href='movie_detail.html' class='showfloat'>
+                                    <div class='movie-name'>
+                                        <p class='name-eng'>Korean Skin Management</p>
+                                        <h3>韩式专业皮肤管理</h3>
+                                    </div>
+                                    <img src='images/course_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='movie_detail.html' class='showfloat'>
+                                    <div class='movie-name'>
+                                        <p class='name-eng'>Korean Skin Management</p>
+                                        <h3>韩式专业皮肤管理</h3>
+                                    </div>
+                                    <img src='images/course_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='movie_detail.html' class='showfloat'>
+                                    <div class='movie-name'>
+                                        <p class='name-eng'>Korean Skin Management</p>
+                                        <h3>韩式专业皮肤管理</h3>
+                                    </div>
+                                    <img src='images/course_img_3.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='movie_detail.html' class='showfloat'>
+                                    <div class='movie-name'>
+                                        <p class='name-eng'>Korean Skin Management</p>
+                                        <h3>韩式专业皮肤管理</h3>
+                                    </div>
+                                    <img src='images/course_img_3.jpg' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section team">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt5">
+                            <div class="title-img">
+                                <p>team</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>团队</h2>
+                        </div>
+                    </div>
+                    <div id="artisthover" class="list-warp">
+                        <div class="team-list">
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='blue-name'>
+                                        <div class='blue-box'>
+                                            <p class='txt-1'>董事长</p>
+                                            <span class='cut-line'></span>
+                                            <p class='txt-2'>Dong Shi</p>
+                                            <p class='txt-3'>懂事</p>
+                                        </div>
+                                    </div>
+                                    <img src='images/team_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='blue-name'>
+                                        <div class='blue-box'>
+                                            <p class='txt-1'>董事长</p>
+                                            <span class='cut-line'></span>
+                                            <p class='txt-2'>Dong Shi</p>
+                                            <p class='txt-3'>懂事</p>
+                                        </div>
+                                    </div>
+                                    <img src='images/team_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='blue-name'>
+                                        <div class='blue-box'>
+                                            <p class='txt-1'>董事长</p>
+                                            <span class='cut-line'></span>
+                                            <p class='txt-2'>Dong Shi</p>
+                                            <p class='txt-3'>懂事</p>
+                                        </div>
+                                    </div>
+                                    <img src='images/team_img_3.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='blue-name'>
+                                        <div class='blue-box'>
+                                            <p class='txt-1'>董事长</p>
+                                            <span class='cut-line'></span>
+                                            <p class='txt-2'>Dong Shi</p>
+                                            <p class='txt-3'>懂事</p>
+                                        </div>
+                                    </div>
+                                    <img src='images/team_img_4.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='blue-name'>
+                                        <div class='blue-box'>
+                                            <p class='txt-1'>董事长</p>
+                                            <span class='cut-line'></span>
+                                            <p class='txt-2'>Dong Shi</p>
+                                            <p class='txt-3'>懂事</p>
+                                        </div>
+                                    </div>
+                                    <img src='images/team_img_4.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='star_detail_1.html' class='showfloat'>
+                                    <div class='blue-name'>
+                                        <div class='blue-box'>
+                                            <p class='txt-1'>董事长</p>
+                                            <span class='cut-line'></span>
+                                            <p class='txt-2'>Dong Shi</p>
+                                            <p class='txt-3'>懂事</p>
+                                        </div>
+                                    </div>
+                                    <img src='images/team_img_4.jpg' />
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section partner">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt6">
+                            <div class="title-img">
+                                <p>partner</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>伙伴</h2>
+                        </div>
+                    </div>
+                    <div class="list-warp">
+                        <div id="starhover" class="star-list">
+                            <div>
+                                <a href='trailer_detail.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'></p>
+                                        <h3>去哪美容</h3>
+                                    </div>
+                                    <img src='images/partner_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='trailer_detail.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'></p>
+                                        <h3>去哪美容</h3>
+                                    </div>
+                                    <img src='images/partner_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='trailer_detail.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'></p>
+                                        <h3>去哪美容</h3>
+                                    </div>
+                                    <img src='images/partner_img_3.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='trailer_detail.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'></p>
+                                        <h3>去哪美容</h3>
+                                    </div>
+                                    <img src='images/partner_img_4.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='trailer_detail.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'></p>
+                                        <h3>去哪美容</h3>
+                                    </div>
+                                    <img src='images/partner_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href='trailer_detail.html' class='showfloat'>
+                                    <div class='star-name'>
+                                        <p class='name-eng'></p>
+                                        <h3>去哪美容</h3>
+                                    </div>
+                                    <img src='images/partner_img_2.jpg' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section certificate">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt7">
+                            <div class="title-img">
+                                <p>certifcate</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>毕业证书</h2>
+                        </div>
+                    </div>
+                    <div id="artisthover" class="list-warp">
+                        <div class="star-list">
+                            <div>
+                                <a href="javascript:;" i="images/certifcate_img_1.jpg" class="Slide One">
+                                    <img src='images/certifcate_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" i="images/certifcate_img_2.jpg" class="Slide One">
+                                    <img src='images/certifcate_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" i="images/certifcate_img_1.jpg" class="Slide One">
+                                    <img src='images/certifcate_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" i="images/certifcate_img_2.jpg" class="Slide One">
+                                    <img src='images/certifcate_img_2.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" i="images/certifcate_img_1.jpg" class="Slide One">
+                                    <img src='images/certifcate_img_1.jpg' />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" i="images/certifcate_img_2.jpg" class="Slide One">
+                                    <img src='images/certifcate_img_2.jpg' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section contact">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt8">
+                            <div class="title-img">
+                                <p>contact</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>联系我们</h2>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                       <div class="contact us">
+							<h4>phone</h4>
+							<p class="phone-number">020-66282668  (广州)
+								<br>020-66282668  (广州)
+							</p>
+							<p class="fax-number">火热招生中...</p>
+							<h4>emall</h4>
+							<p class="email">ADMIN@CQBOC2014.COM</p>
+                        </div>
+                        
+                        <div class="contact-map">
+                            <img src="images/map.jpg" />
+                        </div>                                 
+                        <div class="btn-work">
+                            <a href="job_list.html" class="showfloat">招商加盟</a>
+                            <div class="btn-b"></div>
+                        </div>
+                        <div class="two-code">
+                            <img src="images/wx.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+            <div class="section join">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt9">
+                            <div class="title-img">
+                                <p>join us</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>加盟菲思薇</h2>
+                        </div>
+                    </div>
+                    <div class="join_img">
+                        <iframe src="detail_01.html" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+                    </div>
+                     <div class="mouse_icon">
+                        <div class=""><i class="fa fa-angle-double-down wheel"></i></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="section franchise">
+                <div class="boxwrap">
+                    <div class="left-top">
+                        <div class="title-big left-txt10">
+                            <div class="title-img">
+                                <p>franchise store</p>
+                                <b class="title-line"></b>
+                            </div>
+                            <h2>品牌加盟店</h2>
+                        </div>
+                    </div>
+                    <div class="franchise_img">
+                        <iframe src="detail_02.html" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+                    </div>
+-->
+
+                    <!-- <div class="mouse_icon">
+                        <div class=""><i class="fa fa-angle-double-down wheel"></i></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/plugin.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/ocean-code.js"></script>
+</html>
