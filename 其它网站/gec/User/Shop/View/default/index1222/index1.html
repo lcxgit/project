@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="__ROOT__/js/jquery.js"></script>
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.css">
+	
+<link href="__ROOT__/css/shop_index.css" rel="stylesheet">
+
+
+<!-- App scripts -->
+<script src="/cssmmm/homer.js"></script>
+<script src="/cssmmm/alert.js"></script>
+<script src="/cssmmm/charts.js"></script>
+    <!-- App styles -->
+    <link rel="stylesheet" href="/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/assets/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+
+<body>
+
+<include file="User/Home/View/default/top.html" />
+<include file="User/Home/View/default/left.html" />
+
+<div class="bannerBox">
+     	<a href="shangchengxiangqing.html">
+            <img src="__ROOT__/images/banner.jpg">
+            <img src="__ROOT__/images/banner1.jpg">
+            <img src="__ROOT__/images/banner2.jpg">
+            <img src="__ROOT__/images/banner3.jpg">
+            <img src="__ROOT__/images/banner4.jpg">
+    	</a>
+		 <div class="yuanBox">
+    	<span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="clearfix"></div>
+    </div>
+        <div class="towNav">
+ 
+                <div class="small">
+                	<a href="shangchengchanpin1.html">
+                        <dt>产品名称一</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+           
+            
+            
+                <div class="small">
+                	<a href="shangchengchanpin2.html">
+                        <dt>产品名称二</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+          
+            
+            
+               <div class="small">
+                	<a href="shangchengchanpin3.html">
+                        <dt>产品名称三</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+            
+            
+            
+                <div class="small">
+                	<a href="shangchengchanpin4.html">
+                        <dt>产品名称四</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+           
+            
+            
+               <div class="small">
+                	<a href="shangchengchanpin5.html">
+                        <dt>产品名称五</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+            
+         </div>
+
+
+</div>
+<div class="contentBox">
+                <div class="hBox">
+                    <dl>商家推荐</dl>
+                    <dt>以真心换真心，给你最正确的选择！</dt>
+            
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="bigBox">
+                    <div class="smallBox">
+                        <div class="small_box">
+                            <dl><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        </div>
+                        <div class="small_box">
+                                        <dl><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        
+                        </div>
+                        <div class="small_box">
+                                        <dl><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        </div>
+                        <div class="small_box">
+                        
+                                        <dl class="small_box1"><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        </div>
+            
+            
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="smallBox">
+                        <div class="small_box">
+                            <dl><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        </div>
+                        <div class="small_box">
+                                        <dl><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        
+                        </div>
+                        <div class="small_box">
+                                        <dl><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        </div>
+                        <div class="small_box">
+                        
+                                        <dl class="small_box1"><a href="shangchengxiangqing.html"><img src="image/chanpin.jpg"></a></dl>
+                            <dt>产品名称</dt>
+                            <dd>￥价格</dd>
+                        </div>
+            
+                        <div class="clearfix"></div>
+                      </div>
+                  </div>
+      				 	
+      
+</div>
+<div class="sternBox">
+
+
+
+
+</div>
+<script>
+$(function(){
+		$(".bannerBox img").hide().eq(0).show()
+		$(".yuanBox span").removeClass(".yuanBox current").eq(0).addClass(".yuanBox current")
+		var n=0
+		function move(){
+		if(n<$(".bannerBox img").length-1){
+		n=n+1}
+		else{n=0}
+		
+		$(".bannerBox img").hide().eq(n).show()
+		$(".yuanBox span").removeClass(".yuanBox current").eq(n).addClass(".yuanBox current")
+		}
+		t=setInterval(move,1500)
+		$(".bannerBox").mouseenter(function(){
+		clearInterval(t)
+		}).mouseleave(function(){
+		t=setInterval(move,1500)
+				}
+		
+		)
+		$(".yuanBox span").mouseenter(
+		function(){
+			n=$(this).index()
+		$(".bannerBox img").hide().eq(n).show()
+		$(".bannerBox span").removeClass(".yuanBox current")
+		$(this).addClass(".yuanBox current")
+		clearInterval(ting)
+			
+			
+			}
+		
+		
+		
+		)
+	}
+
+		
+
+
+
+
+
+)
+</script>
+</body>
+</html>

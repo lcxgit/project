@@ -1,0 +1,95 @@
+﻿/* 01装饰器  
+--------------------------------------------------------------------*/
+
+
+/*头部*/
+.Adorner01 .a_title{
+	background:url(../images/adorner_title.gif) no-repeat left top;
+	height:40px;
+	padding-left:10px;
+	overflow:hidden;
+}
+.Adorner01 .a_title_main{
+	background:url(../images/adorner_title.gif) #fff no-repeat right top;
+	height:40px;
+	overflow:hidden;
+
+	padding-right:10px;
+}
+.Adorner01 .a_title_main h3{
+	font-size:13px;
+	display:inline;
+	float:left;
+	/*background:url(../images/ico.png) no-repeat left 15px;
+	padding-left:15px;*/
+	padding-top:10px;
+}
+.Adorner01 .a_title_main a{
+	font-size:9px;
+	display:inline;
+	float:right;
+	line-height:40px;
+}
+
+/*中间内容*/
+.Adorner01 .a_main{
+	background:url(../images/adorner_main.gif) repeat-y left top;
+	padding-left:10px;
+}
+.Adorner01 .a_content{
+	background:url(../images/adorner_main.gif) repeat-y right top;
+	padding-right:10px;
+}
+/*尾部内容*/
+.Adorner01 .a_bottom{
+	background:url(../images/adorner_bottom.gif) no-repeat left top;
+	height:25px;
+	padding-left:10px;
+}
+.Adorner01 .a_bottom_main{
+	background:url(../images/adorner_bottom.gif) no-repeat right top;
+	height:25px;
+	padding-right:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+
+/*.qq_consult{*/
+    /*display:flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*border:1px solid rgb(250,220,130);*/
+    /*background-color: #FFFAEC;*/
+    /*height:30px;*/
+    /*line-height: 30px;*/
+    /*padding-left: 10px;*/
+    /*padding-right: 0.5px;*/
+    /*border-radius: 5px;*/
+    /*margin-left:10px;*/
+    /*margin-right:10px;*/
+/*}*/
+
+.qq_consult{
+    width:430px;
+    border:1px solid rgb(250,220,130);
+    background-color: #FFFAEC;
+    height:30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 0.5px;
+    border-radius: 5px;
+    margin-left:10px;
+    margin-right:10px;
+}

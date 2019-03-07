@@ -1,0 +1,194 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>用户激活-MIF club</title>
+<meta name="keywords" content="MIF club">
+<meta name="description" content="MIF club">
+<link rel="stylesheet" type="text/css" href="/css/base.css" />
+<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/dsdialog.js"></script>
+<link href="/css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	font-family:"微軟雅黑";
+	font-size: 13px;
+	font-weight: bold;
+}
+</style>
+<!-- dd menu -->
+<script type="text/javascript" src="/js/nav.js">
+</script>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>	
+</head>
+
+<body class="body_bg">
+<!-- header start -->
+<!-- header end -->
+<!--------------------搶購金幣二級驗證--------------------------->
+<div  id="light27" class="white_content" style="height:20%;"><span class="dis_bl fr"><a href = "javascript:void(27)" onclick = "document.getElementById('light27').style.display='none';document.getElementById('fade').style.display='none'"><span class="span_style01">關閉窗口</span></a></span>
+<br>
+       <div>
+	   <form action="index.php?sn=jqjb_secpw" method="post"  onsubmit="return infoCheck55();">
+	    請輸入二級密碼：<input type="password" name="secPw"> <span  id="zzan599"><input type="submit" value="查詢" > </span>
+	   </form>
+       </div>
+</div> 
+
+<!--------------------------------------------------->
+
+
+       <div id="light30" class="white_content" style="height:15%"><span class="dis_bl fr"><a href = "javascript:void(30)" onclick = "document.getElementById('light30').style.display='none';document.getElementById('fade').style.display='none'"><span class="span_style01">關閉窗口</span></a></span>
+       <!--玩家身份等級說明---><br>
+       <div>
+       <p><a href="mymsg.html">您有壹條新的交易信息，點擊查看最新消息【查看詳細】</a></p>
+       <hr>
+       </div>
+       </div>
+
+
+
+<!-- nav start -->
+<!-- nav end -->
+<!--tu biao start-->
+<include file="User/Home/View/default/top.html" /><script src="./js/jquery.min.js"></script>
+<!--tu biao end-->
+<!-----------应用头部--结束----------->
+
+<!--main start-->
+<div id="main">
+
+<div class="wid_940 mar_cen">
+<!-----------二级密码验证开始----------->
+<!-----------二级密码验证结束----------->
+<div class="about_top">
+<div class="about_home fl"><a href=wjsy.html>首页</a> -&gt; 账号管理 -&gt; 激活账号</div>
+</div>
+
+<div class="about_nav">
+<ul>
+
+					<li>
+						<a href="{:U('/Home/Index/reg')}">註冊賬號</a>
+					</li>
+
+					<li>
+						<a href="{:U('/Home/Myuser/')}">我的賬號</a>
+					</li>
+
+
+					<li>
+						<a href="{:U('/Home/Activation/')}">激活賬號</a>					</li>
+
+
+					<li>
+						<a href="{:U('/Home/Myuser/xzzh')}">新增賬號</a>
+					</li>
+				</ul>
+</div>
+
+
+<div class="div_bor_style01">
+<p style="line-height:30px;" class="border_bot_sty01">　　　　　　　　　激游戏账户【填写信息】</p>
+
+
+
+<form name="buyFrm"  id="buyFrm" action="/Home/Activation/jihuo" method="post">
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="line-height:30px;" class="xtable">
+<tr>
+  <td width="286" align="left">　　　　　　　　　玩家编号：{$userData['ue_account']}</td>
+</tr>
+<tr>
+  <td align="left">　　　　　　　　　金币余额：{$userData['ue_money']}</td>
+</tr>
+<tr>
+  <td align="left">　　　　　　　激活所需金币：1500</td>
+</tr>
+<tr>
+  <td height="30" align="left">　　　　　　　激活玩家编号：
+    <input name="wjbhname" type="text" id="wjbhname" value="{$userjihuo}"  >  
+    <span id="wjnc2">　</span></td>
+</tr>
+<tr>
+  <td height="30" align="left">　　　　　　　报单中心编号：
+    <input name="bdzxname" type="text" id="bdzxname" value="{$userData['ue_account']}" >  
+    <span id="wjnc">　</span></td>
+</tr>
+   <td height="30" align="left">　　　　　　　　　　验证码：
+       <input name="yzm" type="text" id="yzm" onFocus="getCount();"> 
+    <br>
+　　　　　　　　　　　　　　　<img src="/Home/login/verify" name="myHeader" id="myHeader" onClick="this.src='/Home/login/verify?'+Math.random();" /></td>
+</tr>
+</table>
+  <div align="center"><span id="zzan57" class="mar_top_10 dis_bl">
+    <input id='btn' type="button"  class="input_aqts mar_cen" value="下一步">
+    </span>
+    
+  </div>
+</form>
+<script>
+$(function(){
+
+
+
+$('#btn').click(function(){
+//document.regFrm.__hash__.value;
+//document.getElementById('zzan57').innerHTML = "注册中";
+$('#btn').val("激活中...");
+var $hh = document.buyFrm.__hash__.value;
+var $yzm = $('#yzm').val();
+var $action = $('#buyFrm').attr('action');
+
+//alert($hh);
+var $wjbhname = $('#wjbhname').val();
+var $bdzxname = $('#bdzxname').val();
+
+//alert($account1);
+
+//alert($action);
+$.post($action,{__hash__:$hh,yzm:$yzm,wjbhname:$wjbhname,bdzxname:$bdzxname},function(data){
+if(data.sf == 0){
+ alert(data.nr);
+$('#btn').val("重新激活");
+}else{
+alert(data);
+$('#btn').val("激活成功");
+}
+});
+
+})
+
+
+})
+
+
+</script>
+</div>
+
+<p></p>
+
+</div>
+
+</div>
+<!--main end-->
+
+<!--footer start-->
+<!--footer start-->
+<div id="footer">
+<div class="wid_1000 mar_cen">
+Copyright © 2014 MIFcurrencyclub.com
+</div>
+</div>
+<!--footer end-->
+
+
+
+<!--footer end-->
+
+</body>
+</html>
+
+

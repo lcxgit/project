@@ -1,0 +1,141 @@
+﻿/* classify_01侧栏样式  
+--------------------------------------------------------------------*/
+.classify{
+	position:relative;
+	margin-top:20px;
+}
+.classify .left_t{ width:210px; height:120px; background:url(../images/left_bg.jpg) no-repeat center; margin-bottom:10px;}
+.classify .left_t h3{
+	display:block;
+	font-size:22px;
+	font-weight:normal;
+	color:#FFF;
+	height:30px;
+	padding-top:26px;
+	padding-left:20px;
+	
+	/*border-bottom:solid 1px #e6e6e6;*/
+}
+
+.classify .left_t div{ width:40px; height:2px; background:#FFF; margin-left:20px; margin-top:10px;}
+.classify .left_t p{color:#fff; font-size:14px; padding-left:20px; margin-top:8px;}
+
+.classify ul{ width:210px;}
+.classify li{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	position:relative;
+	margin-bottom:0px;
+}
+.classify li a{
+	color:#FFF;
+	position:relative;
+	display:block;
+	text-indent:20px;
+}
+.classify ul li{
+	background:#679bf1;}
+.classify ul li.current{
+	background:url(../images/left_bg_hover.jpg) center no-repeat;
+}
+
+.classify ul li.current a.cur:link,.classify li.current a.cur:visited{
+	color:#fff;
+}
+.classify ul li:hover{ background:url(../images/left_bg_hover.jpg) center no-repeat;}
+.classify ul li:hover a{ color:#FFF;}
+
+/*二级*/
+.classify ul li .child{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+.classify ul li .child ul li{
+	border-bottom:1px solid #fff;
+	border:none;
+	*background:#f9f9f9;
+	_background:#f9f9f9;
+}
+.classify ul li .child ul li a{
+	background:#f9f9f9;
+	border-bottom:1px solid #F5F5F5;
+	*display:inline-block;
+	_display:inline-block;
+	_height:24px;
+	_margin-top:2px;
+}
+
+/*箭头*/
+.classify li .arrow{
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+}
+.classify li .arrow a{
+	display:block;
+	width:30px;
+	height:30px;
+}
+.classify li .arr_01 a{
+	background:url(../images/ico_1.gif) no-repeat center center;
+}
+.classify .current .arr_01 a{
+	background:url(../images/ico_1_w.gif) no-repeat center center;
+}
+.classify li .arr_01 a:hover{
+	background:url(../images/ico_3_w.gif) #1b5eb1 no-repeat center center;
+}
+.classify li .on a{
+	background:url(../images/ico_2_w.gif) #1b5eb1 no-repeat center center;
+}
+.classify li .on a:hover{
+	background:url(../images/ico_2_w.gif) #1b5eb1 no-repeat center center;
+}
+.classify .current .on a{
+	background:url(../images/ico_2_w.gif) #1b5eb1 no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

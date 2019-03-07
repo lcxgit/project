@@ -1,0 +1,18 @@
+document.writeln("<div class=\"freeyy_view\">");
+document.writeln("  <div class=\"cen\">");
+document.writeln("    <div class=\"freeyy_colse\"><a href=\"javascript:void(0)\" onclick=\"freeyycolse()\"><img src=\"static/images/alpha_0.png\" /></a></div>");
+document.writeln("	<div class=\"clear\"></div>");
+document.writeln("	<input name=\"\" type=\"text\" class=\"freeyy_name\" placeholder=\"您的称呼\" value=\"\"  />");
+document.writeln("	<input name=\"\" type=\"text\" class=\"freeyy_tel\" placeholder=\"您的联系电话\" value=\"\" onkeyup=\"(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,\'\');}).call(this)\" onblur=\"if(this.v){this.v();}\" />");
+document.writeln("	<input name=\"\" type=\"button\" id=\"yy\" onclick=\"sendFree();try{ga(\'send\', \'event\', \'免费预约\', \'电话预约\')}catch(e){};\" class=\"freeyy_ok\" value=\"\" />");
+document.writeln("	<div class=\"clear\"></div>");
+document.writeln("  </div>");
+document.writeln("</div>");
+document.writeln("<div class=\"r_freeyy_ts prompt\" id=\"r_fyy_prompt\"> ");
+document.writeln("	  <div id=\"tj_success_fyy\"><i class=\"fa fa-check-circle green\"></i>提交成功</div>");
+document.writeln("	  <div id=\"tj_error1_fyy\"><i class=\"fa fa-info-circle cs\"></i>请填写姓名</div>");
+document.writeln("	  <div id=\"tj_error2_fyy\"><i class=\"fa fa-info-circle cs\"></i>请填写正确电话</div>");
+document.writeln("	  <div id=\"tj_error3_fyy\"><i class=\"fa fa-info-circle cs\"></i>请勿重复提交</div>");
+document.writeln("	  <div id=\"tj_wrong_fyy\"><i class=\"fa fa-check-circle red\"></i>提交失败</div>");
+document.writeln("	  <div class=\"clear\"></div>  ");
+document.writeln("</div>");

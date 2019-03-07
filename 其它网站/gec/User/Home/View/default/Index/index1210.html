@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/web/css/lib.css?2">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>会员中心</title>	
+	<meta name="Keywords" content="PAAM" />
+	<meta name="Description" content="PAAM" />
+    <script src="__PUBLIC__/web/js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/web/css/weui.min.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/web/css/jquery-weui.min.css">
+	<link href="__PUBLIC__/web/css/font-awesome.min.css" rel="stylesheet">
+	<link href="__PUBLIC__/web/fonts/iconfont.css" rel="stylesheet">
+	<script src="__PUBLIC__/web/js/layer.js"></script>
+</head>
+<body>
+	<!--顶部开始-->
+	<header class="header">
+		<span class="header_l"><a href="javascript:history.go(-1);"><i class="fa fa-chevron-left"></i></a></span>
+		<span class="header_c">个人中心</span>
+		<span class="header_r"><a href="javascript:void(0)"><i class="fa fa-user"></i></a></span>
+	</header>
+	<div class="height40"></div>
+	<!--顶部结束-->
+<style>
+	.user_sy li{
+		width: 33.3%;
+	}
+</style>
+	<div style="background-color: #B52A00 ;padding: 20px 0px;  width: 100%;overflow: hidden;color: #FFFFFF;">
+		<div style="width: 50%;float: left;text-align: center;overflow: hidden"><p>可用莱肯币:</p><p>{$userData['ue_money']}LKB</p></div>
+		<div style="width: 50%;float: left;text-align: center;overflow: hidden"><p>冻结莱肯币:</p><p>{$userData['djmoney']}LKC</p></div>
+	</div>
+<div class="weui_grids" style="background-color: #f9f9f9">
+	<a href="/Index.php/Home/Info/mykuangche/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe614;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">我的矿车</p>
+	</a>
+	<a href="/Index.php/Home/Info/myjiaoyi/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe63f;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">我的交易</p>
+	</a>
+	<a href="/Index.php/Home/Info/kuangcheshouyi/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe628;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">矿车收益</p>
+	</a>
+	<a href="/Index.php/Home/Myuser/index/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe85d;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">我的团队</p>
+	</a>
+	<a href="/Index.php/Home/info/qiugouLKC/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe615;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">求购莱肯币</p>
+	</a>
+	<a href="/Index.php/Home/Index/erweima/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe600;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">二维码</p>
+	</a>
+
+	<a href="/Index.php/Home/Index/help/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe62e;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">帮助中心</p>
+	</a>
+	<a href="/Index.php/Home/Info/myziliao/" class="weui_grid js_grid" data-id="toast">
+		<div class="weui_grid_icon">
+			<i class="iconfont" style="color: #e64340;display: block;width: 16px;margin:0 auto;font-size: 2em;margin-left: -2px;">&#xe678;</i>
+		</div>
+		<p class="weui_grid_label" style="margin-top: 12px">个人资料</p>
+	</a>
+
+</div>
+
+
+    	<div class="height55"></div>
+
+<script>
+	function changeMoney() {
+		$.modal({
+			title: "转换余额",
+			text: "三级团队销售额<br/>达到2万元，奖励1000元！<br/>达到5万元，奖励3000元！<br/>达到8万元，奖励8000元！",
+			buttons: [
+				{ text: "1000", onClick: function(){
+					ajaxChangeMoney(1);
+				}
+				},
+				{ text: "3000", onClick: function(){
+					ajaxChangeMoney(2);
+
+				}
+				},
+				{ text: "8000", onClick: function(){
+					ajaxChangeMoney(3);
+
+				}
+				},
+				{ text: "取消", className: "default", onClick: function(){ } },
+			]
+		});
+	}
+	
+	function ajaxChangeMoney(data) {
+		$.post('/index.php?s=/Home/User/changeMoney.html',{data:data},function (msg) {
+			$.alert(msg,function () {
+				location.reload();
+			});
+		});
+	}
+	function buy_again() {
+		$.modal({
+			title: "复投",
+			text: "请选择复投摇钱树",
+			buttons: [
+				{ text: "30", onClick: function(){
+						ajaxBuyAgain(11);
+					}
+				},
+				{ text: "300", onClick: function(){
+					ajaxBuyAgain(12);
+
+					}
+				},
+				{ text: "1200", onClick: function(){
+					ajaxBuyAgain(13);
+
+				}
+				},
+				{ text: "取消", className: "default", onClick: function(){ } },
+			]
+		});
+	}
+
+	function ajaxBuyAgain(id) {
+		$.ajax({
+			url:'/index.php?s=/Home/User/buy_again.html',
+			type:'post',
+			data:{id:id},
+			success:function (msg) {
+				$.alert(msg,function () {
+					location.reload();
+				});
+
+			}
+		});
+	}
+    $(function(){
+
+		//if(528 == 0){
+		//	$.toptip('您还没有推荐人！',5000, 'success');
+		//}
+       // $.ajax({
+       //     url:'/index.php?s=/Home/User/checkQueue.html',
+       //     type:'post',
+       //     dataType:'json',
+       //     beforeSend:function(){
+       //         $.showLoading("拼命更新中...");
+       //     },
+       //     success:function(res){
+       //         if(res.code == 1){
+       //             $.hideLoading();
+       //         }else{
+       //             location.reload();
+       //         }
+       //     }
+       // }
+       // );
+    });
+</script>
+<!--底部开始-->
+<style>
+	.footer ul li{
+		width: 33%;
+	}
+</style>
+	<div class="footer">
+		<ul>
+			<li><a href="/Index.php/Shop/Index/" class="block"><i class="iconfont">&#xe604;</i>矿机商城</a></li>
+			<li><a href="/Index.php/Home/Info/Index/" class="block"><i class="iconfont">&#xe608;</i>交易市场</a></li>
+			<li><a href="javascript:void(0)"><i class="iconfont">&#xe678;</i>个人中心</a></li>
+		</ul>
+	</div>
+	<!--底部结束-->
+	<script src="__PUBLIC__/web/js/jquery-weui.min.js"></script>
+</body>
+</html>

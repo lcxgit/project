@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/web/css/lib.css?2">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta content="telephone=no" name="format-detection">
+	<title>交易市场</title>
+	<script src="__PUBLIC__/web/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/web/css/weui.min.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/web/css/jquery-weui.min.css">
+	<link href="__PUBLIC__/web/css/font-awesome.min.css" rel="stylesheet">
+	<link href="__PUBLIC__/web/fonts/iconfont.css" rel="stylesheet">
+	<script src="__PUBLIC__/web/js/layer.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/web/css/style.css"/>
+</head>
+<body>
+	<!--顶部开始-->
+	<header class="header">
+		<span class="header_l"><a href="javascript:history.go(-1);"><i class="fa fa-chevron-left"></i></a></span>
+		<span class="header_c">交易市场</span>
+		<span class="header_r"><a href="/Index.php/Home/Index/index/"><i class="fa fa-user"></i></a></span>
+	</header>
+	<div class="height40"></div>
+	<!--顶部结束-->
+	<!--矿车列表-->
+	<div style="width: 90%;margin-left: 5%;margin-top: 20px;overflow:hidden;border-radius:5px">
+		<p id="qiugou_list"onclick='showhidediv("qiugou")'style="float: left;width: 50%;text-align: center;background-color: #E64340;height: 30px;line-height: 30px;color:#fff;border-bottom-left-radius: 5px;border-top-left-radius: 5px">求购GEC</p>
+		<p id="chushou_list" onclick='showhidediv("chushou")'style="float: left;width: 50%;text-align: center;background-color: #fff;height: 30px;line-height: 30px;border-top-right-radius: 5px;border-bottom-right-radius: 5px">出售GEC</p>
+	</div>
+	<div id="qiugou" style="padding-bottom:50px;background-color:#fff;margin-top:0px;width:100%;margin-left:0%">
+	<table class="jyzx_list" style="margin-top:20px;margin-bottom:80px;border-collapse:collapse;table-layout: fixed">
+		<thead>
+			<tr style="width:100%;">
+				<th style="padding:10px 0">昵称</th>
+				<th style="padding:10px 0">等级</th>
+				<th style="padding:10px 0;width:20%">莱肯币</th>
+				<th style="padding:10px 0;">求购价($)</th>
+				<th style="padding:10px 0">状态</th>
+			</tr>
+		</thead>
+		<tbody>
+		<foreach name="list" item="v">
+			<tr style="margin-bottom:100px">
+				<td class="name" style="padding:10px 0;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;">{$v.p_name}</td>
+				<td class="range iconfont" style="padding:10px 0;text-align:center;">
+					<if condition = "$v.p_level eq 0">&#xe667;</if>
+					<if condition = "$v.p_level eq 1">&#xe668;</if>
+					<if condition = "$v.p_level eq 2">&#xe669;</if>
+					<if condition = "$v.p_level eq 3">&#xe66a;</if>
+					<if condition = "$v.p_level eq 4">&#xe64f;</if>
+					<if condition = "$v.p_level eq 5">&#xe66c;</if>
+					<if condition = "$v.p_level eq 6">&#xe66d;</if>
+
+
+				</td>
+				<td class="lkMoney" style="padding:10px 0;text-align:center;">{$v.lkb}</td>
+				<td style="padding:10px 0;text-align:center;"><span  class="money" style="color:red">{$v.jb}</span></td>
+				<if condition = "$v.zt eq 0">
+				<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="{$v.id}">
+					<button style="width:100%;height:32px;background-color:#E64340;font-size:14px" class="btnchushou">待购入</button>
+				</td>
+				</if>
+				<if condition = "$v.zt eq 1">
+				<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="{$v.id}">
+					<button style="background-color:#666;width: 100%;height: 90% ;border: 0px;border-radius: 5px;color: #FFFFFF;cursor: pointer;" >交易中</button>
+				</td>
+				</if>
+				<if condition = "$v.zt eq 2">
+				<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="{$v.id}">
+					<button style="background-color:#E64340;width: 100%;height: 90% ;border: 0px;border-radius: 5px;color: #FFFFFF;cursor: pointer;" class="wancheng">交易完成</button>
+				</td>
+				</if>
+			</tr>
+		</foreach>
+			<!-- <tr>
+				<td style="padding:10px 0;text-align:center;">三九</td>
+				<td style="padding:10px 0;text-align:center;">V3</td>
+				<td style="padding:10px 0;text-align:center;">100.0001</td>
+				<td style="padding:10px 0;text-align:center;">100.00</td>
+				<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="2"><button class="btnchushou" style="background-color:#E64340;width: 100%;height: 100% ;border: 0px;border-radius: 5px;;color: #FFFFFF;cursor: pointer;">出售</button></td>
+			</tr> -->
+		</tbody>
+	</table>
+	</div>
+	<div id="chushou" style="display: none; padding-bottom:50px;background-color:#fff;">
+		<table class="jyzx_list" style="margin-top:20px;margin-bottom:80px;border-collapse:collapse;table-layout: fixed">
+			<thead>
+			<tr style="width:100%;">
+				<th style="padding:10px 0">昵称</th>
+				<th style="padding:10px 0">等级</th>
+				<th style="padding:10px 0;width:20%">莱肯币</th>
+				<th style="padding:10px 0;">出售价($)</th>
+				<th style="padding:10px 0">状态</th>
+			</tr>
+			</thead>
+			<tbody>
+			<foreach name="lists" item="v">
+				<tr style="margin-bottom:100px">
+					<td class="name" style="padding:10px 0;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;">{$v.p_name}</td>
+					<td class="range iconfont" style="padding:10px 0;text-align:center;">
+						<if condition = "$v.p_level eq 0">&#xe667;</if>
+						<if condition = "$v.p_level eq 1">&#xe668;</if>
+						<if condition = "$v.p_level eq 2">&#xe669;</if>
+						<if condition = "$v.p_level eq 3">&#xe66a;</if>
+						<if condition = "$v.p_level eq 4">&#xe64f;</if>
+						<if condition = "$v.p_level eq 5">&#xe66c;</if>
+						<if condition = "$v.p_level eq 6">&#xe66d;</if>
+
+
+					</td>
+					<td class="lkMoney" style="padding:10px 0;text-align:center;">{$v.lkb}</td>
+					<td class="money" style="padding:10px 0;text-align:center;">{$v.jb}</td>
+					<if condition = "$v.zt eq 0">
+						<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="{$v.id}">
+							<button style="background-color:#E64340;width: 100%;height: 90% ;border: 0px;border-radius: 5px;color: #FFFFFF;cursor: pointer;" class="btnsc">待出售</button>
+						</td>
+					</if>
+					<if condition = "$v.zt eq 1">
+						<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="{$v.id}">
+							<button style="background-color:#666;width: 100%;height: 90% ;border: 0px;border-radius: 5px;color: #FFFFFF;cursor: pointer;" >交易中</button>
+						</td>
+					</if>
+					<if condition = "$v.zt eq 2">
+						<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="{$v.id}">
+							<button style="background-color:#E64340;width: 100%;height: 90% ;border: 0px;border-radius: 5px;color: #FFFFFF;cursor: pointer;" class="wancheng">交易完成</button>
+						</td>
+					</if>
+				</tr>
+			</foreach>
+			<!-- <tr>
+				<td style="padding:10px 0;text-align:center;">三九</td>
+				<td style="padding:10px 0;text-align:center;">V3</td>
+				<td style="padding:10px 0;text-align:center;">100.0001</td>
+				<td style="padding:10px 0;text-align:center;">100.00</td>
+				<td style="padding:5px 0;text-align:center;"><input class="ppid" type="hidden" value="2"><button class="btnchushou" style="background-color:#E64340;width: 100%;height: 100% ;border: 0px;border-radius: 5px;;color: #FFFFFF;cursor: pointer;">出售</button></td>
+			</tr> -->
+			</tbody>
+		</table>
+	</div>
+<!--底部开始-->
+<style>
+	.footer ul li{
+		width: 25%;
+	}
+</style>
+	<div class="footer">
+        <ul>
+            <li><a href="/Index.php/Shop/Index" class="block"><i class="iconfont">&#xe604;</i>矿机商城</a></li>
+			<li><a href="/Index.php/Home/Info/mykuangche/" class="block"><i class="iconfont">&#xe601;</i>我的矿机</a></li>
+            <li><a href="/Index.php/Home/Info/Index" class="block"><i class="iconfont">&#xe645;</i>交易市场</a></li>
+            <li><a href="/Index.php/Home/Index/index" class="block"><i class="iconfont">&#xe684;</i>个人中心</a></li>
+        </ul>
+    </div>
+	<!--底部结束-->
+	<script src="__PUBLIC__/web/js/jquery-weui.min.js"></script>
+	<script>
+		function showhidediv(id) {
+			console.log(id);
+			var qiugou = document.getElementById("qiugou");
+			var zhengzai = document.getElementById("chushou");
+			var qiugoubg = document.getElementById("qiugou_list");
+			var zhengzaibg = document.getElementById('chushou_list');
+			if (id == "qiugou") {
+				zhengzai.style.display = 'none';
+				qiugou.style.display = 'block';
+				qiugoubg.style.backgroundColor = "#E64340"
+				qiugoubg.style.color = "#fff"
+				zhengzaibg.style.backgroundColor = "#fff";
+				zhengzaibg.style.color = "#000";
+			}else if(id=='chushou'){
+				zhengzai.style.display = 'block';
+				qiugou.style.display = 'none';
+				qiugoubg.style.backgroundColor = "#fff";
+				qiugoubg.style.color = "#000";
+				zhengzaibg.style.backgroundColor = "#E64340";
+				zhengzaibg.style.color = "#fff";
+			}
+		}
+	</script>
+	<script>
+	
+	
+		$(function(){
+				var s='<div id="popUpBox" style="position:absolute;top:30%;width:100%;height:100%;display:none;background-color:#DDD">'+
+						'<div style="margin:0 auto;width: 90%;height:150px;background-color: #fff;padding:15px 0 10px;border-radius: 10px">'+
+						'<div style="text-align:center;font-size:1.2em;margin-top:15px;">是否确认提交？</div><input class="opid" type="hidden" value="" />'+
+						'<div style="text-align:center;margin-top:35px;"><button style="font-size:1.2em;padding:5px 10px;background-color:#fff;border-radius: 5px;border: 0px;color:green"  id="confirmBtn">确认</button>&nbsp;&nbsp;<button style="padding:5px 10px;font-size:1.2em;border: 0px;background-color:#fff;border-radius: 5px" id="confirmBtnFalse">取消</button></div>'+
+						'</div>'+
+				'</div>';
+				$("body").append(s);
+		})
+
+		$(function(){
+		$(".btnchushou").bind("click",function(){
+			console.log($(this).parent().find(".ppid").val());
+			$("#popUpBox").find(".opid").val($(this).parent().find(".ppid").val());
+			console.log($("#popUpBox").find(".opid").val());
+			$("#popUpBox").fadeIn();
+		})
+		$("#confirmBtn").bind("click",function(){
+			$("#popUpBox").fadeOut();
+			$.ajax({
+				url:"{:U('/Index.php/Home/Info/chushou')}",
+				type:"get",
+				data:{id:$("#popUpBox").find(".opid").val()},
+				dataType:"json",
+				success:function(data){
+				console.log(data);
+					if(data.status==1){
+					$.alert(data.msg,function(){
+					   location.href="/index.php/Home/Info/myjiaoyi";
+					});
+				    }else{
+					$.alert(data.msg);
+					}
+				},
+				error:function(){
+					$.alert("网络错误请重试");
+				}
+			})
+		})
+		$("#confirmBtnFalse").bind("click",function(){
+			$("#popUpBox").fadeOut();
+		})
+		})
+		
+		
+	</script>
+	<script>
+	$(function(){
+				var s='<div id="UpBox" style="position:absolute;top:30%;width:100%;height:100%;display:none;background-color:#DDD">'+
+						'<div style="margin:0 auto;width: 90%;height:150px;background-color: #fff;padding:15px 0 10px;border-radius: 10px">'+
+						'<div style="text-align:center;font-size:1.2em;margin-top:15px;">是否确认提交？</div><input class="opid" type="hidden" value="" />'+
+						'<div style="text-align:center;margin-top:35px;"><button style="font-size:1.2em;padding:5px 10px;background-color:#fff;border-radius: 5px;border: 0px;color:green"  id="firmBtn">确认</button>&nbsp;&nbsp;<button style="padding:5px 10px;font-size:1.2em;border: 0px;background-color:#fff;border-radius: 5px" id="confirmBtnFalse">取消</button></div>'+
+						'</div>'+
+				'</div>';
+				$("body").append(s);
+		})
+	$(function(){
+		$(".btnsc").bind("click",function(){
+			console.log($(this).parent().find(".ppid").val());
+			$("#UpBox").find(".opid").val($(this).parent().find(".ppid").val());
+			console.log($("#UpBox").find(".opid").val());
+			$("#UpBox").fadeIn();
+		})
+		$("#firmBtn").bind("click",function(){
+			$("#UpBox").fadeOut();
+			$.ajax({
+				url:"{:U('/Index.php/Home/Info/lksc')}",
+				type:"get",
+				data:{id:$("#UpBox").find(".opid").val()},
+				dataType:"json",
+				success:function(data){
+				console.log(data);
+					if(data.status==1){
+					$.alert(data.msg,function(){
+					   location.href="/index.php/Home/Info/myjiaoyi";
+					});
+				    }else{
+					$.alert(data.msg);
+					}
+				},
+				error:function(){
+					$.alert("网络错误请重试");
+				}
+			})
+		})
+		$("#firmBtnFalse").bind("click",function(){
+			$("#UpBox").fadeOut();
+		})
+		})
+	</script>
+	<!-- 汇率转换 -->
+	<script>
+    $(function(){
+		$(".money").bind("click",function(){
+			var huilv=$(this).html();
+			$("#UpBox").fadeOut();
+			$.ajax({
+				url:"{:U('/Index.php/Home/Info/huilv')}",
+				type:"get",
+				data:{id:$("#UpBox").find(".opid").val(),huilv:huilv},
+				dataType:"json",
+				success:function(data){
+				console.log(data);
+					$.modal({
+                        title: data.name,
+                        text: "美元："+huilv+"<br>"+"人民币："+data.rmb+"<br>"+"比特币："+data.btc,
+                        buttons:[
+                            { text: "确定", className: "default", onClick: function(){ } },
+                        ]
+                    })
+				},
+				error:function(){
+					$.alert("网络错误请重试");
+				}
+			})
+		})
+		$("#firmBtnFalse").bind("click",function(){
+			$("#UpBox").fadeOut();
+		})
+		})
+</script>
+</body>
+</html>

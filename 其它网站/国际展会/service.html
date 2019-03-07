@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>展会服务_国外参展服务-外贸局指定展览平台-盈拓国际展览导航</title>
+        <meta name="keywords" content="展会服务,参展服务,组展公司,国外展会组展公司" />
+        <meta name="description" content="厦门盈拓展览公司是专业的国外展会组展公司,为国内企业赴境外参展提供专业展会咨询,并提供高效便捷周到的一条龙海外展会服务." />
+        <link rel="shortcut icon" type="images/x-icon" href="http://www.showguide.cn/favicon.ico">
+        <link rel="stylesheet" href="static/css/showguide_style.css" type="text/css" />
+        <link rel="stylesheet" href="static/css/getmsg.css" type="text/css" />
+        <link rel="stylesheet" href="static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/font-awesome-ie7.min.css">
+        <script src="static/js/setimg.js" type="text/javascript"></script>
+        <script src="static/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="static/js/jquery.jplaceholder.js" type="text/javascript"></script>
+        <script src="static/js/killie.js" type="text/javascript"></script>
+        <script src="static/js/regist_popup.js" type="text/javascript"></script>
+        <script src="static/js/base64.min.js" type="text/javascript"></script>
+        <script src="static/js/jquery.cookie.js" type="text/javascript"></script>
+        <script src="static/js/semtrack.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="topnav">
+                <div class="cen">
+                    <font class="floatleft">
+                        <a href="" target="_blank" rel="nofollow">
+                            <font class="col1">商务部外贸发展事务局</font></a>| 盈拓展览</font>
+                    <font class="floatright pr2">
+                        <font class="colth">|</font>
+                        <a href="" target="_blank" rel="nofollow">
+                            <font class="bule">外经贸专项资金申报入口
+                                <i class="fa fa-caret-right"></i></font>
+                        </a>
+                    </font>
+                    <font class="floatright" id="login_false">请
+                        <a target="_blank" href="" rel="nofollow">
+                            <font class="bule">登录</font></a>或
+                        <a target="_blank" href="" rel="nofollow">
+                            <font class="tn_zc">免费注册</font></a>
+                    </font>
+                    <div class="floatright" id="login_right" style="display:none;">
+                        <div class="dlyh">
+                            <a onMouseOut="ddd('dengh', 'hide');" onMouseOver="ddd('dengh', 'show');" href="javascript:void(0);" rel="nofollow">
+                                <div class="bule head_user_name floatleft pl1 pr1"></div>&nbsp;
+                                <i class="fa fa-angle-down"></i>&nbsp;</a>
+                            <div id="dengh" onMouseOut="ddd('dengh', 'hide');" onMouseOver="ddd('dengh', 'show');">
+                                <p class="h_bt">&nbsp;
+                                    <i class="fa fa-angle-down"></i>&nbsp;</p>
+                                <div class="clear"></div>
+                                <ul class="h_lm">
+                                    <li>
+                                        <a href="">会员中心</a></li>
+                                    <li>
+                                        <a href="">订单管理</a></li>
+                                    <li>
+                                        <a href="">我的Y币</a></li>
+                                    <li>
+                                        <a href="">退出</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <font class="floatright pl1">Hi,您好！</font>
+                    <font class="floatright">全球展览咨询电话：
+                        <font class="f14 bol cs">400-8855-088</font>
+                        <font class="pl2 colth">|</font></font>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="cen header_mid">
+                <div class="logo">
+                    <a href="index.html">
+                        <img alt="国际展览导航" src="static/picture/v3_sg_logo.png"></a>
+                </div>
+                <div class="h_right">
+                    <div class="sousuo">
+                        <form action="" method='get' id="searchForm">
+                            <input type="text" class="seach_text" placeholder="请输入搜索关键词..." value="" name="q" id="seach_text" autocomplete="off" />
+                            <div class="ss_wz">
+                                <a href="javascript:void(0)" rel="nofollow" data-search="港台" onClick="sugsearch(this)">港台</a>
+                                <a href="javascript:void(0);" rel="nofollow" data-search="东南亚" onClick="sugsearch(this)">东南亚</a>
+                                <a href="javascript:void(0);" rel="nofollow" data-search="一带一路" onClick="sugsearch(this)">一带一路</a></div>
+                            <input type="button" value="找展会" name="" onClick="checkForm()" class="submit_btn" id="checkSearch" /></form>
+                        <div class="clear"></div>
+                        <div class="t_seach_ts prompt2" id="t_seach_prompt">
+                            <div id="tj_error1_seach">
+                                <i class="fa fa-info-circle cs"></i>请输入搜索关键词,或者关键词不小于两个字符！</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="r_freeyy_ts prompt" id="t_seach_prompt2">
+                            <div id="tj_error2_seach">
+                                <i class="fa fa-info-circle cs"></i>包含特殊字符，请重新输入</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="t_seach_ts prompt2" id="t_seach_prompt3">
+                            <div id="tj_error3_seach">
+                                <i class="fa fa-info-circle cs"></i>您的搜索词太长，因为showguide的查询限制在30个字以内</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="seach_nr" class="seach_nr">
+                            <div class="seachnr_border">
+                                <div id="n_nr">
+                                    <div class="seach_l" id="n_history">
+                                        <p class="seach_n_tit">搜索历史</p>
+                                        <div class="clear"></div>
+                                        <div class="seach_n_pic">
+                                            <img src="static/picture/showg_38.png" alt="盈拓展览logo" width="88" height="61" /></div>
+                                        <div class="clear"></div>
+                                        <div class="seach_n_w">暂无搜索历史记录哦!</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="seach_l" id="y_history" style="display: none;">
+                                        <p class="seach_n_tit">搜索历史</p>
+                                        <div class="clear"></div>
+                                        <ul class="seach_ci" style="border-bottom: none;" id="y_history_info"></ul>
+                                        <div class="clear"></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="seach_r">
+                                        <div class="seach_hot_tit">热搜词</div>
+                                        <div class="clear"></div>
+                                        <div class="seach_hot_word">
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="一带一路" onClick="sugsearch(this)">一带一路</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="东南亚展会" onClick="sugsearch(this)">东南亚展会</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="迪拜big5" onClick="sugsearch(this)">迪拜big5</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="美国建材展" onClick="sugsearch(this)">美国建材展</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="建材展" onClick="sugsearch(this)">建材展</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="食品展" onClick="sugsearch(this)">食品展</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="汽配展" onClick="sugsearch(this)">汽配展</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="电子展" onClick="sugsearch(this)">电子展</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="包装展" onClick="sugsearch(this)">包装展</a>
+                                            <a href="javascript:void(0);" rel="nofollow" data-search="石材展" onClick="sugsearch(this)">石材展</a></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div id="y_nr" style="display: none;">
+                                    <ul class="seach_ci" id="suggestShow"></ul>
+                                    <div class="clear"></div>
+                                    <div class="seach_jg">共搜索到
+                                        <font class="red" id="suggestNum">0</font>条相关结果</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="floatright">
+                        <a href="" target="_blank" rel="nofollow">
+                            <img src="static/picture/sfqy.png"></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="header_menu">
+                <div class="navbox">
+                    <div id="nav-2015">
+                        <div id="navitems-2015">
+                            <li class="">
+                                <a href="index.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">首页</a>
+                            </li>
+                            <li class="">
+                                <font class="re_mai3">
+                                    <a href="yidaiyilu.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">一带一路</a>
+                                    <span class="rmbiao">
+                                        <img src="static/picture/showg_201.png"></span>
+                                </font>
+                            </li>
+                            <li class="">
+                                <a href="exhibition.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展会中心</a>
+                            </li>
+                            <li class="">
+                                <a href="build.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展台搭建</a>
+                            </li>
+                            <li class="">
+                                <a href="transport.html" rel="nofollow" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展品运输</a>
+                            </li>
+                            <li class="">
+                                <a href="lnvestigate.html" rel="nofollow" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">商务考察</a>
+                            </li>
+                            <li class="">
+                                <font class="re_mai3">
+                                    <a href="jh.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展商江湖</a>
+                                    <span class="rmbiao">
+                                        <img src="static/picture/new.png"></span>
+                                </font>
+                            </li>
+                            <li class="nav_baike" onmouseover="this.className='nav_baike on'" onmouseleave="this.className='nav_baike'">
+                                <a href="encyclopedias.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展会百科</a>
+                                <div class="nav_second">
+                                    <ul>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">参展经验</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">参展实务</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">出行攻略</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">签证知识</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">市场分析</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">行业分析</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">外贸资讯</a>
+                                        </li>
+                                        <li>
+                                            <a href="" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展会报道</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="onn">
+                                <a href="service.html" onclick="ga('send', 'event', '顶部导航条', '导航频道', this.href)">展会服务</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript" src="static/js/header.js"></script>
+        <script src="static/js/sg-ad.js" type="text/javascript"></script>
+        <div class="clear"></div>
+        <div class="clear"></div>
+        <div class="exp_service">
+            <div class="e_ser_top">
+                <div class="bcen">&nbsp;</div></div>
+            <div class="clear"></div>
+            <div class="cen">
+                <div class="e_ser_m01">
+                    <div class="e_ser_list marl4">
+                        <div class="esl_js">
+                            <p>150个行业展会最新资讯；</p>
+                            <p>200名展会顾问在线服务；</p>
+                            <p>智能检索展会，给您不一样的搜索体验。</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/aboutus/aboutus.html">盈拓公司简介</a></li>
+                            <li>
+                                <a href="/n/201011818.html">企业参加展会的十大好处</a></li>
+                            <li>
+                                <a href="/n/2010369.html">参展关键是展示企业信誉</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="e_ser_list marlser">
+                        <div class="esl_js">
+                            <p>近二万个国际展会随心选；</p>
+                            <p>多个国际大型展会的总代理商；</p>
+                            <p>千万客户共同的选择，下一个就是您！</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/20102203.html">五招教你如何选择外国展览会</a></li>
+                            <li>
+                                <a href="/n/20102094.html">企业选择优质展会的技巧</a></li>
+                            <li>
+                                <a href="/n/2010870.html">企业参加展会的基本流程</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="e_ser_list marlser">
+                        <div class="esl_js">
+                            <p>1500个展会项目的操作实战；</p>
+                            <p>100000平方米展台的搭建经验；</p>
+                            <p>携手80个国家搭建供应商倾力为您服务！</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/201011919.html">参展时必备的展台准备工作</a></li>
+                            <li>
+                                <a href="/n/2010232615.html">展台环境的注意事项</a></li>
+                            <li>
+                                <a href="/n/201011782.html">展台搭建有什么要注意的</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="e_ser_list marlser">
+                        <div class="esl_js">
+                            <p>80多个国家的签证操作经验；</p>
+                            <p>20000出团人员签证服务案例；</p>
+                            <p>凝聚最强签证服务团队，只为您的出行无忧！</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/2010264188.html">美国商务签证</a></li>
+                            <li>
+                                <a href="/n/2010264197.html">德国商务签证</a></li>
+                            <li>
+                                <a href="/n/2010264195.html">巴西商务签证</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="e_ser_m02">
+                    <div class="e_ser_list marl4">
+                        <div class="esl_js">
+                            <p>豪华任性的行程安排；</p>
+                            <p>宾至如归的展团服务；</p>
+                            <p>专业中文导游在外全程跟团；</p>
+                            <p>多年丰富经验，我们敢于让您任性！</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/2010264253.html">迪拜出行攻略</a></li>
+                            <li>
+                                <a href="/n/2010264247.html">澳大利亚出行攻略</a></li>
+                            <li>
+                                <a href="/n/2010264225.html">俄罗斯出行攻略</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="e_ser_list marlser">
+                        <div class="esl_js">
+                            <p>一份《出行手册》；</p>
+                            <p>一份《展团信息袋》；</p>
+                            <p>更有往返接送机的贴心安排；</p>
+                            <p>细节之处显真心，出行无忧找盈拓。</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/2010264429.html">出国参展产品运输的注意事项</a></li>
+                            <li>
+                                <a href="/n/2010362.html">国外参展注意知识产权使用</a></li>
+                            <li>
+                                <a href="/n/2010448.html">出国参展的外事纪律</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="e_ser_list marlser">
+                        <div class="esl_js">
+                            <p>每个布展、参展环节；</p>
+                            <p>专业展团服务从不缺席；</p>
+                            <p>展会现场精英领队全程协调；</p>
+                            <p>您的收获满满，源自我们的全心全意。</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/2010231666.html">展会现场需注意的五个事项</a></li>
+                            <li>
+                                <a href="/n/2010445.html">剖析展会现场买方心理</a></li>
+                            <li>
+                                <a href="/n/2010230294.html">如何给参观者留下深刻记忆</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="e_ser_list marlser">
+                        <div class="esl_js">
+                            <p>独创《展贸通》行业专刊；</p>
+                            <p>循环发放各大国际展会现场；</p>
+                            <p>打通国际市场、拓宽营销渠道；</p>
+                            <p>我们只专注于推动中国企业“走出去”！</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="/n/2010230388.html">展后如何及时跟进客户</a></li>
+                            <li>
+                                <a href="/n/20102216.html">展后怎样分类跟进不同客户</a></li>
+                            <li>
+                                <a href="/n/20102089.html">如何做好展览后续工作</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="bottom_serv">
+            <div class="serv">
+                <div class="serv_l">
+                    <div class="l_nr">
+                        <img src="static/picture/v3_sg_10.png" />
+                        <p class="pk_1">商务部外贸发展事务局
+                            <br />
+                            <font class="bol">指定国际展览公共信息服务平台</font></p>
+                    </div>
+                </div>
+                <div class="serv_l">
+                    <div class="l_nr">
+                        <img src="static/picture/v3_sg_11.png" />
+                        <p class="pk_2">业务辐射
+                            <br />
+                            <font class="bol">100个国家200个行业</font></p>
+                    </div>
+                </div>
+                <div class="serv_l">
+                    <div class="l_nr">
+                        <img src="static/picture/v3_sg_12.png" />
+                        <p class="pk_3">200名专属展会顾问
+                            <br />
+                            <font class="bol">一对一服务</font></p>
+                    </div>
+                </div>
+                <div class="serv_l" id="bor_rnone">
+                    <div class="l_nr" id="bor_rnone">
+                        <img src="static/picture/v3_sg_13.png" />
+                        <p class="pk_4">行程安排
+                            <br />
+                            <font class="bol">媲美优秀旅游公司</font></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <script src="static/js/footer.js" type="text/javascript"></script>
+        </div>
+        <script type="text/javascript" src="static/js/setimg.js"></script>
+        <script type="text/javascript" src="static/js/change.js"></script>
+        <script type="text/javascript" src="static/js/jquery-ui.js"></script>
+        <div class="rides-cs">
+            <div class="floatL">
+                <script src="static/js/mid_right_leftnav.js" type="text/javascript"></script>
+            </div>
+            <div id="zx_view" class="floatR" style="display:none">
+                <div id="floatR_back">&nbsp;</div>
+                <div id="r_service" style="display:none">
+                    <div class="r_head">
+                        <div class="service_bg">
+                            <div class="rh_pd">
+                                <a onclick="min_right_close()" id="min_right_close" href="javascript:void(0);">x</a>
+                                <div class="clear"></div>
+                                <p class="rh_tit">欢迎登陆客服系统</p>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="r_connr">
+                        <div class="content2">
+                            <div class="service_sr space1">
+                                <input name="" type="text" id="sr_nr" placeholder="会员账号" value="" class="r_l_account" />
+                                <i class="fa fa-user"></i>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="service_sr space6">
+                                <input name="" type="text" id="indexpasstext" placeholder="会员密码" onfocus="changeType(this);" value="" class="r_l_password_new" />
+                                <input name="" type="password" style="display:none;" id="indexpassword" placeholder="会员密码" onfocus="changeType(this);" value="" class="r_l_password" />
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <p class="space1 tar bule floatright">
+                                <a href="javascript:void(0)">&nbsp;</a></p>
+                            <div class="clear"></div>
+                            <div class="space3">
+                                <input name="" type="button" onclick="doLogin()" id="sumbit_cs" value="登 录" /></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="r_sub_ts prompt" id="r_log_prompt">
+                        <div id="tj_success_log">
+                            <i class="fa fa-check-circle green"></i>提交成功</div>
+                        <div id="tj_error1_log">
+                            <i class="fa fa-info-circle cs"></i>请输账号</div>
+                        <div id="tj_error2_log">
+                            <i class="fa fa-info-circle cs"></i>请输密码</div>
+                        <div id="tj_check_log">
+                            <i class="fa fa-info-circle cs"></i>用户名或密码错误</div>
+                        <div id="tj_wrong_log">
+                            <i class="fa fa-info-circle red"></i>网络错误</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="r_message" style="display:none">
+                    <div class="r_head">
+                        <div class="message_bg">
+                            <div class="rh_pd">
+                                <a onclick="min_right_close()" id="min_right_close" href="javascript:void(0);">x</a>
+                                <div class="clear"></div>
+                                <p class="rh_tit">留言咨询</p>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="r_connr">
+                        <div class="">
+                            <div class="message_sr2 space1">
+                                <textarea name="r_m_content" id="sr_nr2" placeholder="请说明您要咨询的展会或其它内容(必填)" value="" class="r_m_content"></textarea>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message_sr space4">
+                                <input name="r_m_company" type="text" id="sr_nr" placeholder="公司名称(必填)" value="" class="r_m_company" />
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message_sr space4">
+                                <input name="r_m_contact" type="text" id="sr_nr" placeholder="联系人(必填)" value="" class="r_m_contact" />
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message_sr space4">
+                                <input name="r_m_tel" type="text" id="sr_nr" placeholder="联系电话(必填)" value="" class="r_m_tel" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="if (this.v) {this.v();}" />
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="lytj_lan">
+                                <a href="javascript:void(0);" id="tq" onclick="ga('send', 'event', '留言咨询', '提交');">
+                                    <input name="" type="button" onclick="sendMessage()" id="sumbit_cs" value="提交"></a>
+                                <input name="" type="button" id="sumbit_hs" value="取消" class="marl1" onclick="cancelMessage()"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="r_sub_ts prompt" id="r_msg_prompt">
+                        <div id="tj_success_msg">
+                            <i class="fa fa-check-circle green"></i>提交成功</div>
+                        <div id="tj_error1_msg">
+                            <i class="fa fa-info-circle cs"></i>请填咨询内容</div>
+                        <div id="tj_error2_msg">
+                            <i class="fa fa-info-circle cs"></i>请填公司名称</div>
+                        <div id="tj_error3_msg">
+                            <i class="fa fa-info-circle cs"></i>请填联系人</div>
+                        <div id="tj_error4_msg">
+                            <i class="fa fa-info-circle cs"></i>请填正确联系方式</div>
+                        <div id="tj_error5_msg">
+                            <i class="fa fa-info-circle cs"></i>请勿重复提交</div>
+                        <div id="tj_wrong_msg">
+                            <i class="fa fa-check-circle red"></i>网络错误</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="r_help" style="display:none;">
+                    <div class="r_head">
+                        <div class="help_bg">
+                            <div class="rh_pd">
+                                <a onclick="min_right_close()" id="min_right_close" href="javascript:void(0);">x</a>
+                                <div class="clear"></div>
+                                <div class="r_help_tit">帮助中心</div>
+                                <div class="clear"></div>
+                                <div class="r_help_seach">
+                                    <input name="" type="text" id="h_seach_nr" value="" placeholder="搜索您想要的帮助内容" />
+                                    <input name="" type="button" onclick="search()" id="h_seach_ok" value="" />
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="col4">
+                                    <p class="resou">
+                                        <font class="rs_bt">热搜:</font>
+                                        <a onclick="searchHelp(this)" href="javascript:void(0)">美国签证</a>
+                                        <a onclick="searchHelp(this)" href="javascript:void(0)">德国签证</a>
+                                        <a onclick="searchHelp(this)" href="javascript:void(0)">商务签证</a></p>
+                                    <div class="clear"></div>
+                                    <div class="h_seach_g"></div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="r_connr">
+                        <div id="help_default">
+                            <p class="tac f14 col2">--------- 常见问题 ---------</p>
+                            <div class="clear"></div>
+                            <p class="tac tcon3">
+                                <a href="http://www.showguide.cn/n/2010265041.html" target="_blank">
+                                    <img src="static/picture/showg_73.png" width="208" height="28" /></a>
+                            </p>
+                            <div class="clear"></div>
+                            <p class="r_help_wttit space5">签证问题</p>
+                            <ul class="r_h_u space1" id="passportQuestion1"></ul>
+                        </div>
+                        <div id="help_nothing" style="display:none;">
+                            <p class="tac f16">抱歉，未找到相关信息！</p>
+                            <p class="tac col2">温馨提示：请检查您的输入是否正确</p>
+                            <div class="clear"></div>
+                            <div class="r_help_hot">热门搜索问题</div>
+                            <div class="clear"></div>
+                            <p class="tac tcon3">
+                                <a href="http://www.showguide.cn/n/2010265041.html" target="_blank">
+                                    <img src="static/picture/showg_73.png" width="208" height="28" /></a>
+                            </p>
+                            <div class="clear"></div>
+                            <p class="r_help_wttit space5">签证问题</p>
+                            <ul class="r_h_u space1" id="passportQuestion2"></ul>
+                        </div>
+                        <div id="help_have" style="display:none;">
+                            <div class="r_help_havek" id="r_help_havek">
+                                <ul class="r_h_u" id="help_have_l"></ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="r_help_havenum" id="r_help_havenum">
+                                <span>
+                                    <a href="javascript:void(0);">点击加载更多</a></span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="r_sub_ts prompt" id="r_help_prompt" style="margin-top:30px;">
+                        <div id="tj_wrong_help">
+                            <i class="fa fa-check-circle red"></i>网络错误</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div onclick="min_right_close()" id="grey_back">&nbsp;</div>
+        <script src="static/js/freeyy_view.js" type="text/javascript"></script>
+        <script src="static/js/mid_right.js" type="text/javascript"></script>
+    </body>
+
+</html>

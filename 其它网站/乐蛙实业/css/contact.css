@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.div_right{margin: 0 0 0 3em;}
+.contact_content img{width: 100%;}
+.form_div{background:url(../img/contact_img.png)no-repeat;background-size:cover; padding: 1em 5em 5em 5em;}
+.form_div label{color: #fff; font-size: 24px;font-weight: 500;line-height: 80px;}
+.form_div .form-control{background-color: transparent; border-radius: 15px;color: #fff;}
+.form_div textarea.form-control {height: 160px;}
+.form_div button{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    width: 190px;
+    padding: 15px 0 15px 0;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid #EC3C59;
+    background: #EC3C59;
+}
+.contact_right .glyphicon{color: #EC3C59;font-size: 50px;}
+.contact_right small{
+	font-size: 16px;
+	color: #666;    
+	margin: -70px 0 10px 80px;
+    display: block;
+}
+.contact_right p{font-size: 22px;color: #333;margin: 0 0 0 80px;}
+.contact_right ul li{padding: 65px 0 0 60px;}
+
