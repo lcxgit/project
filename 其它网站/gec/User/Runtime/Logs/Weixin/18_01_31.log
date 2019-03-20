@@ -1,9 +1,0 @@
-[ 2018-01-31T15:10:00+08:00 ] 127.0.0.1 /Index.php/Weixin/User/enreg/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
-ERR: SQLSTATE[HY000] [1045] Access denied for user 'xnb_gecs'@'localhost' (using password: YES)
-

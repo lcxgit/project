@@ -1,9 +1,0 @@
-$(function(){
-	//推荐控制 
-	$("#yaoqing").click(function(){
-		$("#share").show(500);
-	})
-	$("#share").click(function(){
-		$(this).hide(500);
-	})
-})
