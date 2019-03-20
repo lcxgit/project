@@ -1,0 +1,1194 @@
+@charset "utf-8";
+
+/*font-awesome 字体*/
+@import url("font-awesome.4.7.0.css");
+/*font-awesome 字体*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300,400,500,600,700|Yesteryear');*/
+/* CSS Document */
+&nbsp;/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*滚动条*/
+::-webkit-scrollbar {width:8px;height:8px;background-color:#f5f5f5}
+::-webkit-scrollbar-track {
+  border-radius:10px;
+  background-color:#f5f5f5;
+  box-shadow:inset 0 0 1px transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background-color:#555;
+  box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+}
+::-ms-clear,::-ms-reveal {display:none;}
+::-ms-expand {display:none;}
+/*滚动条*/
+
+:root{
+  --bg_fff: #fff;
+  --bg_f5: #f5f5f5;
+
+  --color: #8db1a5;
+  --color2: #273636;
+  --color_999: #999;
+  --color_666: #666;
+  --color_333: #333;
+  --color_ccc: #ccc;
+  --color_fff: #fff;
+
+  --size_12: 12px;
+  --size_13: 13px;
+  --size_14: 14px;
+  --size_15: 15px;
+  --size_16: 16px;
+  --size_17: 17px;
+  --size_18: 18px;
+  --size_19: 19px;
+  --size_20: 20px;
+  --size_21: 21px;
+  --size_22: 22px;
+  --size_23: 23px;
+  --size_24: 24px;
+  --size_25: 25px;
+  --size_30: 30px;
+
+  --p_text_2: 2;
+  --p_text_3: 3;
+  --p_text_4: 4;
+  --p_text_5: 5;
+  --p_text_6: 6;
+  --p_text_7: 7;
+  --p_text_8: 8;
+  --p_text_9: 9;
+  --p_text_10: 10;
+
+  --text_left:left;
+  --text_center:center;
+  --text_right:right;
+
+  --padding_0: 0px;
+  --padding_5: 5px;
+  --padding_10: 10px;
+  --padding_15: 15px;
+  --padding_20: 20px;
+  --padding_30: 30px;
+  --padding_50: 50px;
+  
+  --padding_t5: 5px 0 0 0;
+  --padding_t10: 10px 0 0 0;
+  --padding_t15: 15px 0 0 0;
+  --padding_t20: 20px 0 0 0;
+  --padding_t30: 30px 0 0 0;
+  --padding_t50: 50px 0 0 0;
+
+  --padding_b5: 0 0 5px 0;
+  --padding_b10: 0 0 10px 0;
+  --padding_b15: 0 0 15px 0;
+  --padding_b20: 0 0 20px 0;
+  --padding_b30: 0 0 30px 0;
+  --padding_b50: 0 0 50px 0;
+  
+  --padding_tb10: 10px 0;
+  --padding_tb20: 20px 0;
+  --padding_tb30: 30px 0;
+  --padding_tb50: 50px 0;
+  --padding_tb100: 100px 0;
+
+  --margin_0: 0px auto;
+  --margin_5: 5px auto;
+  --margin_10: 10px auto;
+  --margin_15: 15px auto;
+  --margin_20: 20px auto;
+  --margin_30: 30px auto;
+  --margin_50: 50px auto;
+  --margin_100: 100px auto;
+
+  --margin_b5: 0px 0px 5px 0px;
+  --margin_b10: 0px 0px 10px 0px;
+
+  --margin_t5: 5px 0px 0px 0px;
+  --margin_t10: 10px auto 0px;
+  --margin_t15: 15px auto 0px;
+  --margin_t20: 20px auto 0px;
+  --margin_t30: 30px auto 0px;
+  --margin_t50: 50px auto 0px;
+
+  --margin_b10: 0px auto 10px;
+  --margin_b15: 0px auto 15px;
+  --margin_b20: 0px auto 20px;
+  --margin_b30: 0px auto 30px;
+  --margin_b50: 0px auto 50px;
+
+  --width_1200px: 1200px;
+  --width_100: 100%;
+  --height_0: auto;
+}
+
+/*.xxx{color:var(--color);}*/
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+*{margin: 0;padding: 0;}
+html {
+  -webkit-text-size-adjust: 100%;/*chrome字体问题*/
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+}
+/*IE6对positon:fixed的单独处理修正IE6滚动抖动的bug*/
+*html,*html body{
+  background-image:url(about:blank);/*修正IE6滚动抖动的bug*/
+  background-attachment: fixed;/*根据自己实际，非必需*/
+}
+html, body{width: 100%;height: 100%;}
+/*body{overflow-x: hidden;}*/
+div {box-sizing: border-box;}
+@font-face {
+  font-family: "icomoon";
+  src: url('../fonts/icomoon.ttf') format('TrueType'); 
+}
+@font-face {
+  font-family: "SourceHanSansCN-Regular";
+  src: url('../fonts/SourceHanSansCN-Regular.otf') format('OpenType'); 
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+  /*font-family: "思源黑体","SourceHanSansCN-Regular" !important;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15px;
+  line-height:25px;
+  color: #666;
+  outline: none;
+}
+input, select, textarea {font-size: 100%;padding-left:10px;}
+/* 去掉各Table cell 的边距并让其边重合 */
+table {border-collapse: collapse;border-spacing: 0;}
+/* IE bug fixed: th 不继承 text-align*/
+th {text-align: inherit;}
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th {text-align: left;}
+/* 去除默认边框 */
+fieldset, img {border: none;outline: none;-moz-outline:none;}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {display: block;}
+/* 去掉列表前的标识, li 会继承 */
+ol, ul, li {list-style: none;}
+/* 一致的 del 样式 */
+del {text-decoration: line-through;}
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: 500;}
+/* 统一上标和下标 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+/* 默认不显示下划线，保持页面简洁 */
+ins, a {text-decoration: none;}
+/* 让链接在 hover 状态下显示下划线 */
+a {
+  color: #666;
+  cursor: pointer;
+  outline: none;
+  outline: none;
+  text-decoration: none;
+  blr:expression(this.onFocus=this.blur());
+}
+a:hover, a:focus {text-decoration: none !important;color: #333;}
+
+/* 清理浮动 */
+.clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfloat {zoom: 1;} /* for IE6 IE7 */
+.overflow{overflow: hidden;}
+.display{display: block;}
+.none {display: none;}
+.font-weight{font-weight: bold;}
+/* 设置内联, 减少浮动带来的bug */
+.floatLeft {float: left;}
+.floatRight {float: right;}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+/*设置图片视频等自适应*/
+audio, canvas, video {display: inline-block;*display: inline;*zoom: 1;}
+.video embed, .video object, .video iframe{width: 100%;height: auto;}
+/*设置图片视频等自适应*/
+img{display: block;max-width: var(--width_100);margin: var(--margin_0)}
+/* 去掉 firefox 下此元素的边框 */
+abbr, acronym {border: 0;font-variant: normal;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: 500;}
+
+
+/*nav icon*/
+/*.header_navbar .active .icon_a{
+  transform:translate(0,40px);
+  -webkit-transform:translate(0,40px);
+  -moz-transform:translate(0,40px);
+  -o-transform:translate(0,40px);
+  -ms-transform:translate(0,40px);
+}
+.header_navbar .active:hover .icon_a{
+  transform:translate(0,-1px);
+  -webkit-transform:translate(0,-0px);
+  -moz-transform:translate(0,-0px);
+  -o-transform:translate(0,-0px);
+  -ms-transform:translate(0,-0px);
+}
+
+.header_navbar .active.nav_icon_a:nth-child(1) .nav_a{
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/home_icon_1.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(1) .nav_a{
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/home_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active.nav_icon_a:nth-child(2) .nav_a{
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/product_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(2) .nav_a{
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/product_icon_1.png) 0 center no-repeat;
+}
+.header_navbar .active.nav_icon_a:nth-child(3) .nav_a{
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/activity_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(3) .nav_a{
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/activity_icon_1.png) 0 center no-repeat;
+}
+.header_navbar .active.nav_icon_a:nth-child(4) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/case_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(4) .nav_a {
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/case_icon_1.png) no-repeat 0 center;
+}
+.header_navbar .active.nav_icon_a:nth-child(5) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/about_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(5) .nav_a {
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/about_icon_1.png) no-repeat 0 center;
+}
+.header_navbar .active.nav_icon_a:nth-child(6) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/news_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(6) .nav_a {
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/news_icon_1.png) no-repeat 0 center;
+}
+.header_navbar .active.nav_icon_a:nth-child(7) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/contact_icon_2.png) 0 center no-repeat;
+}
+.header_navbar .active:hover.nav_icon_a:nth-child(7) .nav_a {
+  transform:translate(0,1px);
+  -webkit-transform:translate(0,0px);
+  -moz-transform:translate(0,0px);
+  -o-transform:translate(0,0px);
+  -ms-transform:translate(0,0px);
+  background:url(../img/contact_icon_1.png) no-repeat 0 center;
+}
+
+.icon_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+}
+.nav_icon_a:hover .icon_a {
+  transform:translate(0,40px);
+  -webkit-transform:translate(0,40px);
+  -moz-transform:translate(0,40px);
+  -o-transform:translate(0,40px);
+  -ms-transform:translate(0,40px);
+}
+
+.nav-item.nav_icon_a:nth-child(1) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/home_icon_2.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(1) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/home_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+
+}
+.nav-item.nav_icon_a:nth-child(2) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/product_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(2) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/product_icon_2.png) 0 center no-repeat;
+  margin:0 auto;
+}
+.nav-item.nav_icon_a:nth-child(3) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/activity_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(3) .nav_a {
+  transform:translate(0,-40px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/activity_icon_2.png) no-repeat 0 center;
+  margin:0 auto;
+}
+.nav-item.nav_icon_a:nth-child(4) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/case_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(4) .nav_a {
+  transform:translate(0,-50px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/case_icon_2.png) no-repeat 0 center;
+  margin:0 auto;
+}
+.nav-item.nav_icon_a:nth-child(5) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/about_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(5) .nav_a {
+  transform:translate(0,-50px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/about_icon_2.png) no-repeat 0 center;
+  margin:0 auto;
+}
+.nav-item.nav_icon_a:nth-child(6) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/news_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(6) .nav_a {
+  transform:translate(0,-50px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/news_icon_2.png) no-repeat 0 center;
+  margin:0 auto;
+}
+.nav-item.nav_icon_a:nth-child(7) .nav_a {
+  transition:all .4s ease-in-out;
+  -webkit-transition:all .4s ease-in-out;
+  -moz-transition:all .4s ease-in-out;
+  -o-transition:all .4s ease-in-out;
+  background:url(../img/contact_icon_1.png) 0 center no-repeat;
+  margin:0 auto;
+  width:35px;
+}
+.nav-item:hover.nav_icon_a:nth-child(7) .nav_a {
+  transform:translate(0,-50px);
+  -webkit-transform:translate(0,-40px);
+  -moz-transform:translate(0,-40px);
+  -o-transform:translate(0,-40px);
+  -ms-transform:translate(0,-40px);
+  background:url(../img/contact_icon_2.png) no-repeat 0 center;
+  margin:0 auto;
+}*/
+/*nav icon*/
+
+/*top*/
+#scrollUp {
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  bottom: 22px;
+  color: #fff;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #719366;
+}
+#scrollUp:hover{background: rgba(113, 147, 102, 0.57);}
+/*top*/
+
+
+/*按钮动画*/
+.btn_more_a{ 
+  position: relative; 
+  overflow: hidden;
+  display: block; 
+  width: 150px; 
+  height: 50px; 
+  color: #fff; 
+  line-height: 20px; 
+  text-align: center; 
+  border: 1px solid #fff;
+}
+.btn_more_a:before{ 
+  content: "";
+  background: #000;
+  position: absolute;   
+  left: -100%; 
+  top: 0; 
+  z-index: 0; 
+  width: 100%; 
+  height: 100%; 
+  transition: all 0.6s ease 0s; 
+  -webkit-transition: all 0.6s ease 0s; 
+  -moz-transition: all 0.6s ease 0s; 
+  -o-transition: all 0.6s ease 0s;
+}
+.btn_more_a:hover:before{ left: 0;}
+.btn_more_a .small{ 
+  line-height: 45px;
+  position: absolute; 
+  z-index: 1;  
+  left: 0; 
+  top: 0;
+  text-align: center; 
+  height: 100%; 
+  width: 100%;
+  transition: all 0.6s ease 0s; 
+  -webkit-transition: all 0.6s ease 0s; 
+  -moz-transition: all 0.6s ease 0s; 
+  -o-transition: all 0.6s ease 0s;
+}
+.btn_more_a:hover .small{color:#fff;}
+/*<a class="btn_more_a" href="javascript:;"><small class="small">more+</small></a>*/
+
+.button{  
+    overflow: hidden;
+    color: #fff;
+    background-color: #000;
+    -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+  padding: 0 26px 0 27px;
+  line-height: 45px;
+  text-decoration: none;
+}
+.button:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+}
+/*<a class="button" href="javascript:;"><small class="small">more+</small></a>*/
+/*按钮动画*/
+
+/*禁止文字复制*/
+.prohibit_text{-moz-user-select: none; -khtml-user-select: none; user-select: none;}
+/*图片放大*/
+.list_img {
+  /*width: 100%;*/
+  overflow: hidden;
+}
+.list_img img {
+  width: 100%;
+  transition: 3s all;
+  -webkit-transition: 3s all;
+}
+.list_img:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+/*图片放大*/
+/*图片向上动*/
+.list_box_shadow {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  overflow: hidden;
+}
+.list_box_shadow:hover {
+  /*box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);*/
+  box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -5px, 0);
+  -webkit-transform: translate3d(0, -5px, 0);
+}
+/*图片向上动*/
+/*图片向下动*/
+.img_profile { 
+  transform: translateZ(0px);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.img_profile:hover {
+    transform: translateY(15px);
+    /*box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);*/
+}
+/*图片向下动*/
+
+/*鼠标滚动轮 图标*/
+.mouse_icon_bg{
+  background: #000;
+  width: 40px;
+  height: 180px;
+  float: right;
+  margin-top: -600px;
+  /*position: absolute;
+  right: 300px;
+  top: 200px;*/
+}
+.mouse_icon_p{
+  font-size: 14px;
+  color: #fff;
+  width: 25px;
+  text-align: center;
+  margin: 10px 0 0 10px;
+}
+.mouse_icon {
+  border: 2px solid #fff;
+  border-radius: 16px;
+  height: 40px;
+  width: 25px;
+  margin: 10px 0 0 10px;
+  display: block;
+  z-index: 10;
+  opacity: 0.8;
+  animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;
+  -webkit-animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;
+}
+.mouse_icon .wheel {
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.mouse_icon .wheel {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 2px;
+  height: 6px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+/*<div class="mouse_icon_bg">
+            <p class="mouse_icon_p">滚动鼠标</p>
+            <div class="mouse_icon">
+              <div class="wheel"></div>
+            </div>
+          </div>
+*/
+/*鼠标滚动轮 图标*/
+
+/*图标上下跳动*/
+
+.arrow_more {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  animation: shake 1s infinite ease-in-out;
+  -o-animation: shake 1s infinite ease-in-out;
+  -webkit-animation: shake 1s infinite ease-in-out;
+  -moz-animation: shake 1s infinite ease-in-out;
+}
+@keyframes shake {
+  0%,100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,100% {
+      -webkit-transform: translateY(0);
+  }
+
+  50% {
+      -webkit-transform: translateY(-5px);
+  }
+}
+/*<div class="arrow_more">arrow_more</div>*/
+
+.arrow{ 
+  opacity:1;
+  animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;
+  -webkit-animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;
+  transform:rotate(-90deg);
+  -webkit-transform:rotate(-90deg); 
+  border-radius:100%;
+  -webkit-border-radius:100%;
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  width:60px;
+  height:60px;
+  line-height:60px;
+  margin-left:-30px;
+  text-align:center;
+  font-size:20px;
+  color:#000;
+  border:1px solid #000;
+  cursor:pointer;
+  overflow:hidden;
+}
+.arrow:hover{animation-play-state:paused;-webkit-animation-play-state:paused;}
+@keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5} }
+@-webkit-keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5} }
+/*<div class="arrow">arrow</div>*/
+
+.slider_more {
+  position: absolute;
+  z-index: 9;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  animation: slider_down 0.8s infinite ease-in-out;
+  -o-animation: slider_down 0.8s infinite ease-in-out;
+  -webkit-animation: slider_down 0.8s infinite ease-in-out;
+  -moz-animation: slider_down 0.8s infinite ease-in-out;
+}
+
+@keyframes slider_down {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@-webkit-keyframes slider_down {
+    0%,100% {
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+/*<div class="slider_more">slider_more</div>*/
+/*图标上下跳动*/
+
+/*下滑线*/
+.underline {
+  font-size: 30px;
+  display:inline-block;
+  position:relative;
+  cursor:pointer;
+  text-decoration:none;
+  border:none!important;
+  transition: 0.5s;
+}
+.underline:before {
+  position:absolute;
+  bottom:0;
+  left:0;
+  content:'';
+  height:1px;
+  width:100%;
+  background:#000;
+  -webkit-transform:scaleX(0);
+  transform:scaleX(0);
+  -webkit-transform-origin:left;
+  transform-origin:left;
+  transition:.4s -webkit-transform cubic-bezier(.77,0,.175,1);
+  transition:.4s transform cubic-bezier(.77,0,.175,1);
+}
+.underline:hover{text-decoration:none;}
+.underline:hover:before {-webkit-transform:scaleX(1);transform:scaleX(1);}
+/*<a href="product.html" class="underline">产品方案</a>*/
+/*下滑线*/
+
+/*图片上下动*/
+.anyway .item {
+  background: #000;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.anyway_img {
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.35s cubic-bezier(0.4,0,0,1) 0s;
+  animation: anyway-floating 6s ease-out 0s infinite alternate-reverse;
+}
+@keyframes anyway-floating {
+  0% {
+    transform:translateY(-2rem)
+  }
+  100% {
+    transform:translateY(2rem)
+  }
+}
+.anyway_img_1{
+  top: 50%;
+  width: 11%;
+  left: 62%;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+.anyway_img_2 {
+  top: 10%;
+  width: 21%;
+  left: 74%;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+.anyway_img_3 {
+  top: 0;
+  width: 16%;
+  left: 6%;
+  opacity: .5;
+  animation-delay: 0.5s;
+  animation-duration: 8s;
+}
+/*
+<article class="anyway">
+      <div class="item">
+          <img src="http://s.anw.red/iconmoon-2017/images/anyway-1.png" class="anyway_img anyway_img_1">
+          <img src="http://s.anw.red/iconmoon-2017/images/anyway-2.png" class="anyway_img anyway_img_2">
+          <img src="http://s.anw.red/iconmoon-2017/images/anyway-3.png" class="anyway_img anyway_img_3">
+    </div>
+  </article>
+ */
+/*图片上下动*/
+
+/*底部边框动画向右滑动*/
+.list_a {padding: 20px;}
+.item_a {color: #333;text-decoration: none;}
+.item_a:hover{text-decoration: none;color: #fff;}
+.item_a .item_text_img {
+  width: 400px;
+  align-items:center;
+  position:relative;
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  -webkit-transition:width 4s cubic-bezier(.19,1,.22,1);
+  transition:width 4s cubic-bezier(.19,1,.22,1);
+}
+.item_a .item_text_img:after,.item_a .item_text_img:before {
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  height:1px;
+  opacity:1;
+  width:0;
+  background-color:#000;
+  -webkit-transition:width 4s cubic-bezier(.19,1,.22,1);
+  transition:width 4s cubic-bezier(.19,1,.22,1);
+}
+.item_a:hover .item_text_img,.item_a:hover .item_text_img:after {width:100%;}
+.item_a .item_text_img img {height: 50px;}
+.item_a .item_text_img .title {font-size: 20px;color:#000;margin:0 0 0 0;}
+
+/*
+<div class="list_a">
+            <a href="javascript:;" class="item_a">
+                <div class="item_text_img">
+                    <span class="title">底部边框动画向右滑动</span>
+                    <img src="images/cat.png" alt="底部边框动画向右滑动" />
+                </div>
+            </a>
+        </div>
+ */
+/*底部边框动画向右滑动*/
+
+/*从左到右的背景颜色动画*/
+.link {
+ display:inline-block;
+ position:relative;
+ padding: 10px 50px;
+ margin: 0 auto;
+ font-size:15px;
+ font-weight:600;
+ letter-spacing:3.6px;
+ text-transform:uppercase;
+ background-color:#6fd8d5;
+ border:0;
+ color:#fff;
+ cursor:pointer;
+ transform:perspective(1px) translateZ(0);
+}
+.link:before {
+ content:"";
+ position:absolute;
+ top:0;
+ right:0;
+ bottom:0;
+ left:0;
+ z-index:-1;
+ background:#f96;
+ transform:scaleX(0);
+ transform-origin:0 50%;
+ transition:transform .5s ease-out
+}
+.link:hover:before {
+ transform:scaleX(1);
+ transition-timing-function:cubic-bezier(.52,1.64,.37,.66)
+}
+/*<h2 class="link">h2</h2>*/
+/*从左到右的背景颜色动画*/
+
+/*从左到右的线动画 1*/
+.link_a{
+  background-image:linear-gradient(transparent calc(100% - 1px),#b2b2b2 1px);
+  background-repeat:no-repeat;
+  background-size:0 100%;
+  transition:background-size .2s;
+  color: #333;
+  font-size: 15px;
+}
+.link_a:hover{background-size:100% 100%;}
+/*<a class="link_a" href="">aaaaa</a>*/
+/*从左到右的线动画 1*/
+
+/*从左到右的线动画 2*/
+.before_a:before {
+  width: 0;
+  display: block;
+  background: #000;
+  height: 1px;
+  content: '';
+  margin: 0 0 5px;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  left: 2vw;
+  transition: 0.25s ease-in-out;
+}
+.before_a:hover:before {width: 1vw;transition: 0.25s ease-in-out;}
+/*<h3><a class="before_a" href="">before_a</a><h3>*/
+/*从左到右的线动画 2*/
+
+/*文字从左到右动画*/
+.title_left:hover span {
+    margin-left: 4vw;
+    margin-right: 0vw;
+    transition: 0.25s ease-in-out;
+}
+.title_left span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: left;
+    transform: translateX(0vw) translateY(-50%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-left: 2vw;
+    right: 2vw;
+}
+/*<a href=""><span>title_left</span></a>*/
+/*文字从左到右动画*/
+
+/*边框动画*/
+.border_item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition: ease .65s;
+}
+.border_item:after { 
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: ease .65s;
+}
+.border_item:hover:before {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  border-top: 3px solid #0448e2;
+  border-left: 3px solid #0448e2;
+} 
+.border_item:hover:after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  border-right: 3px solid #0448e2;
+  border-bottom: 3px solid #0448e2;
+}
+
+/*按钮动画 背景从左到右，鼠标移开是向右移出*/
+.more_a_i {
+  font-family:'Archivo Narrow';
+  font-weight:400;
+  font-size: 15px;
+  color: #333;
+  letter-spacing: 2;
+  position:relative;
+  display:inline-block;
+  padding: 10px 20px;
+  background-color:rgba(0,0,0,0.08);
+  -webkit-transition:color ease-out .3s;
+  transition:color ease-out .3s;
+}
+.more_a_i:hover {color:#fff;}
+.more_a_i::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  display:block;
+  width:100%;
+  height:100%;
+  background-color:#000;
+  -webkit-transform:scale(0,1);
+  transform:scale(0,1);
+  -webkit-transform-origin:right;
+  transform-origin:right;
+  -webkit-transition:-webkit-transform ease-out .3s;
+  transition:-webkit-transform ease-out .3s;
+  transition:transform ease-out .3s;
+  transition:transform ease-out .3s,-webkit-transform ease-out .3s;
+}
+.more_a_i:hover::before {
+  -webkit-transform:scale(1,1);
+  transform:scale(1,1);
+  -webkit-transform-origin:left;
+  transform-origin:left;
+}
+
+.more_a_i span {
+  position:relative;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  height:100%;
+}
+.more_a_i span i {
+  position:relative;
+  display:block;
+  width:50px;
+  height:1px;
+  background-color:rgba(0,0,0,0.2);
+  margin-left:20px;
+  overflow:hidden;
+}
+.more_a_i span i::before {
+  content:"";
+  display:block;
+  width:20px;
+  height:1px;
+  background-color:#000;
+  -webkit-transform:translate(30px,0);
+  transform:translate(30px,0);
+}
+.more_a_i:hover span i::before {
+  -webkit-transform:translateX(30px);
+  transform:translateX(30px);
+}
+.more_a_i span i::after {
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  display:block;
+  width:100%;
+  height:1px;
+  display:block;
+  -webkit-transform:scale(0,1);
+  transform:scale(0,1);
+  -webkit-transform-origin:right;
+  transform-origin:right;
+  background-color:#fff;
+  -webkit-transition:-webkit-transform ease-out .3s .2s;
+  transition:-webkit-transform ease-out .3s .2s;
+  transition:transform ease-out .3s .2s;
+  transition:transform ease-out .3s .2s,-webkit-transform ease-out .3s .2s;
+}
+.more_a_i:hover span i::after {
+  -webkit-transform:scale(1,1);
+  transform:scale(1,1);
+  -webkit-transform-origin:left;
+  transform-origin:left;
+}
+/*<a class="more_a_i" href="javascript:;"><span>MORE<i></i></span></a>*/
+/*按钮动画 背景从左到右，鼠标移开是向右移出*/
+/*边框动画*/
