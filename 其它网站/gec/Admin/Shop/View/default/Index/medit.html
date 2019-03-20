@@ -1,0 +1,111 @@
+<!doctype html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>添加子菜单</title>
+	<link href="/sncss/css/style.css" rel="stylesheet" type="text/css" />  
+	
+</head>
+<style>
+.row-fluid {margin:10px;}
+.field-box {margin:10px 0;}
+.field-box label {padding-right:15px;}
+.span2 {border:1px solid #cdcdcd; width:50%; height:35px; line-height:35px; padding:0 15px;}
+</style>
+<body>
+	<div class="container-fluid">
+	<div id="pad-wrapper" class="form-page">
+		<div class="place">
+			<span>微信管理</span>
+				
+			<ul class="placeul">
+			<li><a href="#">修改分类</a></li>
+			</ul>
+		</div>
+		<div class="row-fluid form-wrapper" >
+			<form action="/admin.php/Shop/Index/medit" method="post">
+				<!-- left column -->
+				<div class="span8 column">
+					<input type="hidden" name="menu_id" value="{$rsmenu['menu_id']}" />
+					<div class="field-box" >
+						<div class="field-box">
+							<label>上&nbsp;&nbsp;级&nbsp;&nbsp;目&nbsp;&nbsp;录:</label>
+								<select name="pid" class="span2">
+									<option value="0">作为一级菜单</option>
+									<volist name="pidmenu" id="pidmenu">
+									<option value="{$pidmenu.menu_id}"
+										<if condition="$rsmenu['pid'] eq $pidmenu['menu_id']">
+										selected=""</if>
+										>{$pidmenu.menu_name}
+									</option>
+									</volist>
+								</select>
+						</div>
+						<div class="field-box">
+							<label>菜&nbsp;&nbsp;单&nbsp;&nbsp;名&nbsp;&nbsp;称:</label> 
+								<input class="span2" type="text" data-toggle="tooltip" data-trigger="focus" title="请输入菜单名" data-placement="right" name="menu_name" value="{$rsmenu['menu_name']}" 
+						</div>
+					</div>
+					<div class="field-box">
+						<label>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型:</label>
+							<select name="menu_type" class="span2">
+								<option value="none"
+									<if condition="$rsmenu['menu_type'] eq 'none'">
+									selected=""</if>
+									>一级菜单
+								</option>
+								<option value="view"
+									<if condition="$rsmenu['menu_type'] eq 'view'">
+									selected=""</if>
+									>超链接
+								</option>
+								<option value="click"
+									<if condition="$rsmenu['menu_type'] eq 'click'">
+									selected=""</if>
+									>点击事件
+								</option>
+							</select>
+					</div>
+					<div class="field-box" style="width: 100%;">
+						<label>点击事件key:</label> 
+							<input class="span2" type="text"
+							data-toggle="tooltip" data-trigger="focus" title="此处为点击key"
+							data-placement="right" name="event_key"
+							value="{$rsmenu['event_key']}" />
+					</div>
+					<div class="field-box" style="width: 100%;">
+						<label>链&nbsp;&nbsp;&nbsp;接&nbsp;&nbsp;&nbsp;URL:</label> 
+							<input class="span2" type="text"
+							data-toggle="tooltip" data-trigger="focus" title="此处为链接"
+							data-placement="right" name="view_url"
+							value="{$rsmenu['view_url']}" />
+					</div>
+					<div class="field-box actions">
+						<input type="submit" class="btn btn-success" value="提交">
+						<input type="reset" value="重置" class="btn btn-danger">
+					</div>
+				</div>
+			</form>
+			<!-- right column -->
+			<div class="span4 column pull-right">
+				<div class="field-box">
+					<h3>说明：</h3>
+				</div>
+				<div class="field-box">请填写正确的链接和名称</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- end main container --> <!-- scripts for this page --> <script
+	src="__JS__/jquery-latest.js"></script> <script
+	src="__JS__/bootstrap.min.js"></script> <script src="__JS__/theme.js"></script>
+ <script type="text/javascript">
+	$(document).ready(function(){
+		var eqli = $("#dashboard-menu").children().eq(2);
+		eqli.attr('class','active');
+		$("#dashboard-menu .active .submenu").css("display","block");
+	});
+</script>
+</body>
+</html>

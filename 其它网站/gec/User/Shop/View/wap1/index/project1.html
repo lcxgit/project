@@ -1,0 +1,348 @@
+<!doctype html>
+<html><script src="/js/layer/jquery.min.js"></script>
+<script src="/User/Shop/View/wap/index/js/jquery.js"></script>
+
+
+<script type="text/javascript" >
+function ReImgSize(){ 
+for (j=0;j<document.images.length;j++) 
+{ 
+document.images[j].width=(document.images[j].width>420)?"420":document.images[j].width; 
+} 
+}
+</script>
+<style>
+input{border:0 solid #000;background:#FFF;}
+img{ 
+max-width:100%;height:auto; 
+} 
+body{padding-bottom:66px;background:#aa7738;}
+body,h1,dl{margin:0;}
+h1,h2,h3,dd{margin:0;}
+a{ text-decoration:none;color:#FFF;}
+*{ font-family:"微软雅黑";}
+.clearfix{ clear:both;}
+ body,dd,dt,dl{margin:0;}
+dd,dt{padding:0;}
+.clearfix{clear:both;}
+span{display:block;}
+*{font-family:"微软雅黑"}
+a,img{display:block;} 
+
+
+
+
+
+
+
+
+.top{background:#12b8f6;position:fixed;left:0;top:0;width:100%;box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
+
+  background-image: -moz-linear-gradient( 90deg, rgb(95,64,26) 0%, rgb(199,133,52) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(95,64,26) 0%, rgb(199,133,52) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(95,64,26) 0%, rgb(199,133,52) 100%);
+}
+
+.top_nav{width:96%;margin:0 auto;}
+.logo{float:left;}
+.right_button{float:right;}
+.right_button input{font-size:24px; font-weight:bold;border:#333 1px solid; border-radius:6px;margin-top:6px;height:28px;line-height:24px;background:#eae7e7;}
+
+.two_nav{width:100%;border-bottom:1px #333CCC solid;}
+.two_nav1{width:96%;margin:0 auto;}
+.guanli h1{font-size:16px;line-height:38px;color:#FFF;}
+.tuijian2 h1{font-size:16px;line-height:38px;color:#FFF;}
+.guanli a{font-size:16px;line-height:30px;}
+.tuijian2 a{font-size:14px;line-height:16px;display:block;}
+
+
+.bannerBox{width:100%;margin-top:36px;}
+.contentBox{width:96%;margin:0 auto;}
+.small_box{width:48%;float:left;border:#000 1px solid;margin:0 1px;margin-bottom:2px;}
+
+.small_box dd,.small_box dt{font-size:12px;}
+.small_box dd{color:#F00;}
+.small_box dt{color:#666;}
+.small_box span{background-color:#FFF;width:100%;}
+.hBox dl{padding:0;margin:0;}
+.hBox dt{padding:0;margin:0;font-size:10px;margin-left:9px;}
+.towNav h1{font-size:16px;padding:4px 0;}
+.towNav h2{font-size:14px;padding:4px 0;}
+
+
+.weibu{background:#2b75fc;position:fixed;left:0;bottom:0;width:100%;box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
+  background-image: -moz-linear-gradient( 90deg, rgb(155,114,63) 0%, rgb(211,156,89) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(155,114,63) 0%, rgb(211,156,89) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(155,114,63) 0%, rgb(211,156,89) 100%);
+
+}
+
+.center{width:96%;margin:0 auto;}
+.center a{width:20%;float:left; text-align:center;}
+.pages{width:100.5%;padding:10px 0px;clear:both;}
+.pages li{float:left;margin:0px 5px;} 
+.pages a{color:#09f;margin:0px 2px;} 
+</style>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>华银国际HY</title>
+</head>
+
+<body>
+<div class="top">
+	<div class="top_nav">
+	<small class="text-muted" style="color:#FFF;font-size:16px;margin-top:6px;margin-bottom:6px;line-height:40px;">华银国际HY</small>
+    	<!-- <div class="logo">
+        	<img >
+        </div> -->
+        <div class="right_button">
+        	<h1><input name="" type="button"  value="&nbsp;-&nbsp;" style="
+  background-image: -moz-linear-gradient( 90deg, rgb(143,93,29) 0%, rgb(191,145,106) 20%, rgb(173,115,65) 39%, rgb(188,139,97) 60%, rgb(168,110,28) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(143,93,29) 0%, rgb(191,145,106) 20%, rgb(173,115,65) 39%, rgb(188,139,97) 60%, rgb(168,110,28) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(143,93,29) 0%, rgb(191,145,106) 20%, rgb(173,115,65) 39%, rgb(188,139,97) 60%, rgb(168,110,28) 100%);padding:0 6px;"></h1>
+  <h8><input name="" type="button"  value="分类" style="
+  background-image: -moz-linear-gradient( 90deg, rgb(143,93,29) 0%, rgb(191,145,106) 20%, rgb(173,115,65) 39%, rgb(188,139,97) 60%, rgb(168,110,28) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(143,93,29) 0%, rgb(191,145,106) 20%, rgb(173,115,65) 39%, rgb(188,139,97) 60%, rgb(168,110,28) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(143,93,29) 0%, rgb(191,145,106) 20%, rgb(173,115,65) 39%, rgb(188,139,97) 60%, rgb(168,110,28) 100%);font-family:'宋体';font-size:18px;"></h8>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="two_nav">
+    	<div class="two_nav1">
+    	 <!-- <div class="guanli">
+        	<h1>管理组织</h1>
+        	<a href="tuijian.html">推荐列表</a>
+            <a href="yonghuqun.html">我的用户群</a>
+        </div> -->
+       
+        	<a href="__CONTROLLER__/historyOrderform"><h1 style="font-size:18px;">购物明细</h1></a>
+        	<a href="__MODULE__/index/listProject?pid={$v.id}" style="padding:2px 0;">
+                        <dt>全部分类</dt>
+                       
+                        <div class="clearfix"></div>
+                	</a>
+                    
+                    <foreach name="title" item="v">
+        	<a href="__MODULE__/index/listProject?pid={$v.id}" style="padding:2px 0;">
+                        <dt>{$v.name}</dt>
+                        
+                        <div class="clearfix"></div>
+                	</a>
+           </foreach>
+       
+       <!-- <div class="shouqi0"><input name="" type="button"  value="∧"></div>-->
+    </div>
+    </div>
+</div>
+
+
+        
+        
+        
+        
+
+
+<div class="bannerBox" style="margin-top:36px;">
+            <img src="{$arr.imagepath}">
+  		 <div class="yuanBox">
+    	<span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <span></span>
+        <div class="clearfix"></div>
+    </div>
+    
+</div>    
+
+
+
+<div class="contentBox">
+
+              <div class="towNav">
+ 
+          <h1>{$arr.name}</h1>
+          
+          <!-- <dl> -->
+              <p class="topp" style="margin:0;padding:0;">&nbsp;</p>
+                <h2>{$arr.title}</h2>
+            <div class="topp">&nbsp;</div>                
+                <p>价格： <b style="color:red;">￥ {$arr.price}</b></p>
+                <br/>
+                <div class="clearfix"></div>
+        <!--   </dl> -->
+         <!--  <dt> -->
+    
+              <span>数量</span>
+              <form>
+                <span><input style="text-indent:10px;width:100px;" id="count" size="1" onchange="countnum()" type="number" class="text" value="1"/></span>
+				<script>
+					function countnum(){
+						var val = $("#count").val();
+						if(val<=0){
+							$("#count").val("1");
+						}
+					}
+				</script>
+                <div class="clearfix"></div>
+              </form>
+          <!-- b</dt> -->
+              <span class="duo" style="cursor:pointer;" onclick="confirm()">立即购买</span>
+              <p class="topp">&nbsp;</p>
+              <div class="clearfix"></div>
+               <div class="fenjie">
+                  <img src="/images/xiabianxian.gif">
+                </div>
+            
+      </div>
+      <div class="tuijian1">
+      <foreach name="list" item="value">
+      <a href="shangchengxiangqing.html">
+          <img src="{$value.imagepath}">
+            <h2>{$value.name}</h2>
+            <h2>￥{$value.price}</h2>
+      </a>
+      </foreach>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="contentBox">
+                <div class="hBox">
+                    <h1>产品详情</h1>
+            
+                  
+                </div>
+                
+    <div class="content">
+       
+          <h3>{$arr.title}</h3>
+          <p>{$arr.content}</p>
+        
+      </div>
+
+  </div>
+
+
+
+
+<div class="weibu">
+<div class="center">
+	<a href="/Home/Index/home">
+        <span>
+            <img>
+           <p>首页</p>
+        </span>
+    </a>
+    <a href="/Home/index/news.html">
+        <span>
+            <img>
+           <p>公告</p>
+        </span>
+    </a>
+    <a href="/Home/Myuser/lxwm">
+        <span>
+            <img>
+           <p>我们</p>
+        </span>
+    </a>
+	<a href="/shop/index/index">
+        <span>
+            <img>
+           <p>商城</p>
+        </span>
+    </a>
+    <a href="/Home/Login/index.html">
+        <span>
+            <img>
+           <p>退出</p>
+        </span>
+    </a>
+</div>
+</div>
+
+
+</body>
+<script>
+$(".two_nav").hide();
+$(".right_button h1").hide();
+$(".right_button h8").click(
+						function(){
+							$(".two_nav").show()
+						}
+					)
+$(".right_button h8").click(
+						function(){
+							$(".right_button h1").show()
+						}
+					)					
+$(".right_button h8").click(
+						function(){
+							$(".right_button h8").hide()
+						}
+					)
+
+
+$(".right_button h1").click(
+						function(){
+							$(".two_nav").hide()
+						}
+					)
+$(".right_button h1").click(
+						function(){
+							$(".right_button h8").show()
+						}
+					)						
+$(".right_button h1").click(
+						function(){
+							$(".right_button h1").hide()
+						}
+					)
+							
+							
+/*$(function(){
+		$(".bannerBox img").hide().eq(0).show()
+		$(".yuanBox span").removeClass(".yuanBox current").eq(0).addClass(".yuanBox current")
+		var n=0
+		function move(){
+		if(n<$(".bannerBox img").length-1){
+		n=n+1}
+		else{n=0}
+		
+		$(".bannerBox img").hide().eq(n).show()
+		$(".yuanBox span").removeClass(".yuanBox current").eq(n).addClass(".yuanBox current")
+		}
+		t=setInterval(move,1500)
+		$(".bannerBox").mouseenter(function(){
+		clearInterval(t)
+		}).mouseleave(function(){
+		t=setInterval(move,1500)
+				}
+		
+		)
+		$(".yuanBox span").mouseenter(
+		function(){
+			n=$(this).index()
+		$(".bannerBox img").hide().eq(n).show()
+		$(".bannerBox span").removeClass(".yuanBox current")
+		$(this).addClass(".yuanBox current")
+		clearInterval(ting)
+			
+			
+			}
+		
+		
+		
+		)
+	}
+
+		
+
+
+
+
+
+)*/
+</script>
+</html>

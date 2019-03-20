@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=1200">
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <title>比特币</title>
+    <link rel="shortcut icon" href=static/images/favicon.ico.png>
+    <link rel=stylesheet href=static/css/font_593980_4ft7bv0qsdk21emi.css>
+    <link href=static/css/app.9aa76c9d33dbab3dee90becf5ec2a462.css rel=stylesheet>
+</head>
+<body>
+    <div id="app">
+        <svg xmlns="http://www.w3.org/2000/svg" hidden="hidden" style="position: absolute; z-index: -999;">
+            <symbol viewBox="0 0 11 1" id="minus">
+                <path d="M0 1V0h11v1z" fill="#979797" fill-rule="nonzero"></path>
+            </symbol>
+            <symbol viewBox="0 0 11 11" id="add">
+                <path d="M5 5V0h1v5h5v1H6v5H5V6H0V5h5z" fill="#979797" fill-rule="nonzero"></path>
+            </symbol>
+            <symbol viewBox="0 0 15 14" id="cart">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M-1-2h17v17H-1z"></path>
+                    <path d="M3.291 1.616H15l-1.392 6.747H4.672l.223 1.089h8.918v.963H4.094L2.16.964H0V0h2.96l.331 1.616zm2.206 11.666c-.675 0-1.223-.54-1.223-1.205s.548-1.205 1.223-1.205 1.223.54 1.223 1.205-.548 1.205-1.223 1.205zm7.05 0c-.676 0-1.223-.54-1.223-1.205s.547-1.205 1.223-1.205c.675 0 1.223.54 1.223 1.205s-.548 1.205-1.223 1.205z" fill="#FFF" fill-rule="nonzero"></path>
+                </g>
+            </symbol>
+        </svg>
+        <div data-v-12204bcb="" class="header">
+            <div data-v-12204bcb="" class="header__inner">
+                <a data-v-12204bcb="" href="index.html" class="logo router-link-active"></a>
+                <ul data-v-12204bcb="" role="menubar" class="menu el-menu--horizontal el-menu">
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="hash.html">云算力</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="product.html">矿机</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="hosting.html">托管</a></li>
+                    <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item is-active" style="color: rgb(255, 255, 255); border-bottom-color: transparent;"><a href="pool.html">矿池</a></li>
+                </ul>
+                <div data-v-12204bcb="" class="right text-right">
+                    <ul data-v-12204bcb="" role="menubar" class="menu login el-menu--horizontal el-menu">
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item sign-in" style="border-bottom-color: transparent;">登录</li>
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item sign-up" style="border-bottom-color: transparent;">注册</li>
+                        <li data-v-12204bcb="" role="menuitem" tabindex="0" class="el-menu-item menu-item cart" style="border-bottom-color: transparent;">
+                            <a data-v-12204bcb="" href="/cart" class="">
+                                <img data-v-12204bcb="" src="static/images/cart.9bdd50b.svg" alt=""></a>
+                        </li>
+                        <li data-v-12204bcb="" role="menuitem" aria-haspopup="true" class="mine el-submenu" menu-trigger="hover" tabindex="0">
+                            <div class="el-submenu__title" style="border-bottom-color: transparent;">
+                                <span data-v-12204bcb="">
+                                    <img data-v-12204bcb="" src="static/images/person.1cee58e.svg" alt="" class="icon-my-center">个人中心</span>
+                                <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                            </div>
+                            <div class="el-menu--horizontal" style="display: none;">
+                                <ul role="menu" class="el-menu el-menu--popup el-menu--popup-bottom-start">
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的账户</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的订单</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的托管</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的云算力</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">我的邀请</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">收货地址</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">安全中心</li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item">退出登录</li></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul data-v-12204bcb="" role="menubar" class="menu lang el-menu--horizontal el-menu">
+                        <li data-v-12204bcb="" role="menuitem" aria-haspopup="true" class="el-submenu" tabindex="0">
+                            <div class="el-submenu__title" style="border-bottom-color: transparent;">
+                                <img data-v-12204bcb="" src="static/images/common_cn.b5f55b2.svg" alt="" width="20px" height="13px" style="margin-top: -2px; margin-right: 10px;">简体中文
+                                <!-- <i class="el-submenu__icon-arrow el-icon-arrow-down"></i> -->
+                            </div>
+                            <div class="el-menu--horizontal lang-popper">
+                                <ul role="menu" class="el-menu el-menu--popup el-menu--popup-bottom-start">
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item menu-item">
+                                        <img data-v-12204bcb="" src="static/images/common_cn.b5f55b2.svg" alt="" width="20px" height="13px" />简体中文
+                                    </li>
+                                    <li data-v-12204bcb="" role="menuitem" tabindex="-1" class="el-menu-item menu-item">
+                                        <img data-v-12204bcb="" src="static/images/common_en.5bec5f8.svg" alt="" width="20px" height="13px" />English
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div data-v-32f2f1fc="" class="page">
+                <div data-v-32f2f1fc="" class="page-container">
+                    <div data-v-32f2f1fc="" class="order-info el-row">
+                        <div data-v-32f2f1fc="" class="el-col el-col-16">
+                            <p data-v-32f2f1fc="" class="recharge-order">订单提交成功，请尽快付款，订单号：r20181205142632369120059</p>
+                            <!----></div>
+                        <div data-v-32f2f1fc="" class="text-right el-col el-col-8">应付总金额
+                            <em data-v-32f2f1fc="" class="money">100.00</em>元</div></div>
+                    <div data-v-32f2f1fc="" class="pay-methods">
+                        <ul data-v-32f2f1fc="" class="pay-methods-list">
+                            <!---->
+                            <li data-v-32f2f1fc="" class="active">
+                                <label data-v-32f2f1fc="" role="checkbox" aria-checked="true" aria-disabled="true" class="el-checkbox is-disabled is-checked">
+                                    <span aria-checked="mixed" class="el-checkbox__input is-disabled is-checked">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" disabled="disabled" true-value="3" class="el-checkbox__original" checked="checked"></span>
+                                    <!----></label>
+                                <img data-v-32f2f1fc="" src="static/images/alipay.png" alt="">
+                                <span data-v-32f2f1fc="" class="name">支付宝</span>
+                                <span data-v-32f2f1fc="" class="recommend">推荐</span></li>
+                            <li data-v-32f2f1fc="" class="">
+                                <label data-v-32f2f1fc="" role="checkbox" aria-disabled="true" class="el-checkbox is-disabled">
+                                    <span aria-checked="mixed" class="el-checkbox__input is-disabled">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" disabled="disabled" true-value="4" class="el-checkbox__original"></span>
+                                    <!----></label>
+                                <img data-v-32f2f1fc="" src="static/images/WeChat_pay.svg" alt="">
+                                <span data-v-32f2f1fc="" class="name">微信支付</span></li>
+                            <li data-v-32f2f1fc="" class="">
+                                <label data-v-32f2f1fc="" role="checkbox" aria-disabled="true" class="el-checkbox is-disabled">
+                                    <span aria-checked="mixed" class="el-checkbox__input is-disabled">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" disabled="disabled" class="el-checkbox__original" value="" checked="checked"></span>
+                                    <!----></label>
+                                <span data-v-32f2f1fc="">
+                                    <img data-v-32f2f1fc="" src="static/images/quick-pay.jpg" alt="">
+                                    <span data-v-32f2f1fc="" class="name">快捷支付</span>
+                                    <span data-v-32f2f1fc="" class="right btn-add">添加银行卡</span></span>
+                            </li>
+                            <li data-v-32f2f1fc="" class="">
+                                <label data-v-32f2f1fc="" role="checkbox" aria-disabled="true" class="el-checkbox is-disabled">
+                                    <span aria-checked="mixed" class="el-checkbox__input is-disabled">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" disabled="disabled" true-value="1" class="el-checkbox__original"></span>
+                                    <!----></label>
+                                <img data-v-32f2f1fc="" src="static/images/e-bank.png" alt="">
+                                <span data-v-32f2f1fc="" class="name">网银支付</span>
+                                <span data-v-32f2f1fc="" class="txt">大额在线支付，实时到账</span></li>
+                            <li data-v-32f2f1fc="" class="">
+                                <label data-v-32f2f1fc="" role="checkbox" aria-disabled="true" class="el-checkbox is-disabled">
+                                    <span aria-checked="mixed" class="el-checkbox__input is-disabled">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" disabled="disabled" true-value="2" class="el-checkbox__original"></span>
+                                    <!----></label>
+                                <img data-v-32f2f1fc="" src="static/images/transfer-accounts.png" alt="">
+                                <span data-v-32f2f1fc="" class="name">对公转账</span>
+                                <span data-v-32f2f1fc="" class="txt">线下转账，延时到账</span></li>
+                        </ul>
+                    </div>
+                    <div data-v-32f2f1fc="" class="pay-info">
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <div data-v-32f2f1fc="" class="pay-online">
+                            <button data-v-32f2f1fc="" type="button" class="el-button el-button--primary">
+                                <!---->
+                                <!---->
+                                <span>立即支付</span></button>
+                        </div>
+                        <!----></div>
+                    <div data-v-32f2f1fc="" class="el-dialog__wrapper" style="display: none;">
+                        <div role="dialog" aria-modal="true" aria-label="提示" class="el-dialog" style="margin-top: 15vh; width: 420px;">
+                            <div class="el-dialog__header">
+                                <span class="el-dialog__title">提示</span>
+                                <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                                    <i class="el-dialog__close el-icon el-icon-close"></i>
+                                </button>
+                            </div>
+                            <!---->
+                            <div class="el-dialog__footer">
+                                <div data-v-32f2f1fc="">
+                                    <button data-v-32f2f1fc="" type="button" class="el-button el-button--default">
+                                        <!---->
+                                        <!---->
+                                        <span>选择其他付款方式</span></button>
+                                    <button data-v-32f2f1fc="" type="button" class="el-button el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span>已完成付款</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-32f2f1fc="" class="el-dialog__wrapper custom" style="display: none;">
+                        <div role="dialog" aria-modal="true" aria-label="支付验证" class="el-dialog" style="margin-top: 15vh; width: 420px;">
+                            <div class="el-dialog__header">
+                                <span class="el-dialog__title">支付验证</span>
+                                <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                                    <i class="el-dialog__close el-icon el-icon-close"></i>
+                                </button>
+                            </div>
+                            <!---->
+                            <div class="el-dialog__footer">
+                                <div data-v-32f2f1fc="">
+                                    <button data-v-32f2f1fc="" disabled="disabled" type="button" class="el-button el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span>确认支付</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-32f2f1fc="" class="el-dialog__wrapper custom" style="display: none;">
+                        <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 420px;">
+                            <div class="el-dialog__header">
+                                <h4 data-v-32f2f1fc="">快捷支付
+                                    <span data-v-32f2f1fc="" class="subhead">支付更快捷，一步验证，无需网银！</span></h4>
+                                <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                                    <i class="el-dialog__close el-icon el-icon-close"></i>
+                                </button>
+                            </div>
+                            <!---->
+                            <div class="el-dialog__footer">
+                                <div data-v-32f2f1fc="">
+                                    <button data-v-32f2f1fc="" disabled="disabled" type="button" class="el-button el-button--primary is-disabled">
+                                        <!---->
+                                        <!---->
+                                        <span>确认绑卡</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-32f2f1fc="" class="el-dialog__wrapper custom" style="display: none;">
+                        <div role="dialog" aria-modal="true" aria-label="微信支付" class="el-dialog" style="margin-top: 15vh; width: 420px;">
+                            <div class="el-dialog__header">
+                                <span class="el-dialog__title">微信支付</span>
+                                <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                                    <i class="el-dialog__close el-icon el-icon-close"></i>
+                                </button>
+                            </div>
+                            <!---->
+                            <div class="el-dialog__footer">
+                                <div data-v-32f2f1fc="">
+                                    <button data-v-32f2f1fc="" type="button" class="el-button el-button--default">
+                                        <!---->
+                                        <!---->
+                                        <span>选择其他付款方式</span></button>
+                                    <button data-v-32f2f1fc="" type="button" class="el-button el-button--primary">
+                                        <!---->
+                                        <!---->
+                                        <span>已完成付款</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-36a43c6d="" data-v-32f2f1fc="" class="features el-row">
+                    <div data-v-36a43c6d="" class="el-col el-col-6">
+                        <img data-v-36a43c6d="" src="static/images/feature-1.png" alt="">
+                        <p data-v-36a43c6d="">算力超群</p></div>
+                    <div data-v-36a43c6d="" class="el-col el-col-6">
+                        <img data-v-36a43c6d="" src="static/images/xl.png" alt="">
+                        <p data-v-36a43c6d="">效率高超</p></div>
+                    <div data-v-36a43c6d="" class="el-col el-col-6">
+                        <img data-v-36a43c6d="" src="static/images/feature-3.png" alt="">
+                        <p data-v-36a43c6d="">经久耐用</p></div>
+                    <div data-v-36a43c6d="" class="el-col el-col-6">
+                        <img data-v-36a43c6d="" src="static/images/pz.png" alt="">
+                        <p data-v-36a43c6d="">品质可靠</p></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-dab67d26="" class="footer">
+            <div data-v-dab67d26="" class="footer__inner el-row">
+                <div data-v-dab67d26="" class="el-col el-col-7">
+                    <img data-v-dab67d26="" src="static/images/logo.jpg" alt="" class="footer-logo">
+                    <p data-v-dab67d26=""><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP 16052051号-1</a> Copyright © 游控派 版权所有</p>
+                    <p data-v-dab67d26="">广州游控派技有限公司</p>
+                    <p data-v-dab67d26="">地址：广州市番禺区海伦堡创意园</p></div>
+                <div data-v-dab67d26="" class="el-col el-col-3">
+                    <h5 data-v-dab67d26="">挖链产品与服务</h5>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href="index.html" class="link">游控派</a></p>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href=" https://www.jinse.com/" target="_blank" class="link">金色财经</a></p>
+                </div>
+                <div data-v-dab67d26="" class="el-col el-col-3">
+                    <h5 data-v-dab67d26="">关于游控派</h5>
+                    <p data-v-dab67d26="">
+                        <a data-v-dab67d26="" href="" class="link">游控派简介</a></p>
+                    <p data-v-dab67d26="">商务合作</p>
+                    <p data-v-dab67d26="">youkongpai@126.com</p></div>
+                <div data-v-dab67d26="" class="text-center el-col el-col-4">
+                    <h5 data-v-dab67d26="">客服热线</h5>
+                    <p data-v-dab67d26="" class="service">020-83064707</p>
+                    <p data-v-dab67d26="">周一至周五 09:00~18:00</p>
+                    <p data-v-dab67d26="">（仅收市话费）</p></div>
+                <div data-v-dab67d26="" class="el-col el-col-5 el-col-offset-2">
+                    <div data-v-dab67d26="" class="text-center el-row">
+                        <div data-v-dab67d26="" class="el-col el-col-12">
+                            <h5 data-v-dab67d26="">游控派客服微信</h5>
+                            <img data-v-dab67d26="" src="static/images/webwxgetmsgimg.jpg" alt="" class="download-img"></div>
+                        <div data-v-dab67d26="" class="el-col el-col-12">
+                            <h5 data-v-dab67d26="">游控派公众号</h5>
+                            <img data-v-dab67d26="" src="static/images/webwxgetmsgimg.jpg" alt="" class="download-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

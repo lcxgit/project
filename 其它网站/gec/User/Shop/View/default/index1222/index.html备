@@ -1,0 +1,330 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>商城</title>
+
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/font-awesome.css">
+	<link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.css">
+	<script src="/cssmmm/jquery.min.js"></script>
+<link href="__ROOT__/css/shop_index.css" rel="stylesheet">
+
+ <script src="/cssmmm/jquery.min.js"></script>
+<script src="/cssmmm/jquery-ui.min.js"></script>
+<script src="/cssmmm/jquery.slimscroll.min.js"></script>
+<script src="/cssmmm/bootstrap.min.js"></script>
+<script src="/cssmmm/jquery.flot.js"></script>
+<script src="/cssmmm/jquery.flot.resize.js"></script>
+<script src="/cssmmm/jquery.flot.pie.js"></script>
+<script src="/cssmmm/curvedLines.js"></script>
+<script src="/cssmmm/index.js"></script>
+<script src="/cssmmm/metisMenu.min.js"></script>
+<script src="/cssmmm/icheck.min.js"></script>
+<script src="/cssmmm/jquery.peity.min.js"></script>
+<script src="/cssmmm/index(1).js"></script>
+<script src="/cssmmm/toastr.min.js"></script>
+<script src="/cssmmm/jquery.countdown.min.js"></script>
+<!-- App scripts -->
+<script src="/cssmmm/homer.js"></script>
+<script src="/cssmmm/alert.js"></script>
+<script src="/cssmmm/charts.js"></script>
+<script src="jquery.js"></script>
+    <!-- App styles -->
+    <link rel="stylesheet" href="/assets/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/assets/fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+	<style>
+body{margin:0;}
+.daohangli li{ width:12%}
+.daohang{height:46px;background-color:#333;}
+.dropdown-toggle1{ position:relative}
+.dropdown-menu1{ position:absolute; left:0; top:42px; background:#505050; width:100%}
+
+.dropdown-toggle2{ position:relative}
+.dropdown-menu2{ position:absolute; left:0; top:42px; background:#505050; padding:10px 25px 0 20px}
+
+.dropdown-toggle3{ position:relative}
+.dropdown-menu3{ position:absolute; left:0; top:42px; background:#505050; padding:10px 20px 0 20px}
+.big ul{width:200px;background-color:#999;z-index:999;position:absolute;left:220px;top:0;}
+.big a{font-size:8px;color:#000;}
+.big a:hover{font-size:8px;color:#F00;}
+.container a{color:#FFF;!important}
+.container a:hover{color:#F00;!important}
+.main{width:100%}
+.bannerBox{background-color:#EEE;margin-left:-190px;}
+.topbanner{width:100%;!important}
+</style>
+</head>
+
+<body>
+<div class="No" style="background-color:#eee;height:26px;border-bottom:1px solid #CCC;">
+
+	<span style="float:left;margin-left:60%;line-height:26px;">&nbsp||&nbsp&nbsp奖金： {$userData['ue_money']}</span>
+	<span style="float:left;line-height:26px;">&nbsp&nbsp&nbsp&nbsp||&nbsp&nbsp购物卷： {$userData['ggf']}</span>
+	<span style="float:left;line-height:26px;">&nbsp&nbsp&nbsp||&nbsp&nbsp购物积分： {$userData['ue_integral']}</span>
+	<span style="float:left;line-height:26px;">&nbsp&nbsp&nbsp||&nbsp&nbsp推荐号：{$userData['ue_accname']}</span>
+	<span style="float:left;line-height:26px;">&nbsp&nbsp&nbsp||&nbsp&nbsp身份：<if condition="$userData.sfjl1 eq 0">普通会员<else />服务中心</if><span>
+	<div class="clearfix" style="clear:block;"></div>
+
+
+
+</div>
+
+<div class="logo" style="height:74px;">
+	<div style="width:56px;height:66px; margin-left:256px;margin-top:8px;margin-bottom:8px;"><img src="/img/logo.png"></div>
+</div>
+
+<div class="daohang">
+	<div class="container">
+		<ul class="nav nav-tabs text-center daohangli" style="border:0; width:100%;">
+			
+			
+			
+			
+			<li class="shang" style="width:25%;background-color:#F00;"><a style="color:#FFF;line-height:26px;border-bottom:1px solid #333;" href="/shop/index">商城</a></li>
+			<li><a href="/Home/Index/home">我的首页</a></li>
+			<li class="dropdown-toggle1">
+				  <a href="##" class="" data-toggle="dropdown">我的账户<span class="caret"></span></a>
+				  <ul class="dropdown-menu1" style="display:none; z-index:999">
+					
+					<p><a href="/Home/Info" style="color:#fff; cursor:pointer">个人资料</a></p>
+					<p><a href="/Home/Info/xgmm" style="color:#fff">更改密码</a></p>
+					<p><a href="/Home/Myuser" style="color:#fff">推荐列表</a></p>
+					<p><a href="/Home/Myuser/xzzh" style="color:#fff">我的用户群</a></p>
+					<p><a href="/Home/Info/cwmx" style="color:#fff">个人财务</a></p>
+					<!--<p><a href="/Home/Info/pin" style="color:#fff">激活码</a></p>-->
+				  </ul>
+		  	</li>
+			
+			
+			<li class="dropdown-toggle2" style="z-index:999">
+				  <a href="##" class="" data-toggle="dropdown">注册会员<span class="caret"></span></a>
+				  <ul class="dropdown-menu2" style="display:none">
+					
+					<p><a href="/Home/Index/reg" style="color:#fff">注册会员</a></p>
+					<p><a href="/Home/Info/bdzx" style="color:#fff">申请报单中心</a></p>
+					
+				  </ul>
+		  	</li>
+			
+			
+			<li><a href="/Home/Index/news">新闻公告</a></li>
+			<li><a href="/Home/Myuser/lxwm">联系我们</a></li>
+			<li><a href="/Home/Login/logout.html">退出</a></li>
+			
+			<!--<li class="dropdown-toggle1">
+				  <a href="##" class="" data-toggle="dropdown">管理组织<span class="caret"></span></a>
+				  <ul class="dropdown-menu1" style="display:none">
+					
+					<p><a href="/Home/Myuser" style="color:#fff">推荐列表</a></p>
+					<p><a href="/Home/Myuser/xzzh" style="color:#fff">我的用户群</a></p>
+				  </ul>
+		  	</li>-->
+			<!--<li><a href="/Home/Info/pin">激活码</a></li>-->
+			
+			<!--<li class="dropdown-toggle3">
+				  <a href="##" class="" data-toggle="dropdown">财务管理<span class="caret"></span></a>
+				  <ul class="dropdown-menu3" style="display:none">
+					
+					<p><a href="/Home/Info/cwmx" style="color:#fff">个人财务</a></p>
+					<p><a href="/Home/Info/xgmm" style="color:#fff">我的用户群</a></p>
+				  </ul>
+		  	</li>-->
+			
+			
+			<script>
+				$(document).ready(function(){
+				  $(".dropdown-toggle1").click(function(){
+					$(".dropdown-menu1").toggle();
+				  });
+				});
+				$(document).ready(function(){
+				  $(".dropdown-toggle2").click(function(){
+					$(".dropdown-menu2").toggle();
+				  });
+				});
+				
+			</script>
+		
+		</ul>
+	
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="main">
+<div class="bannerBox" style="position:relative;left:0;top:0;">
+        <!-- <div style="float:right;width:100%;"><a href="__CONTROLLER__/historyOrderform"><h1 style="float:right;color:red;margin-right:20px;">购物明细</h1></a></div> -->
+     	<div class="towNav" style="position:absolute;left:142px;top:0;background-color:rgba(255,255,255,0.8)">
+		<div class="small">
+                	<a href="__MODULE__/index/listProject?pid={$v.id}">
+                        <dt>全部分类</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+			<foreach name="title" item="v">
+                <div class="small" style="border-top:1px solid #333;">
+                	<a href="__MODULE__/index/listProject?pid={$v.id}">
+                        <dt>{$v.name}</dt>
+                        <dd>〉</dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>
+           </foreach>
+            <!--<div class="small" style="width:100%;text-align:center;">
+                	<a style="width:100%;text-align:center;">
+                        <dt style="width:100%;text-align:center;">︾</dt>
+                        <dd></dd>
+                        <div class="clearfix"></div>
+                	</a>
+                 </div>-->
+            
+         </div>
+		 <div class="topbanner" style="height:397px">
+		<a href="#">
+            <img src="__ROOT__/images/banner0.jpg">
+            <!--<img src="__ROOT__/images/banner1.jpg">
+            <img src="__ROOT__/images/banner2.jpg">
+            <img src="__ROOT__/images/banner3.jpg">
+            <img src="__ROOT__/images/banner4.jpg">-->
+			<!-- <img  src="{$shop_hot[0]['imagepath']|default='__ROOT__/images/banner0.jpg'}">
+            <img  src="{$shop_hot[1]['imagepath']|default='__ROOT__/images/banner1.jpg'}">
+            <img  src="{$shop_hot[2]['imagepath']|default='__ROOT__/images/banner2.jpg'}">
+            <img  src="{$shop_hot[3]['imagepath']|default='__ROOT__/images/banner3.jpg'}">
+            <img  src="{$shop_hot[4]['imagepath']|default='__ROOT__/images/banner4.jpg'}"> -->
+           
+    	</a>
+		<!--<div class="yuanBox">
+    	<span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="clearfix"></div>
+		</div>-->
+        </div>
+
+
+</div>
+
+<style>
+
+/*.pages a,.pages span {
+    display:inline-block;
+    padding:2px 5px;
+    margin:0 1px;
+    border:1px solid #f0f0f0;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.pages a,.pages li {
+    display:inline-block;
+    list-style: none;
+    text-decoration:none; color:#58A0D3;
+}
+.pages a.first,.pages a.prev,.pages a.next,.pages a.end{
+    margin:0;
+}
+.pages a:hover{
+    border-color:#50A8E6;
+}
+.pages span.current{
+    background:#50A8E6;
+    color:#FFF;
+    font-weight:700;
+    border-color:#50A8E6;
+}*/</style>
+
+<div class="contentBox">
+
+                <div class="hBox">
+                    <dl style="font-size:18px; font-family:'宋体'">商家推荐</dl>
+                   
+            
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="bigBox">
+                    <div class="smallBox">
+					<empty name="shop_hot">
+					<div style="width:100%;padding:50px;text-align:center;font-size:16px;color:;#DDD">暂无数据</div>
+					<else/>
+                    <foreach name="shop_hot" item="value">
+                        <div class="small_box" style="margin-left:20px;margin-bottom:20px;">
+                            <a href="__MODULE__/index/project?id={$value.id}"><img width="300" height="300" style="margin-top:40px;margin-bottom:20px;" src="{$value.imagepath}"></a>
+                            <dt style="margin-left:20px">{$value.name}</dt>
+                            <dd style="margin-right:30px"><strong>价格:{$value.price}元</strong></dd>
+                        </div>                        
+                    </foreach>
+					</empty>
+                            <div class="clearfix"></div>
+                    
+                        
+                      </div>
+                  </div>
+                  <div class="pages" style="margin:50px 0 ;text-align: center;">{$show}</div>
+      				 	<div class="No_box">
+                
+             
+           
+      </div>
+
+</div>
+</div>
+<!--<script>
+$(function(){
+		$(".bannerBox img").hide().eq(0).show()
+		$(".yuanBox span").removeClass(".yuanBox current").eq(0).addClass(".yuanBox current")
+		var n=0
+		function move(){
+		if(n<$(".bannerBox img").length-1){
+		n=n+1}
+		else{n=0}
+		
+		$(".bannerBox img").hide().eq(n).show()
+		$(".yuanBox span").removeClass(".yuanBox current").eq(n).addClass(".yuanBox current")
+		}
+		t=setInterval(move,2500)
+		$(".bannerBox").mouseenter(function(){
+		clearInterval(t)
+		}).mouseleave(function(){
+		t=setInterval(move,2500)
+				}
+		
+		)
+		$(".yuanBox span").mouseenter(
+		function(){
+			n=$(this).index()
+		$(".bannerBox img").hide().eq(n).show()
+		$(".bannerBox span").removeClass(".yuanBox current")
+		$(this).addClass(".yuanBox current")
+		clearInterval(ting)
+			
+			
+			}
+		
+		
+		
+		)
+	}
+
+		
+
+
+
+
+
+)
+</script>-->
+</body>
+</html>
+
