@@ -14,7 +14,8 @@ document.write("<scr"+"ipt src='js/bootstrap.3.3.7.js' type='text\/javascript' c
 /*bootstrap*/
 
 /*swiper*/
-document.write("<scr"+"ipt src='js/swiper.min.4.0.7.js' type='text\/javascript' charset='utf-8'></scr"+"ipt>");
+document.write("<scr"+"ipt src='js/swiper.4.5.js' type='text\/javascript' charset='utf-8'></scr"+"ipt>");
+//document.write("<scr"+"ipt src='js/swiper.min.4.0.7.js' type='text\/javascript' charset='utf-8'></scr"+"ipt>");
 /*swiper*/
 
 /*owl*/
@@ -47,6 +48,6 @@ document.write("<scr"+"ipt src='js/jquery.flexslider.js' type='text\/javascript'
 document.write("<scr"+"ipt src='js/public.js' type='text\/javascript' charset='utf-8'></scr"+"ipt>");
 
 /*kefu*/
-//document.write("<scr"+"ipt src='js/customer_service.js' type='text\/javascript' charset='utf-8'></scr"+"ipt>");
+document.write("<scr"+"ipt src='js/customer_service.js' type='text\/javascript' charset='utf-8'></scr"+"ipt>");
 /*kefu*/
 

@@ -17,7 +17,8 @@
 /*font-awesome 字体*/
 
 /*swiper*/
-@import url("swiper.min.4.0.7.css");
+@import url("swiper.4.5.css");
+/*@import url("swiper.min.4.0.7.css");*/
 /*swiper*/
 
 /*幻灯片切换动画*/
@@ -162,11 +163,26 @@
 .nav_pagination .pagination .active a:hover, 
 .nav_pagination .pagination li a:hover {background:var(--color);color: var(--color_fff);border-color:var(--color);}
 
-.details_ul {margin: var(--margin_t50);}
+.next_prev_list {margin: var(--margin_t20);padding: var(--padding_t20);border-top: 1px solid var(--color_ccc);} 
+.details_ul {float: left; margin: var(--margin_0);padding: var(--padding_0);}
 .details_ul li {font-size: var(--size_16);color:var(--color_666);margin: 0 auto 10px;}
 .details_ul li:last-child {margin: var(--margin_0);}
 .details_ul li a {font-size: var(--size_16);color:var(--color_666);}
 .details_ul li a:hover {color: var(--color);}
+.next_prev_list .link {
+  float: right;
+  color: var(--color_fff);
+  font-size: var(--size_16);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: var(--margin_t10);
+  border: 1px solid transparent;
+  background-color: var(--color);
+}
+.next_prev_list .link:hover {color: var(--color);border: 1px solid var(--color);} 
+.next_prev_list .link:before {background-color: var(--color_fff);}
 
 .flex {position: relative;display: inline-flex;justify-content: flex-start;flex-wrap: wrap;}
 .flex .nav_text {position: relative;width: 260px;}
@@ -802,9 +818,10 @@
   -webkit-line-clamp: var(--p_text_5);
   text-overflow: ellipsis;
   word-break: break-all;
+  height: 120px;
 }
 .index_news_content .news_list .left_text .figcaption_text .link {
-  display: inline-table;
+  display: inline-flex;
   position: relative;
   overflow: hidden;
   padding: 5px 15px;
@@ -928,6 +945,7 @@
   -webkit-line-clamp: var(--p_text_2);
   text-overflow: ellipsis;
   word-break: break-all;
+  height: 40px;
 }
 
 .index_news .btn_a {width: var(--width_1200px);margin: var(--margin_t30);}
@@ -1108,9 +1126,10 @@
   -webkit-line-clamp: var(--p_text_3);
   text-overflow: ellipsis;
   word-break: break-all;
+  height: 80px;
 }
 .business_content .business_list .figure_img .figcaption_text .link {
-  display: inline-table;
+  display: inline-flex;
   overflow: hidden;
   position: relative;
   color: var(--color_333);
@@ -1403,6 +1422,7 @@
   -webkit-line-clamp: var(--p_text_4);
   text-overflow: ellipsis;
   word-break: break-all;
+  height: 80px;
 }
 .news_content .nav_pagination {margin: var(--margin_t50);}
 /*news*/
@@ -1419,17 +1439,18 @@
   padding: var(--padding_0);
   margin: var(--margin_b50);
 }
-.news_detail_content .flex .title_text {margin: 0px auto 5px;text-align: var(--text_center);}
-.news_detail_content .flex .title_text h2 {
+.news_detail_content .title_text {margin: 0px auto 5px;text-align: var(--text_center);}
+.news_detail_content .title_text h2 {
   font-size: var(--size_25);
   color: var(--color_333);
   margin: var(--margin_b10);
   padding: var(--padding_b20);
   border-bottom: 1px dashed var(--color_ccc);
 }
-.news_detail_content .flex .title_text ul {margin: var(--margin_0);padding: var(--padding_b10);}
-.news_detail_content .flex .title_text ul li {color: var(--color_333);font-size: var(--size_12);padding: 0 20px;display: inline-block;}
-.news_detail_content .flex .text p {color: var(--color_666);font-size: var(--size_14);text-indent: 0px;}
+.news_detail_content .title_text ul {margin: var(--margin_0);padding: var(--padding_b10);}
+.news_detail_content .title_text ul li {color: var(--color_333);font-size: var(--size_12);padding: 0 20px;display: inline-block;}
+.news_detail_content .text p {color: var(--color_666);font-size: var(--size_14);text-indent: 0px;}
+
 /*news_detail*/
 
 /*contact*/
