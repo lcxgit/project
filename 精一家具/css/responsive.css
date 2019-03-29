@@ -76,8 +76,8 @@
 	.index_product_content .figure_img:nth-child(2) {margin-top: 100px;}
 	.index_footer .index_footer_content .list_menu {grid-column-gap: 260px;}
 	.index_footer_content .copyright_text {padding: 20px 0 0 40px;}
-	.index_manufacture_content .figure_img .figcaption_text {padding: 30px 50px;}
-	.index_manufacture_content .figure_img .figcaption_text h2 {font-size: 68px;line-height: 70px;}
+	/*.index_manufacture_content .figure_img .figcaption_text {padding: 30px 50px;}
+	.index_manufacture_content .figure_img .figcaption_text h2 {font-size: 68px;line-height: 70px;}*/
 	.index_manufacture_content .figure_img .figcaption_text .list_icon {margin: var(--margin_t30);}
 	.index_manufacture_content .figure_img .figcaption_text .icon {margin: 0 22px 0 0;width: 150px;padding: var(--padding_30);}
 	.index_about_content .text .pt100 {padding: 200px 90px 0;}
@@ -119,7 +119,7 @@
 	.index_product_content .figure_img .figcaption_text .bg_8db1a5 {padding: 15px 50px;}
 	.index_manufacture_content .figure_img .figcaption_text {padding: 10px 30px;}
 	.index_manufacture_content .figure_img .figcaption_text .icon {width: 110px;margin: 0 20px 0 0;padding: var(--padding_15);}
-	.index_manufacture_content .figure_img .figcaption_text h2 {font-size: 58px;line-height: 60px;}
+	/*.index_manufacture_content .figure_img .figcaption_text h2 {font-size: 58px;line-height: 60px;}*/
 	.index_news_cases_content .index_news {margin: var(--margin_20);}
 	.index_news_cases_content .index_cases {margin: var(--margin_b20);}
 	.index_news .link_a {margin: var(--margin_t10);}
@@ -208,7 +208,7 @@
 	.header .form_search {margin: 50px auto 15px;}
 	.index_about_content .text {position: relative;}
 	.index_about_content .text .pt100 {padding: 50px 30px;}
-	.index_about_content .text h2 {font-size: 40px;line-height: 40px;margin: var(--margin_b15);}
+	/*.index_about_content .text h2 {font-size: 40px;line-height: 40px;margin: var(--margin_b15);}*/
 	.index_about_content .text span {font-size: var(--size_15);line-height: 15px;margin: var(--margin_b30);}
 	.header .text_list, .header .menu_list {padding: var(--padding_0);}
 	.header .menu_list {overflow: auto;height: 100px;}
