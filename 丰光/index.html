@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta name="author" contect="web developer lcx" />
+	<meta name="name" content="丰光, beta V1.0 2018/10/1" />
+	<meta name="copyright" content="丰光 All Rights Reserved" />
+	<meta name="applicable-device" content="pc,mobile">
+    <!--<meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+	<meta http-equiv="refresh" content="2" /> -->
+	<title>丰光</title>
+	<meta name="keywords" content="丰光">
+	<meta name="description" content="丰光 不超过850个字符">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+	<!-- header -->
+	<header class="container-fluid header">
+		<div class="container header_menu">
+			<figure class="figure_logo_img">
+				<a href="index.html"><img src="images/logo.png" class="logo_img" alt="" /></a>
+			</figure>
+	        <nav class="menu_nav_none">
+	        	<!-- <ul class="top_menu_nav_ul">
+	        		<li class="top_menu_nav_ul_li"><a href="index.html">首页</a></li>
+	        	</ul> -->                       
+	        </nav>
+	        <div class="right_menu_button">
+	        	<!-- <div class="dropdown">
+				    <button type="button" class="btn dropdown-toggle menu_dropdown" id="dropdownMenu1" data-hover="dropdown" data-close-others="true" data-toggle="dropdown" aria-expanded="false">EN
+				        <span class="caret"></span>
+				    </button>
+				    <ul class="dropdown-menu animated" role="menu" aria-labelledby="dropdownMenu1" data-animation="fadeIn">
+				        <li><a tabindex="-1" href="#">中</a></li>
+				        <li><a tabindex="-1" href="#">EN</a></li>
+				    </ul>
+				</div> -->
+				<select class="selectpicker select_zh_en">
+					<optgroup>
+					    <option>EN</option>
+					    <option>中</option>
+					</optgroup>
+				</select>
+	            <button id="menu_trigger" class="menu_button" type="button">
+	                <span class="span_only">menu</span>
+	                <span class="icon_span"></span>
+	                <span class="icon_span"></span>
+	                <span class="icon_span"></span>
+	            </button>
+			</div>
+		</div>
+		<div class="menu_main">
+			<button type="button" class="button_close">Close</button>
+			<div class="grid_main">
+				<figure class="menu_img">
+					<img src="images/menu_img.jpg" alt="" />
+				</figure>
+				<nav class="menu_main_nav">
+					<figure class="menu_logo_img">
+						<a href="index.html"><img src="images/logo.png" alt="" /></a>
+					</figure>
+					<ul class="menu_main_nav_ul">
+						<li class="">
+							<a href="about.html">关于我们</a>
+							<ul class="sub_ul">
+								<li class=""><a href="about.html">关于我们</a></li>
+								<li><a href="about_structure.html">组织架构</a></li>
+								<li><a href="about_app.html">灯光师APP</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="product.html">产品中心</a>
+							<ul class="sub_ul">    
+								<li><a href="product.html">智能控制器</a></li>
+								<li><a href="product.html">智能染色灯</a></li>
+								<li><a href="product.html">智能控制器</a></li>
+								<li><a href="product.html">智能染色灯</a></li>
+								<li><a href="product.html">智能控制器</a></li>
+								<li><a href="product.html">智能染色灯</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="case.html">合作案例</a>
+							<ul class="sub_ul">
+									<li><a href="case.html">智能灯光</a></li>
+									<li><a href="case.html">智能KTV</a></li>
+									<li><a href="case.html">户外灯光</a></li>
+									<li><a href="case.html">专业音响</a></li>
+									<li><a href="case.html">智能电子</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="news.html">新闻中心</a>
+							<ul class="sub_ul">           
+								<li><a href="news.html">公司新闻</a></li>
+								<li><a href="news.html">行业新闻</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="contact.html">联系我们</a>
+							<ul class="sub_ul">
+								<li><a href="contact.html">联系我们</a></li>
+								<li><a href="recruitment.html">企业招聘</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- header -->
+
+	<main class="main">
+		<!-- slider -->
+		<!-- <div class="box_skitter box_skitter_large">
+	        <ul>
+	            <li>
+	                <a href=""><img src="images/slider4.png" class="" alt="" /></a>
+	            </li>
+	            <li>
+	                <a href=""><img src="images/slider3.jpg" class="" alt="" /></a>
+	            </li>
+	            <li>
+	                <a href=""><img src="images/slider2.jpg" class="" alt="" /></a>
+	            </li>
+	        </ul>
+	    </div> -->
+		<div id="bootstrap-touch-slider" class="slider_img carousel bs-slider fade fade_slider control-round indicators-line hidden-xs hidden-sm" data-ride="carousel" data-pause="hover" data-interval="">
+			<canvas id="canvas_particle" style=" position:absolute;  left:0px; top:0px; width:100%; height:100%;z-index:3;"></canvas>
+		    <div class="carousel-inner" role="listbox">
+		        <div class="item active">
+		            <img src="images/banner1_bg.jpg" class="img-responsive slide-image" alt="" />
+		            <div class="slider_content">
+	                	<div class="container slider_text">
+	                		<div class="row">
+	                			<div class="text_content">
+                					<h3 class="h3_1" data-animation="animated fadeInLeft">全球智能灯光领先</h3>
+                					<h4 class="h4" data-animation="animated fadeInRight">
+                						<sup class="sup">就在</sup>
+                						<sub class="sub">AK PRO</sub>
+                					</h4>
+		                		</div>
+		                		<div class="clearfix"></div>
+	                		</div>
+	                	</div>
+	                </div>
+		        </div>
+		        <div class="item">
+		            <img src="images/banner2_bg.jpg" class="img-responsive slide-image" alt="" />
+		            <div class="slider_content">
+	                	<div class="container slider_text">
+	                		<div class="row">
+	                			<div class="text_content">
+                					<h3 class="h3_2" data-animation="animated fadeInLeft">AK PRO</h3>
+                					<span class="span_2" data-animation="animated fadeInLeft">专业智能舞台灯光、音响、城市景观和建筑照明设备</span>
+                					<img class="img_2" src="images/img_2.png" data-animation="animated fadeInRight" alt="" />
+		                		</div>
+		                		<div class="clearfix"></div>
+	                		</div>
+	                	</div>
+	                </div>
+		        </div> 
+		        <div class="item">
+		            <img src="images/banner3_bg.jpg" class="img-responsive slide-image" alt="" />
+		            <div class="slider_content">
+	                	<div class="container slider_text">
+	                		<div class="row">
+	                			<div class="text_content">
+	                				<div class="div_border"></div>
+	                				<div class="h3_3_span_3">
+	                					<h3 class="h3_3" data-animation="animated zoomIn">AK PRO</h3>
+	                					<span class="span_3" data-animation="animated zoomIn">智能灯光</span>
+	                				</div>
+		                		</div>
+		                		<div class="clearfix"></div>
+	                		</div>
+	                	</div>
+	                </div>
+		        </div> 
+		    	<div class="item">
+		            <img src="images/banner4_bg.jpg" class="img-responsive slide-image" alt="" />
+		            <div class="slider_content">
+	                	<div class="container slider_text">
+	                		<div class="row">
+	                			<div class="text_content">
+                					<h3 class="h3_4" data-animation="animated fadeInLeft">专业智能灯光</h3>
+                					<span class="span_4" data-animation="animated fadeInLeft">研发/生产/销售</span>
+                					<img class="img_4" src="images/img_4.png" data-animation="animated fadeInRight" alt="" />
+		                		</div>
+		                		<div class="clearfix"></div>
+	                		</div>
+	                	</div>
+	                </div>
+		        </div> 
+		        <!-- <div class="item">
+		            <img src="images/slider2.jpg" class="img-responsive slide-image" alt="" />
+		            <div class="slider_content">
+	                	<div class="container slider_text">
+	                		<div class="row">
+	                			<div class="text_content">
+	                				<div class="left">
+				                		<h2 class="h2" data-animation="animated fadeInLeft">AK PRO TECHNOLOGY LIMITED</h2>
+				                		<h2 class="h2" data-animation="animated fadeInLeft">Founded in 2007</h2>
+				                		<p class="p" data-animation="animated fadeInRight">专业智能舞台灯光、音响、城市景观和建筑照明设备</p>
+				                		<a class="link" data-animation="animated zoomIn" href="">了解更多<i class="fa fa-long-arrow-right"></i></a>
+			                		</div>
+			                		<div class="right">
+			                			<img class="pro_slider_img" src="images/slider_img.png" data-animation="animated fadeInRight" alt="" />
+			                		</div>
+		                		</div>
+		                		<div class="clearfix"></div>
+	                		</div>
+	                	</div>
+	                </div>
+		        </div>
+		        <div class="item">
+		            <img src="images/slider2.jpg" class="img-responsive slide-image" alt="" />
+		            <div class="slider_content">
+	                	<div class="container slider_text">
+	                		<div class="row">
+	                			<div class="text_content">
+	                				<video class="slider_video" controls poster="images/slider2.jpg">
+	                					<source src="images/slider_video.mp4" type="video/mp4">
+	                					<source src="movie.ogg" type="video/ogg">
+										<source src="movie.webm" type="video/webm">
+										<object data="movie.mp4">
+											<embed src="movie.swf">
+										</object>
+		                            </video>
+		                		</div>
+		                		<div class="clearfix"></div>
+	                		</div>
+	                	</div>
+	                </div>
+		        </div> -->
+		    </div>
+		    <ol class="carousel-indicators">
+		        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+		        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+		        <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+		    </ol>
+		    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+		        <span class="fa fa-angle-left" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+		        <span class="fa fa-angle-right" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		    </a>
+		</div> 
+		<div id="bootstrap-touch-slider" class="slider_img carousel bs-slider fade fade_slider control-round indicators-line hidden-md hidden-lg" data-ride="carousel" data-pause="hover" data-interval="3000">
+			<canvas id="canvas_particle2" style=" position:absolute;  left:0px; top:0px; width:100%; height:100%;z-index:3;"></canvas>
+		    <div class="carousel-inner" role="listbox">
+		        <div class="item active">
+		            <img src="images/slider2.jpg" class="img-responsive slide-image" alt="" />
+		        </div>
+		        <div class="item">
+		            <img src="images/slider2.jpg" class="img-responsive slide-image" alt="" />
+		        </div>
+		        <div class="item">
+		            <img src="images/slider3.jpg" class="img-responsive slide-image" alt="" />
+		        </div> 
+		    </div>
+		    <ol class="carousel-indicators">
+		        <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+		        <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+		        <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+		    </ol>
+		    <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+		        <span class="fa fa-angle-left" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+		        <span class="fa fa-angle-right" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		    </a>
+		</div>
+		<div class="slide_more">
+			<a class="more_i" href="#index_product"><i class="fa fa-angle-down i_more"></i></a>
+		</div>
+	    <!-- slider -->
+
+		<!-- index_product -->
+	    <section class="container-fluid index_product" id="index_product">
+	    	<div class="container index_product_content">
+	    		<div class="row">
+	    			<div class="index_product_list grid">
+	    				<figure class="figure_img_text">
+	    					<a class="a_img" href="product_detail.html">
+	    						<img src="images/index_img_1.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+	    						<a href="product_detail.html">	
+	    							<h3>SmartLight</h3>
+	    							<span>智能灯光</span>
+	    						</a>
+	    					</figcaption>
+    						<a class="text_desc" href="product_detail.html">	
+    							<h3>SmartLight</h3>
+    							<span>智能灯光</span>
+    						</a>
+	    				</figure>
+	    				<figure class="figure_img_text">
+	    					<a class="a_img" href="product_detail.html">
+	    						<img src="images/index_img_2.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+	    						<a href="product_detail.html">
+	    							<h3>SmartKTV</h3>
+	    							<span>智能KTV</span>
+	    						</a>
+	    					</figcaption>
+    						<a class="text_desc" href="product_detail.html">	
+    							<h3>SmartLight</h3>
+    							<span>智能灯光</span>
+    						</a>
+	    				</figure>
+	    				<figure class="figure_img_text">
+	    					<a class="a_img" href="product_detail.html">
+	    						<img src="images/index_img_3.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+	    						<a href="product_detail.html">
+	    							<h3>Outdoor</h3>
+	    							<span>户外灯光</span>
+	    						</a>
+	    					</figcaption>
+    						<a class="text_desc" href="product_detail.html">	
+    							<h3>SmartLight</h3>
+    							<span>智能灯光</span>
+    						</a>
+	    				</figure>
+	    				<figure class="figure_img_text">
+	    					<a class="a_img" href="product_detail.html">
+	    						<img src="images/index_img_4.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+		    					<a href="product_detail.html">
+		    						<h3>MajorSound</h3>
+		    						<span>专业音响</span>
+		    					</a>
+	    					</figcaption>
+    						<a class="text_desc" href="product_detail.html">	
+    							<h3>SmartLight</h3>
+    							<span>智能灯光</span>
+    						</a>
+	    				</figure>
+	    				<figure class="figure_img_text">
+	    					<a class="a_img" href="product_detail.html">
+	    						<img src="images/index_img_5.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+    						<a href="product_detail.html">
+	    						<h3>Intelligent Electronics</h3>
+	    						<span>智能电子</span>
+    						</a>
+	    					</figcaption>
+    						<a class="text_desc" href="product_detail.html">	
+    							<h3>SmartLight</h3>
+    							<span>智能灯光</span>
+    						</a>
+	    				</figure>
+	    				<figure class="figure_img_text">
+	    					<a class="a_img" href="about.html">
+	    						<img src="images/index_img_6.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+	    						<a href="about.html">
+		    						<h3>AboutUs</h3>
+		    						<span>关于我们</span>
+	    						</a>
+	    					</figcaption>
+    						<a class="text_desc" href="product_detail.html">	
+    							<h3>SmartLight</h3>
+    							<span>智能灯光</span>
+    						</a>
+	    				</figure>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </section>
+	    <!-- index_product -->
+
+	    <!-- index_news -->
+	    <article class="container-fluid index_news">
+	    	<div class="container index_news_content">
+	    		<div class="row">
+	    			<div class="index_news_title">
+	    				<h2>新闻中心<span class="index_news_en">NEWS</span> <small>AK PRO</small></h2>
+	    			</div>
+	    			<div class="index_news_list grid">
+	    				<figure class="figure_img_text">
+	    					<a class="a_img list_img" href="news_detail.html">
+	    						<img src="images/index_news_img_1.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+	    						<h3><a href="news_detail.html">丰光科技参加2017美国拉斯维加斯LDI专业灯光展会</a></h3>
+	    						<span>2019.01.20</span>
+	    					</figcaption>
+	    				</figure>
+	    				<figure class="figure_img_text">
+	    					<a class="a_img list_img" href="news_detail.html">
+	    						<img src="images/index_news_img_2.jpg" class="img-responsive center-block" alt="" />
+	    					</a>
+	    					<figcaption class="figcaption_text">
+	    						<h3><a href="news_detail.html">丰光科技参加2017美国拉斯维加斯LDI专业灯光展会</a></h3>
+	    						<span>2019.01.20</span>
+	    					</figcaption>
+	    				</figure>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </article>
+	    <!-- index_news -->
+	</main>
+
+	<!-- footer -->
+	<footer class="container-fluid footer">
+		<nav class="footer_nav row">
+			<div class="container">
+				<ul class="col-xs-12 col-sm-12 col-md-6 footer_nav_ul">
+					<li><a href="about.html">关于我们</a></li>
+					<li><a href="product.html">产品中心</a></li>
+					<li><a href="case.html">合作案例</a></li>
+					<li><a href="news.html">新闻中心</a></li>
+					<li><a href="recruitment.html">企业招聘</a></li>
+				</ul>                                
+				<ul class="col-xs-12 col-sm-12 col-md-6 footer_ul_right">
+					<li><a href="">网站建设：</a></li>
+					<li><a href="">企泰科技</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</nav>
+		<div class="container footer_content">
+			<div class="row">
+    			<figure class="col-xs-12 col-sm-3 col-md-3 footer_logo">
+    				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+    			</figure>
+    			<article class="col-xs-12 col-sm-6 col-md-6 text-center footer_text">
+    				<h2>联系我们CONTACT</h2>
+    				<p>地址：中国.广东省广州市番禺区石基金山华创工业园C26栋   电话：020-2818-7123 / 400-0722-272</p>
+    				<p>办公时间：周一至周六（09：00-18：00）   邮箱：info@aklight.cn</p>
+    				<ul class="footer_icon">
+    					<li><a href="javascript:;"><i class="fa fa-whatsapp"></i></a></li>
+    					<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+    					<li><a href="javascript:;"><i class="fa fa-facebook-f"></i></a></li>
+    					<li><a href="javascript:;"><i class="fa fa-youtube-play"></i></a></li>
+    				</ul>
+    			</article>
+    			<figure class="col-xs-12 col-sm-3 col-md-3 footer_weixin_img">
+    				<img src="images/footer_weixin_img.jpg" alt="" />
+    			</figure>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer_bottom_text">
+		<article class="container text-center">
+			<div class="col-xs-12 col-sm-12 col-md-6 left_text">
+				<p>Copyright © 2017 广东丰光科技有限公司 粤ICP备17040311号</p>
+			</div>
+			<ul class="col-xs-12 col-sm-12 col-md-6 footer_bottom_text_ul">
+				<li><a href="">隐私政策</a></li>
+				<li><a href="">销售政策</a></li>
+				<li><a href="">法律声明</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">APP使用协议</a></li>
+			</ul>
+		</article>
+	</footer>
+	<!-- footer -->
+
+	<div class="js">
+	<script src="js/document_write.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="js/canvas-particle.js" type="text/javascript" charset="utf-8"></script> -->
+	</div>
+</body>
+</html>
