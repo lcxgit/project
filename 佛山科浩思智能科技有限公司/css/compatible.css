@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+br {color: transparent;}
+
+.fp-right ul li .fp-tooltip {color: #ccc !important;font-size: 15px !important;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {background: #00a34a !important;}
+.slider {padding: 0;margin: 0 auto;width: 100%;}
+
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+/*@supports not (display: grid) {}*/
