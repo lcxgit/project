@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+	<meta name="applicable-device" content="pc,mobile" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="robots" content="all" />
+	<meta name="author" contect="web developer lcx" />
+	<meta name="generator" content="Sublime Text3|chrome|Firefox" />
+	<meta name="name" content="特威, beta V1.0, 2019-06-03" />
+	<meta name="copyright" content="特威 and lcx All Rights Reserved" />
+	<meta name="theme-color" content="#333" />
+	<meta name="msapplication-navbutton-color" content="#333">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#333">
+	<title>特威</title>                    
+	<meta name="keywords" content="特威" />
+	<meta name="description" content="特威 不超过850个字符" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<main class="main">
+		<!-- header -->
+		<header class="header">
+			<div class="header_text">
+				<div class="container d-flex flex-wrap align-content-center justify-content-between justify-content-lg-end">
+					<div class="codehim-dropdown">
+					    <ul class="dropdown-items">
+					        <li><a class="main-links" href="index.html">网站首页</a></li>
+					        <li><a class="main-links" href="about.html">走进特威</a></li>
+					        <li>
+					            <span class="dropdown-heading">产品中心</span>
+					            <ul class="menu-items">
+					                <li><a href="product.html">SC系列变频施工升降机</a></li>
+					                <li><a href="product.html">SC系列变频施工升降机</a></li>
+					            </ul>
+					        </li>
+					        <li><a class="main-links" href="case.html">工程案例</a></li>
+					        <li><a class="main-links" href="service.html">服务与支持</a></li>
+					        
+					        <li>
+					            <span class="dropdown-heading">新闻资讯</span>
+					            <ul class="menu-items">
+					            	<li><a href="news.html">公司新闻</a></li>
+					                <li><a href="news.html">行业新闻</a></li>
+					            </ul>
+					        </li>
+					        <li><a class="main-links" href="recruit.html">招贤纳士</a></li>
+					        <li><a class="main-links" href="contact.html">联系我们</a></li>
+					    </ul>
+					</div>
+					<div class="d-flex flex-wrap align-content-center justify-content-end">
+						<a class="a" href=""><i class="fa fa-weixin"></i>在线留言</a>
+						<div class="select_input">
+							<button id="btn-search" class="btn btn--search btn_text">
+								<i class="fa fa-search"></i>在线搜索
+							</button>
+							<div class="search">
+								<button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">
+									<i class="fa fa-times"></i>
+								</button>
+								<form class="search__form" action="">
+									<input class="search__input" name="search" type="search" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+									<span class="search__info">Hit enter to search or ESC to close</span>
+								</form>
+							</div>
+						</div>
+						<a class="a" href=""><i class="fa fa-random"></i>切换英文</a>
+					</div>
+				</div>
+			</div>
+			<menu class="header_menu">
+				<div class="logo_text">
+					<div class="container">
+						<div class="d-flex flex-wrap align-content-stretch justify-content-between m_wrap">
+					        <a class="nav_logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+				            <h5 class="h5">
+				            	<i class="fa fa-phone"></i>全国服务咨询热线：<small>400-550-288</small>
+				            	<img src="images/logo_text_img.jpg" alt="" />
+				            </h5>
+				        </div>
+					</div>
+				</div>
+				<nav class="nav_bar">
+					<div class="container">
+				        <div class="main_menu">
+				            <ul class="container navbar_ul">
+				                <li class="nav_item active">
+				                    <a class="nav_link" href="index.html">网站首页</a>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="about.html">走进特威</a>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="product.html" data-toggle="">产品中心</a>
+				                    <div class="dropdown_menu">
+				                        <a class="dropdown_item" href="product.html">SC系列变频施工升降机</a>
+				                        <a class="dropdown_item" href="product.html">SC系列变频施工升降机</a>
+				                    </div>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="case.html">工程案例</a>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="service.html" data-toggle="">服务与支持</a>
+				                    <div class="dropdown_menu">
+				                        <a class="dropdown_item" href="service.html">服务与支持</a>
+				                        <a class="dropdown_item" href="service_map.html">销售网络图</a>
+				                    </div>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="news.html" data-toggle="">新闻资讯</a>
+				                    <div class="dropdown_menu">
+				                        <a class="dropdown_item" href="news.html">公司新闻</a>
+				                        <a class="dropdown_item" href="news.html">行业新闻</a>
+				                    </div>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="recruit.html">招贤纳士</a>
+				                </li>
+				                <li class="nav_item">
+				                    <a class="nav_link" href="contact.html">联系我们</a>
+				                </li>
+				            </ul>
+				        </div>
+					</div>
+			    </nav>
+			</menu>
+		</header>
+		<!-- header -->
+
+		<!-- slider -->
+		<section class="swiper-container slider_img_list">
+			<div class="swiper-wrapper">
+		        <figure class="swiper-slide">
+		        	<a class="a" href="">
+		        		<img class="img-fluid d-sm-block d-md-block d-lg-none d-xl-none" src="images/slider.jpg" alt="" />
+		        		<img class="img-fluid d-sm-none d-md-none d-none d-lg-block d-xl-block" src="images/slider.jpg" alt="" />
+		        	</a>
+		        </figure>
+		        <figure class="swiper-slide">
+		        	<a class="a" href="">
+		        		<img class="img-fluid d-sm-block d-md-block d-lg-none d-xl-none" src="images/slider.jpg" alt="" />
+		        		<img class="img-fluid d-sm-none d-md-none d-none d-lg-block d-xl-block" src="images/slider.jpg" alt="" />
+		        	</a>
+		        </figure>
+			</div>
+			<div class="pagination_next_prev">
+				<div class="swiper-pagination slider_pagination"></div>
+				<div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+				<div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+			</div>
+		</section>
+		<!-- slider -->
+
+		<!-- index_about -->
+		<article class="container-fluid index_about">
+			<div class="container index_about_main">
+				<div class="index_title">
+					<h2>走进特威</h2>
+					<span>Enter Twain</span>
+				</div>
+				<div class="text">
+					<h5 class="h5">精益求精  传承工匠精神</h5>
+					<div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 ">
+							<p class="p">广州市特威工程机械有限公司地处广州市白云区神山镇,广清高速神山出口附近，是一家施工升降机的专业生产厂家。公司成立于2011年，占地100000多平方米，注册资金1060万元，现有员工300余人其中工程技术人员33人，高级技术人员52人。</p>
+							<p class="p">SC200/200型施工升降机是特威公司的主导产品，是一种靠齿轮齿条传动的电梯。具有广泛的用途，不仅可用于一般的高层建筑施工的人、货运输，还可用于工业、电力、矿井、石油、化工等领域的人货运输。整机的工作级别为A8。 公司产品严格执行行业标准并进行大量人性化处理，在吊笼内饰、电控箱、驾驶室等部位进行优化改进，使用起来更为方便、安全。</p>
+							<a class="clearfix link" href="about.html">了解更多<i class="fa fa-plus"></i></a>
+							<ul class="clearfix d-flex flex-wrap align-content-stretch justify-content-center ul">
+								<li><a href="about.html"><img src="images/index_about_img_1.jpg" alt="" /><span>特威简介</span></a></li>
+								<li><a href="about.html"><img src="images/index_about_img_2.jpg" alt="" /><span>企业文化</span></a></li>
+								<li><a href="about.html"><img src="images/index_about_img_3.jpg" alt="" /><span>资质荣誉</span></a></li>
+								<li><a href="about.html"><img src="images/index_about_img_4.jpg" alt="" /><span>组织架构</span></a></li>
+							</ul>
+						</div>
+						<a class="col-sm-12 col-md-12 col-lg-12 col-xl-5 list_img" href="about.html"><img class="img-fluid" src="images/index_about_img_5.jpg" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- index_about -->
+
+		<!-- index_product -->
+		<section class="container-fluid index_product">
+			<div class="container index_product_main">
+				<div class="index_title">
+					<h2>产品中心</h2>
+					<span>Product Center</span>
+				</div>
+				<div class="index_product_tab">
+					<div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 product_tab_nav">
+						<ul class="nav-tabs nav ul">
+						    <li><a class="active" href="#index_product_tab_1" data-toggle="tab">SC系列普通升降机</a></li>
+						    <li><a href="#index_product_tab_2" data-toggle="tab">SC系列工频变频双控制升降机</a></li>
+						    <li><a href="#index_product_tab_3" data-toggle="tab">SC系列变频升降机</a></li>
+						    <li><a href="#index_product_tab_4" data-toggle="tab">SC系列变频绿色环保型升降机</a></li>
+						    <li><a href="#index_product_tab_5" data-toggle="tab">SC系列特殊机型</a></li>
+						    <li><a href="#index_product_tab_6" data-toggle="tab">SC系列变频绿色环保型升降机</a></li>
+						    <li><a href="#index_product_tab_7" data-toggle="tab">SC系列特殊机型</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-8 col-xl-9 tab-content tab_content">
+						<div class="tab-pane tab_text fade show active" id="index_product_tab_1">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+						<div class="tab-pane tab_text fade" id="index_product_tab_2">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+						<div class="tab-pane tab_text fade" id="index_product_tab_3">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+						<div class="tab-pane tab_text fade" id="index_product_tab_4">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+						<div class="tab-pane tab_text fade" id="index_product_tab_5">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+						<div class="tab-pane tab_text fade" id="index_product_tab_6">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+						<div class="tab-pane tab_text fade" id="index_product_tab_7">
+							<a class="a" href="product_detail.html">
+								<span class="list_img"><img class="img-fluid" src="images/index_product_img_1.jpg" alt="" /></span>
+								<div class="text">
+									<small>SC系列普通施工升降机是我们公司其中一种产品，它具有直接启动，结构简单等优点，并且相对国内同类产品它具有更明显优势</small>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="p50">
+					<div class="swiper-container index_product_list">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="product_detail.html">
+									<span class="list_img"><img class="img-fluid" src="images/index_product_img_2.jpg" alt="" /></span>
+									<small>安全器板装配</small>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="product_detail.html">
+									<span class="list_img"><img class="img-fluid" src="images/index_product_img_3.jpg" alt="" /></span>
+									<small>照明灯</small>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="product_detail.html">
+									<span class="list_img"><img class="img-fluid" src="images/index_product_img_4.jpg" alt="" /></span>
+									<small>电动防抖装置</small>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="product_detail.html">
+									<span class="list_img"><img class="img-fluid" src="images/index_product_img_5.jpg" alt="" /></span>
+									<small>单开门门锁</small>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="pagination_next_prev">
+						<div class="swiper-pagination index_product_pagination"></div>
+						<div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+						<div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- index_product -->
+
+		<!-- index_case -->
+		<section class="container-fluid index_case">
+			<div class="container index_case_main">
+				<div class="index_title">
+					<h2>工程案例</h2>
+					<span>Engineering case</span>
+				</div>
+				<div class="row text">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 index_case_list_1">
+						<div class="swiper-container index_case_list">
+							<div class="swiper-wrapper">
+						        <figure class="swiper-slide">
+						        	<a class="a" href="case.html">
+						        		<img class="img-fluid" src="images/index_case_img_1.jpg" alt="" />
+						        		<figcaption class="figcaption_text">
+						        			<h3>成都绿地中心468项目中国建筑</h3>
+						        			<span>第1工程局468m</span>
+						        		</figcaption>
+						        	</a>
+						        </figure>
+						        <figure class="swiper-slide">
+						        	<a class="a" href="case.html">
+						        		<img class="img-fluid" src="images/index_case_img_1.jpg" alt="" />
+						        		<figcaption class="figcaption_text">
+						        			<h3>成都绿地中心468项目中国建筑</h3>
+						        			<span>第2工程局468m</span>
+						        		</figcaption>
+						        	</a>
+						        </figure>
+						        <figure class="swiper-slide">
+						        	<a class="a" href="case.html">
+						        		<img class="img-fluid" src="images/index_case_img_1.jpg" alt="" />
+						        		<figcaption class="figcaption_text">
+						        			<h3>成都绿地中心468项目中国建筑</h3>
+						        			<span>第3工程局468m</span>
+						        		</figcaption>
+						        	</a>
+						        </figure>
+							</div>
+							<div class="pagination_next_prev">
+								<div class="swiper-pagination index_case_pagination"></div>
+								<div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+								<div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+							</div>
+						</div>
+					</div>
+					<figure class="col-sm-12 col-md-6 col-lg-6 col-xl-6 index_case_list_2">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a_text">
+					            <a class="list_img" href="case.html">
+					            	<img class="img-fluid" src="images/index_case_img_2.jpg" alt="" />
+					            	<div class="img_text">
+										<span>重庆塔</span>
+									</div>
+					            </a>
+					        </div>
+					        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a_text">
+					            <a class="list_img" href="case.html">
+					            	<img class="img-fluid" src="images/index_case_img_3.jpg" alt="" />
+					            	<div class="img_text">
+										<span>深圳汉京金融中心</span>
+									</div>
+					            </a>
+					        </div>
+					        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a_text">
+					            <a class="list_img" href="case.html">
+					            	<img class="img-fluid" src="images/index_case_img_4.jpg" alt="" />
+					            	<div class="img_text">
+										<span>东莞国贸大厦</span>
+									</div>
+					            </a>
+					        </div>
+				            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a_text">
+					            <a class="list_img" href="case.html">
+					            	<img class="img-fluid" src="images/index_case_img_5.jpg" alt="" />
+					            	<div class="img_text">
+										<span>重庆来福土广场</span>
+									</div>
+					            </a>
+					        </div>
+				        </div>
+			        </figure>
+			    </div>
+			    <div class="mx-auto text-center">
+				    <a class="link" href="case.html">查看更多<i class="fa fa-plus"></i></a>
+				</div>
+			</div>
+		</section>
+		<!-- index_case -->
+
+		<!-- index_honor -->
+		<section class="container-fluid index_honor">
+			<div class="container index_honor_main">
+				<div class="index_title">
+					<h2>荣誉资质</h2>
+					<span>honor</span>
+				</div>
+				<div class="p50">
+					<div class="swiper-container index_honor_list">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a class="list_img" href="">
+									<img class="img-fluid" src="images/honor_img_1.jpg" alt="" />
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="list_img" href="">
+									<img class="img-fluid" src="images/honor_img_2.jpg" alt="" />
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="list_img" href="">
+									<img class="img-fluid" src="images/honor_img_3.jpg" alt="" />
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="list_img" href="">
+									<img class="img-fluid" src="images/honor_img_4.jpg" alt="" />
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="list_img" href="">
+									<img class="img-fluid" src="images/honor_img_5.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="pagination_next_prev">
+						<div class="swiper-pagination index_honor_pagination"></div>
+						<div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+						<div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- index_honor -->
+
+		<!-- index_news -->
+		<article class="container-fluid index_news">
+			<div class="container index_news_main">
+				<div class="index_title">
+					<h2>新闻资讯</h2>
+					<span>News and information</span>
+				</div>
+				<ul class="d-flex flex-wrap align-content-center justify-content-center news_ul">
+					<li><a href="news.html">公司新闻</a></li>
+					<li><a href="news.html">行业新闻</a></li>
+				</ul>
+				<div class="row">
+					<figure class="col-sm-12 col-md-12 col-lg-8 col-xl-8 figure_img">
+						<div class="row">
+			        		<a class="col-sm-6 col-md-6 col-lg-6 col-xl-6 list_img" href="news_detail.html">
+			        			<img class="img-fluid" src="images/index_news_img.jpg" alt="" />
+			        		</a>
+			        		<figcaption class="col-sm-6 col-md-6 col-lg-6 col-xl-6 figcaption_text">
+			        			<h3><a href="news_detail.html">导轨式液压升降机安全阀的使用注</a></h3>
+			        			<span>2019-06-03</span>
+			        			<p>导轨式液压升降机利用的安宁阀是特种设备上的一种限压、泄压起到安全袒护效力的要紧附件.安全阀的步履妥当性和功用凶狠直接相干到建筑和人身的安全,并与节能和境况保护全</p>
+			        			<a class="clearfix link" href="news.html">了解更多<i class="fa fa-plus"></i></a>
+			        		</figcaption>
+			        	</div>
+		        	</figure>
+	        		<ul class="col-sm-12 col-md-12 col-lg-4 col-xl-4 ul">
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        			<li><a href="news_detail.html">新闻新闻新闻新闻新闻新闻</a><span>2019-06-03</span></li>
+	        		</ul>
+		        </div>
+			</div>
+		</article>
+		<!-- index_news -->
+
+		<!-- footer -->
+		<footer class="container-fluid footer">
+			<div class="footer_main">
+				<nav class="footer_nav">
+					<ol class="container ol">
+		                <li><a href="about.html">走进特威</a></li>
+		                <li><a href="product.html">产品中心</a></li>
+		                <li><a href="case.html">工程案例</a></li>
+		                <li><a href="service.html">服务与支持</a></li>
+		                <li><a href="news.html">新闻资讯</a></li>
+		                <li><a href="recruit.html">招贤纳士</a></li>
+		                <li><a href="contact.html">联系我们</a></li>
+		            </ol>
+		        </nav>
+		        <article class="container footer_text">
+		        	<div class="left_text">
+		        		<p class="text_p">电话：020-36711962    36135361 
+		        			地址：广州市白云区神山镇五丰工业大道318号
+		        		</p>
+		        		<p class="p">广州市特威工程机械有限公司 版权所有 盗版必究 
+		        			<a class="a" href="">备案号：粤ICP备14019xxxxx号 </a>     
+		        			<span class="span"><a href="">技术支持：</a><a href="">企泰科技</a></span>
+		        		</p>
+		        	</div>
+		        	<figure class="right_img">
+		        		<img class="text_img" src="images/footer_wx_img.jpg" alt="" />
+		        	</figure>
+		        </article>
+			</div>
+		</footer>
+		<!-- footer -->
+	</main>
+	<div>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</div>
+</body>
+</html>

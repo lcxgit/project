@@ -1,0 +1,249 @@
+http://wp.qq.com/
+
+http://qxw1193270130.my3w.com/
+广州荣信电子产品有限公司	121.42.96.177	qxw1193270130	ronsinQt127
+
+锐力展柜
+http://qxu1883990061.my3w.com/
+qxu1883990061 Rl510410
+http://qxu1883990061.my3w.com/dede/
+admin admin
+$cfg_dbtype = 'mysql';
+$cfg_dbhost = 'qdm157490323.my3w.com';
+$cfg_dbname = 'qdm157490323_db';
+$cfg_dbuser = 'qdm157490323';
+$cfg_dbpwd = 'Rl510410';
+$cfg_dbprefix = 'dede_';
+$cfg_db_language = 'utf8';
+
+http://qxw1608460123.my3w.com/
+广东省生物农药创新应用	
+139.129.147.212   账号：qxw1608460123	 密码：gdswfzQt127
+
+
+http://qxw1608500070.my3w.com/
+广东粤能净环保科技有限公司	121.42.117.113	qxw1608500070	ypuritechQt127
+
+
+约塑
+广州诺瑞德企业管理有限公司
+http://qxw1539410063.my3w.com
+121.42.112.148	 用户名：qxw1539410063	密码：yuesussQt127
+pc版   http://yuesuss.com/Admin/
+移动版  http://yuesuss.com/Admin/Login.aspx
+yuesu  123456X
+
+
+广州市维客网络技术有限公司
+测试地址：http://qxw1193270130.my3w.com/
+121.42.96.177  qxw1193270130	wellkooQt127
+
+测试地址： http://qxu1883990061.my3w.com/
+http://qxu1883990061.my3w.com/dede/#
+admin admin
+数据库地址  qdm157490323.my3w.com  数据名  qdm157490323_db
+数据库用户  qdm157490323  
+数据库密码  Rl510410
+
+
+广州菲思薇生物科技有限公司
+测试地址  http://qxw1608530015.my3w.com/
+http://www.face-way.com
+121.42.117.70   qxw1608530015  facewayQt127
+用户名：root
+- 密码：Weikesoft8878a
+- 数据库用户名： root
+- 数据库密码： weikesoft
+
+
+广州溯源信息技术有限公司
+测试地址   http://qxw1099360192.my3w.com/
+121.42.69.163	qxw1099360192  origintechQt127
+
+正超
+http://qxw1539260071.my3w.com/
+121.42.109.82	qxw1539260071	stzc1234
+
+广州聚业环保设备有限公司
+gzjuye.com.cn
+后台帐号：juye   123456x
+百度统计帐号：juye123   admin123
+gzjuye123  qxw1608460006
+139.129.147.215
+
+家简生活
+http://www.hsl99.cn/
+117.50.2.46
+administrator
+1qazxsw2DDD@
+
+迎宾馆
+测试地址：http://qxw1608440155.my3w.com/
+FTP地址：139.129.147.230 
+账号：qxw1608440155
+密码：gdyingbinhotelQt127
+
+广州高精测控科技有限公司
+http://qxw1539240090.my3w.com/
+121.42.109.113 	
+qxw1539240090	
+gzgjckQt127
+
+广州铂金装饰有限公司
+http://ptdeco.cn/
+http://qxw1608190171.my3w.com/
+FTP：139.129.148.18
+账号： qxw1608190171
+密码： ptdecoQt127
+
+广州乐蛙实业有限责任公司	
+http://qxw1099310047.my3w.com/
+121.42.69.248	
+qxw1099310047	
+lovatimeQt127
+
+
+广州欧黛化妆品科技有限公司	
+http://laestephe.net
+
+地址 byw6493260001.my3w.com
+FTP登录用户名 byw6493260001
+FTP登录密码 Laestephe123
+
+
+密装
+http://missjoy.cn
+http://120.79.102.17:8064/
+后台  mizhuang 123456x 
+
+喜云翔  http://ausknife.com
+深圳喜云翔商贸有限公司	
+FTP地址： 139.129.179.177	
+账号： qxw1608130140
+密码： ausknifeQt127
+测试地址： http://qxw1608130140.my3w.com/
+http://qxw1608130140.my3w.com/admin
+qt 123456x
+
+
+深圳市汉丽电子有限公司
+http://watersmetal.com/
+后台： wotesi  123456x
+FTP:  qxw1539310197  ztinfo123  121.42.109.72
+
+佳安
+http://qxw1194430190.my3w.com/  
+qt 123456x
+121.42.92.145  qxw1194430190    gzjadtQt127
+原网站： http://gzjadt.com/
+
+广州市君程物流有限公司
+测试地址：http://qxw1194120100.my3w.com/
+FTP：121.42.94.129 
+账号： qxw1194120100
+密码： jc56Qt127
+
+贵族之恋
+http://guizuzhilian.com/
+http://guizuzhilian.com/join/index.html
+113.10.191.171
+gzzl201901
+gzzl20190103!@#
+
+悦瑞生物
+测试网站：http://qxw1142570042.my3w.com/index.aspx
+ftp:121.42.78.51 	
+账号：qxw1142570042	
+密码：youreeQt127
+
+丰光
+http://qxw1193240189.my3w.com/
+121.42.96.234
+qxw1193240189 
+gzbyswQt127
+
+精一家具
+http://zitoliving.com/index.aspx
+121.42.121.120	qxw1649810177	zitolivingQt127
+jignyi   123456x
+http://zitoliving.com/Admin/Index.aspx
+
+
+广东穗星电缆实业有限公司
+http://qxw1539420011.my3w.com/
+121.42.112.114	
+qxw1539420011	
+LinrongSQt127
+
+亿升源智能科技(东莞)有限公司
+http://qxw1649830127.my3w.com	
+121.42.121.56 	
+qxw1649830127	
+DGYSYQt127
+
+广东华丰环保科技有限公司
+http://qxw1608760061.my3w.com/
+
+广州市明静舞台灯光设备有限公司
+http://hmw021096.my3w.com/
+
+云南一米阳光家纺有限公司
+http://qxw1539180176.my3w.com/
+121.42.107.71 	qxw1539180176	ymygjmQt127
+
+广东都挺好家具科技有限公司	
+http://qxw1142580127.my3w.com/
+121.42.78.40	qxw1142580127	gddthQt127
+
+丰光
+http://aklight.cn
+39.107.43.182   byw6347880001  aklightQt127
+
+http://gzbestbake.com/
+
+参考网站
+http://demo.uemo.net/itemid/27382/
+
+
+webqt后台
+weifx.webqt.cn
+账号： webqt     密码： 12345678
+
+http://entertry.com:8688
+qt_lcx qt_lcx
+
+导航栏
+http://www.17sucai.com/preview/1/2014-03-14/FullscreenOverlayStyles/
+
+https://github.com/opencoon/fxsystem
+http://m.yoyoso.kr/index.html
+http://117.50.2.46:8085/
+http://pm.uokosoft.com/yk.php?s=/Index/index#
+http://qt.entertry.com/#/admin
+
+
+https://www.gametime.com/products?orderby_sort=productPrice%7Cdesc&limit=12&search%3Aregion=%3DUSA%7CBOTH%7CIS_EMPTY&category_group=2%7C3%7C6%7C13%7C14%7C16%7C1%7C18&category%3Aspecials[]=313&category%3Aages[]=5
+https://www.lappset.com/Products/Product-search?product_family=PLAY
+https://playworld.com/early-childhood/components
+
+mstsc
+
+
+3月
+H5 精一家具 2019/03/6
+PC 华丰 2019/03/18
+PC 明静舞台灯光 2019/03/27
+
+4月
+PC 亿升源 2019-04-01
+
+5月
+H5 佛山科浩思智能科技有限公司 2019-05-05
+PC 一米阳光家纺 2019-05-20
+PC 广东都挺好家具科技有限公司 2019-05-22
+H5 广东艾柯尼家具有限公司 2019-05-27
+//PC 广州市尼科机械 2019-05-16
+
+6月
+H5 广州韩之素国际贸易有限公司-响应式
+驷源机电确认设计稿

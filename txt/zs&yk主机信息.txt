@@ -1,0 +1,88 @@
+
+
+众森  主机
+IP地址 60.205.26.25 
+临时域名 bxu2342160198.my3w.com 
+主机管理控制台用户名 bxu2342160198
+
+FTP登录主机地址 bxu2342160198.my3w.com
+FTP登录用户名 bxu2342160198
+FTP登录密码 Zscx5897863
+
+数据库类型 MySQL
+数据库连接地址 bdm643975323.my3w.com
+数据库名称 bdm643975323_db
+数据库用户名 bdm643975323
+数据库管理密码 Zscx5897863
+
+
+
+广州众森创新科技有限公司
+https://www.zhongsen.tech/
+后台
+https://www.zhongsen.tech/ggbb/root.php
+ggbb	123456
+
+
+
+美食——爱屋及乌
+http://food.aiarvrsoft.com
+后台
+http://food.aiarvrsoft.com/food/root.php
+root	123456
+
+
+
+
+蔓之研
+后台
+http://manzhiyan.aiarvrsoft.com/mianmo/root.php
+root	123456
+
+
+
+--------------------------------------------------华丽分割线--------------------------------------------------
+
+
+
+
+游控派  主机
+阿里云	蔓之研001	mzy001
+IP地址 121.42.105.132
+临时域名 qxu1152210113.my3w.com
+主机管理控制台用户名 qxu1152210113
+
+FTP登录主机地址 qxu1152210113.my3w.com
+FTP登录用户名 qxu1152210113
+FTP登录密码 mzy001001
+
+数据库类型 MySQL
+数据库连接地址 qdm176766284.my3w.com
+数据库名称 qdm176766284_db
+数据库用户名 qdm176766284
+数据库管理密码 mzy001001
+
+
+
+游控派  比特币
+http://uokosoft.com/
+没有后台，只有静态
+
+
+
+游控派科技
+http://www.uokosoft.com
+后台
+http://www.uokosoft.com/soft/root.php
+root  123456
+
+
+
+广州市普茂誉礼品有限公司
+http://pm.uokosoft.com/
+后台
+http://pm.uokosoft.com/yk.php?s=/Login/index
+root  123456
+
+
+--------------------------------------------------我是有底线--------------------------------------------------

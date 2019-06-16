@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* CSS Document */
+&nbsp;
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+
+*,*::after,*::before {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+/*滚动条*/
+::-webkit-scrollbar {
+	width:8px;
+	height:8px;
+	background-color:#f5f5f5;
+}
+::-webkit-scrollbar-track {
+	border-radius:10px;
+	background-color:#f5f5f5;
+	box-shadow:inset 0 0 1px transparent;
+}
+::-webkit-scrollbar-thumb {
+	border-radius:10px;
+	background-color:#555;
+	box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+}
+::-ms-clear,::-ms-reveal {
+	display:none;
+}
+::-ms-expand {
+	display:none;
+}
+/*滚动条*/
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+* {
+	margin:0;
+	padding:0;
+}
+br {color: transparent;}
+figure {margin: 0;}
+html {
+	-webkit-text-size-adjust:100%;/*chrome字体问题*/
+	-ms-text-size-adjust:100%;
+	font-size:100%;
+}
+/*IE6对positon:fixed的单独处理修正IE6滚动抖动的bug*/
+*html,*html body {
+	background-image:url(about:blank);
+	/*修正IE6滚动抖动的bug*/
+	background-attachment:fixed;
+	/*根据自己实际，非必需*/
+}
+html,body {
+	width:100%;
+	height:100%;
+}
+body {overflow-x:hidden;}
+div {box-sizing:border-box;}
+@font-face {font-family:"sy";src:url('../fonts/sy.ttf') format('TrueType');}
+body,button,input,select,textarea {
+	font-family:"sy" !important;
+	/*font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-size:15px;
+	line-height:25px;
+	color:#666;
+	outline:none;
+}
+input,select,textarea {
+	font-size:100%;
+	padding-left:10px;
+}
+/* 去掉各Table cell 的边距并让其边重合 */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/* IE bug fixed:th 不继承 text-align*/
+th {
+	text-align:inherit;
+}
+/* 对齐是排版最重要的因素,别让什么都居中 */
+caption,th {
+	text-align:left;
+}
+/* 去除默认边框 */
+fieldset,img {
+	border:none;
+	outline:none;
+	-moz-outline:none;
+}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+	display:block;
+}
+/* 去掉列表前的标识,li 会继承 */
+ol,ul,li {
+	list-style:none;
+}
+/* 一致的 del 样式 */
+del {
+	text-decoration:line-through;
+}
+/* 来自yahoo,让标题都自定义,适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:500;
+}
+/* 统一上标和下标 */
+sub,sup {
+	font-size:75%;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+}
+sup {
+	top:-0.5em;
+}
+sub {
+	bottom:-0.25em;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+	text-decoration:none;
+}
+/* 让链接在 hover 状态下显示下划线 */
+a {
+	color:#666;
+	cursor:pointer;
+	outline:none;
+	outline:none;
+	text-decoration:none;
+	blr:expression(this.onFocus=this.blur());
+}
+a:hover,a:focus {
+	text-decoration:none !important;
+	color:#333;
+}
+/* 清理浮动 */
+.clearfix {clear:both;}
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+/* 重设 HTML5 标签,IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+/*设置图片视频等自适应*/
+audio,canvas,video {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.video embed,.video object,.video iframe {
+	width:100%;
+	height:auto;
+}
+/*设置图片视频等自适应*/
+/*img {
+	display:block;
+	max-width:var(--width_100);
+	margin:var(--margin_0)
+}
+*/
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+}
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:500;
+}
+
+:root {
+
+	--6x2:calc(600px * 2);
+	--100:100%;
+	--height:auto;
+
+	--bg_940608:#940608;
+	--bg_f5:#f5f5f5;
+	--bg_f:#fff;
+	--bg_0:#000;
+
+	--color:#cd3500;
+	--3:#333;
+	--6:#666;
+	--9:#999;
+	--0:#000;
+	--f:#fff;
+	--c:#ccc;
+	--d:#ddd;
+	--e:#eee;
+
+	--12:12px;
+	--13:13px;
+	--14:14px;
+	--15:15px;
+	--16:16px;
+	--17:17px;
+	--18:18px;
+	--19:19px;
+	--20:20px;
+	--21:21px;
+	--22:22px;
+	--23:23px;
+	--24:24px;
+	--25:25px;
+	--30:30px;
+
+	--t1:1;
+	--t2:2;
+	--t3:3;
+	--t4:4;
+	--t5:5;
+	--t6:6;
+	--t7:7;
+	--t8:8;
+	--t9:9;
+	--t10:10;
+
+	--left:left;
+	--center:center;
+	--right:right;
+
+	--p0:0px;
+	--p5:5px;
+	--p10:10px;
+	--p15:15px;
+	--p20:20px;
+	--p25:25px;
+	--p30:30px;
+	--p40:40px;
+	--p50:50px;
+
+	--pt5:5px 0px 0px 0px;
+	--pt10:10px 0px 0px 0px;
+	--pt15:15px 0px 0px 0px;
+	--pt20:20px 0px 0px 0px;
+	--pt25:25px 0px 0px 0px;
+	--pt30:30px 0px 0px 0px;
+	--pt40:40px 0px 0px 0px;
+	--pt50:50px 0px 0px 0px;
+
+	--pb5:0px 0px 5px 0px;
+	--pb10:0px 0px 10px 0px;
+	--pb15:0px 0px 15px 0px;
+	--pb20:0px 0px 20px 0px;
+	--pb25:0px 0px 25px 0px;
+	--pb30:0px 0px 30px 0px;
+	--pb40:0px 0px 40px 0px;
+	--pb50:0px 0px 50px 0px;
+
+	--ptb5:5px 0px;
+	--ptb10:10px 0px;
+	--ptb15:15px 0px;
+	--ptb20:20px 0px;
+	--ptb25:25px 0px;
+	--ptb30:30px 0px;
+	--ptb40:40px 0px;
+	--ptb50:50px 0px;
+
+	--plr5:0px 5px;	
+	--plr10:0px 10px;
+	--plr15:0px 15px;
+	--plr20:0px 20px;
+	--plr25:0px 25px;
+	--plr30:0px 30px;
+	--plr40:0px 40px;
+	--plr50:0px 50px;
+
+	--m_0:0px 0px 0px 0px;
+	--m0:0px auto;
+	--mtb5:5px auto;
+	--mtb10:10px auto;
+	--mtb15:15px auto;
+	--mtb20:20px auto;
+	--mtb25:25px auto;
+	--mtb30:30px auto;
+	--mtb40:40px auto;
+	--mtb50:50px auto;
+	--mtb60:60px auto;
+	--mtb80:80px auto;
+	--mtb100:100px auto;
+
+	--mt5:5px auto 0px;
+	--mt10:10px auto 0px;
+	--mt15:15px auto 0px;
+	--mt20:20px auto 0px;
+	--mt25:25px auto 0px;
+	--mt30:30px auto 0px;
+	--mt40:40px auto 0px;
+	--mt50:50px auto 0px;
+
+	--mb5:0px auto 5px;
+	--mb10:0px auto 10px;
+	--mb15:0px auto 15px;
+	--mb20:0px auto 20px;
+	--mb25:0px auto 25px;
+	--mb30:0px auto 30px;
+	--mb40:0px auto 40px;
+	--mb50:0px auto 50px;
+}
+

@@ -1,0 +1,169 @@
+163邮箱
+lcx1243878247@163.com
+lcx13232195379
+
+Google 帐号电子邮件地址
+lcx
+xiaocainiao132@gmail.com
+lcx13232195379
+
+微信公众号
+1243878247@qq.com
+13232195379LCX
+
+小程序
+lcx1243878247@163.com
+LCX13232195379
+
+阿里云
+账号 1243878247@qq.com
+密码 LCX13232195379
+主机IP 121.42.76.82
+主机管理控制台地址  https://cp.aliyun.com
+主机用户名  qxu1098300141
+FTP登录主机地址  qxu1098300141.my3w.com
+FTP用户名  qxu1098300141
+MySQL数据库连接地址  qdm164415241.my3w.com
+数据库名称  qdm164415241_db
+数据库用户名  qdm164415241
+临时域名  qxu1098300141.my3w.com
+域名 wanyou16.com 
+
+php空间
+www.hostinger.com.hk
+域名 lcx.esy.es
+服务器IP 31.170.165.253 
+FTP主机	ftp.lcx.esy.es
+FTP IP地址	185.28.20.51
+FTP端口	21
+FTP用户名	u785066021
+FTP密码	13232195379
+MySQL主机 	mysql.hostinger.com.hk
+MySQL数据库	    MySQL用户名
+u785066021_lcx 	u785066021_lcx 	
+u785066021_web 	u785066021_web 	
+MySQL密码 123456
+lcx.esy.es/happy_birthday
+lcx.esy.es/happybirthday
+
+php空间
+https://www.awardspace.com/
+二级域名 lcx.atwebpages.com
+主域名 www.lcx.dx.am
+二级域名 linsimin.lcx.dx.am
+项目地址 www.lcx.dx.am/index.php/Jianli
+主机名 lcx.atwebpages.com，f16-preview.awardspace.net
+FTP用户名 2409529_lcx 
+FTP密码 lcx123456
+数据库主机 fdb16.awardspace.net
+数据库名称 2409529_lcx
+数据库用户 2409529_lcx
+数据库密码 lcx123456
+
+小胖空间
+Cpanel的用户名: xiaop_20567201
+Cpanel的密码: lcx13232
+你的网址: http://monkey.xiaopangkj.space
+FTP 服务器 : ftp.xiaopangkj.space
+FTP 登录 : xiaop_20567201
+FTP 密码 : lcx13232
+MySQL 数据库名: 请自行登录控制面板Cpanel中创建
+MySQL 用户 : xiaop_20567201
+MySQL 密码 : lcx13232
+MySQL 服务器: 控制面板Cpanel中查询
+控制面板 Cpanel: http://cpanel.xiaopangkj.space
+lcx.22web.org
+lcx.66ghz.com
+
+主机屋
+临时域名： 	
+ftp6159035.host523.zhujiwu.me 
+IP地址：111.67.196.212
+FTP地址 sk523.webcname.net  
+FTP用户名 ftp6159035
+FTP密码 13232195379lcxROOT
+账号 lcx123test
+密码 13232195379LCX
+数据库账号 zjwdb_6159035
+密码 13232195379lcxROOT
+数据库名称 zjwdb_6159035
+主机屋2
+临时域名：
+http://ftp6210003.host701.zhujiwu.me 
+IP地址：111.67.196.18
+FTP地址：sk701.webcname.net  
+FTP用户名：ftp6210003 连接端口：21
+FTP密码：lcx132321ROOT  
+数据库账号：zjwdb_6210003  连接端口：3306
+数据库密码：lcx132321ROOT
+
+主机吖 php主机
+https://www.zhujiya.com
+账号 lcx
+密码 LCX123456lcx
+FTP链接地址 vhost180.cloudvhost.top
+FTP账号 webmaster@HA401535
+FTP密码 66bBhfECPMA5K20V
+
+3a网络
+http://cnaaa.org
+账号 1243878247@qq.com
+密码 lcx123456
+有利云
+http://www.yuoli.cn
+用户名 17044336
+13232195379LCX
+临时域名 http://rfwj5h4x.host.mz.kgylw.cn/
+sql地址 localhost
+数据库名 blog
+数据库用户名 blog
+密码 J37715Y6y6
+FTP帐号	rfwj5h4x
+FTP密码	FFS8T2Y1y6
+服务器IP 183.131.85.71	域名指向 183.131.85.71
+FTP指向 183.131.85.71	FTP端口 21
+
+https://www.destoon.com/member/login.php
+test-1  123456
+
+其它网站
+www.lcx.dx.am/test/H5开心消消乐
+www.lcx.dx.am/test/生日动画
+lcx.22web.org/H5开心消消乐
+
+https://www.pantrysbest.com/cities/beijing
+https://mos.meituan.com/
+http://www.cssmoban.com/cssthemes/5641.shtml
+https://laod.cn/
+企业网站模版
+http://tpl.amazeui.org/template/22/companyWebsite/dist/index.html
+
+蓝色响应式的网络建设设计公司网站模板 数立方
+http://www.17sucai.com/pins/demoshow/24106
+
+水果店
+http://www.17sucai.com/preview/2/2017-04-22/moban2025/index.html
+html 模版
+http://www.17sucai.com/preview/2/2017-05-16/learn/index.html#
+
+异清轩博客模板
+http://www.17sucai.com/preview/512263/2016-04-05/%E5%BC%82%E6%B8%85%E8%BD%A9%E5%8D%9A%E5%AE%A28/index.html
+创意白色H5
+http://www.17sucai.com/preview/93614/2017-08-25/%E5%88%9B%E6%84%8F%E7%99%BD%E8%89%B2H5/index.html
+
+
+Allprogrammers are playwrights and all computers are lousy actors. (Anonymous HackActor)
+
+所有的程序员都剧作家，而所有计算机都是糟糕的演员。 
+
+Oneman’s crappy software is another man’s full time job. (Jessica Gaston)
+
+一个人写的烂软件将会给另一个人带来一份全职工作。 
+
+Anyfool can write code that a computer can understand. Good programmers write codethat humans can understand.
+
+傻瓜写计算机能理解的代码。优秀的程序员写人类能读懂的代码。 
+
+It’s hard enough to find an error in your code when you’re looking for it; it’seven harder when you’ve assumed your code is error-free. (Steve McConnel)
+
+你的目的是找bug的时候，bug已经很难找了；更不要说当你认为自己的代码中没有错误的时候。
